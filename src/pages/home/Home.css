@@ -1,0 +1,7 @@
+#homepage {
+  min-height: calc(100 * var(--vh));
+}
+
+#homepage p {
+  margin: 30px;
+}

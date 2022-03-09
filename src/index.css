@@ -1,13 +1,27 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-text-size-adjust: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  --dark: #282c34;
+  --red: #e9a2ad;
+  --gold: #dcc77f;
+}
+html,
+body,
+#root {
+  min-height: calc(100 * var(--vh)) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden scroll;
+  min-width: 100vw;
+}
+
+@font-face {
+  font-family: "Tahu";
+  font-display: swap;
+  src: url("./fonts/Tahu.ttf") format("truetype");
 }

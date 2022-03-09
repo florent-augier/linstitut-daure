@@ -1,0 +1,59 @@
+import React, { createContext, lazy, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+// import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+// import { useTransition, animated } from "react-spring";
+
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+import Loading from "./../global/loading/Loading";
+
+// const Navbar = lazy(() => import("./../global/navbar/Navbar"));
+const App = lazy(() => import("../App"));
+const Home = lazy(() => import("./../pages/home/Home"));
+const Lash = lazy(() => import("./../pages/lash/Lash"));
+const Eyebrow = lazy(() => import("./../pages/eyebrow/Eyebrow"));
+const FacialCare = lazy(() => import("./../pages/facial-care/FacialCare"));
+const Sun = lazy(() => import("./../pages/sun/Sun"));
+const Journey = lazy(() => import("./../pages/journey/Journey"));
+const Contact = lazy(() => import("../pages/contact/Contact"));
+
+export const ToastContext = createContext();
+
+const InitialRouter = () => {
+  // let history = useNavigate();
+  // let location = useLocation();
+
+  //   const transitions = useTransition(location, {
+  //     from: { opacity: 0.2 },
+  //     enter: { opacity: 1 },
+  //     leave: { opacity: 0.2 },
+  //     config: { duration: 200 },
+  //   });
+
+  //   const notify = (alert) => toast(alert);
+
+  return (
+    <>
+      {/* <ToastContainer /> */}
+      {/* <ToastContext.Provider value={{ notify }}> */}
+      {/* <animated.div style={props}> */}
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
+            <Route path="beaute-des-cils" element={<Lash />} />
+            <Route path="beaute-des-sourcils" element={<Eyebrow />} />
+            <Route path="soin-du-visage" element={<FacialCare />} />
+            <Route path="sun" element={<Sun />} />
+            <Route path="mon-parcours" element={<Journey />} />
+            <Route path="contact" element={<Contact />} />
+          </Route>
+        </Routes>
+      </Suspense>
+      {/* </animated.div> */}
+      {/* </ToastContext.Provider> */}
+    </>
+  );
+};
+
+export default InitialRouter;
