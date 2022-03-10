@@ -7,13 +7,29 @@ header {
   overflow: hidden;
   border-top: 4px solid var(--gold);
   font-family: "Tahu";
+  transition: all 0.7s ease;
 }
+header.border-show {
+  transition: all 0.7s ease;
+  border-bottom: 4px solid var(--gold);
+  border-top: none;
+}
+
+header.border-show #navbar-logo img {
+  transition: all 0.7s ease;
+  width: calc(1048px * 0.08);
+  height: calc(1338px * 0.08);
+}
+
 #navbar-logo {
+  transition: all 0.7s ease;
   width: fit-content;
   height: fit-content;
   margin: 24px;
 }
 #navbar-logo img {
+  transition: all 0.7s ease;
+
   width: calc(1048px * 0.1);
   height: calc(1338px * 0.1);
 
@@ -72,6 +88,22 @@ a.navbar-link span {
   top: -100px;
 } */
 
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background-color: var(--dark);
+  transition: all 0.45s;
+}
+
+.navbar-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .navbar-link.active {
   text-decoration: line-through;
   text-decoration-style: double;
@@ -109,30 +141,41 @@ a.navbar-link span {
 }
 
 @media screen and (max-width: 1000px) {
-  html.no-scroll {
-    position: absolute;
-    height: calc(100 * var(--vh));
-    width: 100%;
-    overflow: hidden;
-    background-color: var(--dark);
+  /* html.no-scroll header {
+    position: relative;
+    display: flex;
+  } */
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: white;
   }
-  header,
-  nav {
-    overflow: hidden;
-    padding: 0;
+
+  header.active {
+    position: fixed;
+    overflow: hidden scroll;
     height: auto;
   }
 
-  nav ul {
+  header.active #navbar-logo {
+    display: none;
+  }
+  #navbar-logo {
+    margin: 0;
+    margin-left: 50px;
+  }
+
+  /* nav ul {
     position: relative;
     top: 0;
     width: 100%;
-  }
+  } */
 
   nav.active {
     height: calc(100 * var(--vh));
-    position: fixed;
-    overflow: hidden scroll;
+    padding: 0;
+    width: 100vw;
   }
   nav.active ul {
     flex-direction: column;
@@ -140,34 +183,6 @@ a.navbar-link span {
     background-color: var(--dark);
     color: var(--gold);
   }
-
-  /* .navbar-item::before {
-    content: "";
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    height: 100px;
-    position: absolute;
-    left: -80%;
-    top: auto;
-    border-radius: 25px;
-    z-index: 1;
-    transition: all 0.5s;
-  } */
-
-  /* li::before {
-    height: 50px;
-  } */
-
-  /* li:hover:before {
-    transition: all 0.5s;
-    left: -10%;
-    top: auto;
-  } */
-
-  /* .active-li::before {
-    left: -10%;
-  } */
 
   nav ul li {
     display: none;
@@ -236,5 +251,13 @@ a.navbar-link span {
   .active-li::before {
     left: -50px;
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #navbar-logo img {
+    transition: all 0.7s ease;
+    width: calc(1048px * 0.06);
+    height: calc(1338px * 0.06);
   }
 }

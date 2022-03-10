@@ -16,7 +16,6 @@ body,
   min-height: calc(100 * var(--vh)) !important;
   margin: 0 !important;
   padding: 0 !important;
-  overflow: hidden scroll;
   min-width: 100vw;
 }
 

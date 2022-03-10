@@ -8,6 +8,29 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navbarRef = useRef(null);
+  const headerRef = useRef(null);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    if (scrollPosition > 10) {
+      headerRef.current.classList.add("border-show");
+    } else {
+      headerRef.current.classList.remove("border-show");
+    }
+  }, [scrollPosition]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const homeRef = useRef(null);
   const lashRef = useRef(null);
@@ -30,6 +53,7 @@ export default function Navbar() {
   const toggleHamburgerButton = () => {
     setIsOpen(!isOpen);
     navbarRef.current.classList.toggle("active");
+    headerRef.current.classList.toggle("active");
     setOverflow();
   };
 
@@ -43,20 +67,6 @@ export default function Navbar() {
     }
   }, []);
 
-  const handleShowBorderBottom = () => {
-    console.log("hhheyyy");
-    if (window.clientY === 0) {
-      console.log("je suis en haut de la page");
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleShowBorderBottom);
-    return () => {
-      window.removeEventListener("scroll", handleShowBorderBottom);
-    };
-  }, []);
-
   useEffect(() => {
     const checkLocation = () => {
       allRefs.map((refer) => refer.current.classList.add("active-li"));
@@ -66,6 +76,11 @@ export default function Navbar() {
 
   const handleClickOnLinks = (ref) => {
     let myHtml = document.firstElementChild;
+    navbarRef.current.classList.remove("active");
+    headerRef.current.classList.remove("active");
+    if (isOpen) {
+      setIsOpen(!isOpen);
+    }
 
     allRefs.map(
       (refer) => ref !== refer && refer.current.classList.remove("active-li")
@@ -77,7 +92,7 @@ export default function Navbar() {
   };
 
   return (
-    <header>
+    <header ref={headerRef}>
       <div id="navbar-logo">
         <img
           src="https://res.cloudinary.com/flowww-dev/image/upload/v1646825243/L%27institut%20d%27Aur%C3%A9/logo_swz799.webp"
