@@ -255,6 +255,9 @@ a.navbar-link span {
 }
 
 @media screen and (max-width: 520px) {
+  #navbar-logo {
+    margin-left: 12px;
+  }
   #navbar-logo img {
     transition: all 0.7s ease;
     width: calc(1048px * 0.06);
