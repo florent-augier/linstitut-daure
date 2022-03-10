@@ -76,11 +76,13 @@ a.navbar-link {
   display: inline-flex;
   height: 100%;
   width: 100%;
+  text-decoration: none;
 }
 a.navbar-link span {
   display: flex;
   text-align: center;
   margin: auto;
+  position: relative;
 }
 
 /* .active-li::before {
@@ -88,7 +90,7 @@ a.navbar-link span {
   top: -100px;
 } */
 
-.navbar-link::after {
+.navbar-link span::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -99,7 +101,7 @@ a.navbar-link span {
   transition: all 0.45s;
 }
 
-.navbar-link:hover:after {
+.navbar-link:hover span:after {
   width: 100%;
   left: 0;
 }
