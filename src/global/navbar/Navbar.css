@@ -1,13 +1,17 @@
 header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  font-family: "Tahu";
+  border-top: 4px solid var(--gold);
+  transition: all 0.7s ease;
+
   height: auto;
   width: 100%;
-  position: relative;
-  top: 0;
-  display: flex;
+  z-index: 9999;
+
   overflow: hidden;
-  border-top: 4px solid var(--gold);
-  font-family: "Tahu";
-  transition: all 0.7s ease;
 }
 header.border-show {
   transition: all 0.7s ease;
@@ -17,10 +21,13 @@ header.border-show {
 
 header.border-show #navbar-logo img {
   transition: all 0.7s ease;
-  width: calc(1048px * 0.08);
-  height: calc(1338px * 0.08);
+  width: calc(1048px * 0.05);
+  height: calc(1338px * 0.05);
+  margin: 0;
 }
-
+header.border-show #navbar-logo {
+  margin: auto 12px;
+}
 #navbar-logo {
   transition: all 0.7s ease;
   width: fit-content;
@@ -176,16 +183,12 @@ a.navbar-link span {
     margin-left: 50px;
   }
 
-  /* nav ul {
-    position: relative;
-    top: 0;
-    width: 100%;
-  } */
-
   nav.active {
     height: calc(100 * var(--vh));
     padding: 0;
     width: 100vw;
+    color: var(--gold);
+    text-decoration-color: var(--dark);
   }
   nav.active ul {
     flex-direction: column;
@@ -217,11 +220,6 @@ a.navbar-link span {
   }
   nav.active ul li {
     display: flex;
-  }
-
-  nav.active {
-    color: var(--gold);
-    text-decoration-color: var(--dark);
   }
   .navbar-link {
     color: var(--gold);

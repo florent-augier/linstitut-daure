@@ -2,6 +2,17 @@
   min-height: calc(100 * var(--vh));
 }
 
-#homepage p {
-  margin: 30px;
+.wrapper-first-layout {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper-first-layout {
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100 * var(--vh));
+  background-image: url(https://res.cloudinary.com/flowww-dev/image/upload/v1646948278/L%27institut%20d%27Aur%C3%A9/275115826_357468106255254_1478927441923213647_n_zjs85p.jpg);
 }

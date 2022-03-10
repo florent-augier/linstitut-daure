@@ -114,20 +114,20 @@ export default function Navbar() {
           </li>
           <li id="lash" className="navbar-item" ref={lashRef}>
             <NavLink
-              to="/beaute-des-cils"
+              to="/cils"
               className="navbar-link"
               onClick={() => handleClickOnLinks(lashRef)}
             >
-              <span>Beauté des cils</span>
+              <span>Cils</span>
             </NavLink>
           </li>
           <li id="eyebrow" className="navbar-item" ref={eyebrowRef}>
             <NavLink
-              to="/beaute-des-sourcils"
+              to="/sourcils"
               className="navbar-link"
               onClick={() => handleClickOnLinks(eyebrowRef)}
             >
-              <span>Beauté des sourcils</span>
+              <span>Sourcils</span>
             </NavLink>
           </li>
           <li id="facial-care" className="navbar-item" ref={facialCareRef}>

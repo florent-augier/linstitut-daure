@@ -41,8 +41,8 @@ const InitialRouter = () => {
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
-            <Route path="beaute-des-cils" element={<Lash />} />
-            <Route path="beaute-des-sourcils" element={<Eyebrow />} />
+            <Route path="cils" element={<Lash />} />
+            <Route path="sourcils" element={<Eyebrow />} />
             <Route path="soin-du-visage" element={<FacialCare />} />
             <Route path="sun" element={<Sun />} />
             <Route path="mon-parcours" element={<Journey />} />
