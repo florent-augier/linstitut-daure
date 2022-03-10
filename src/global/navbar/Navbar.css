@@ -37,6 +37,14 @@ header.border-show #navbar-logo img {
   max-height: 1338px;
 }
 
+nav,
+nav ul,
+nav ul li,
+.hamburger-button-wrapper,
+.hamburger-button {
+  transition: all 0.7s ease;
+}
+
 nav {
   width: 100%;
   display: flex;

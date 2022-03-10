@@ -6,7 +6,7 @@ export default function Loading() {
     <div className="wrap">
       <div className="loading">
         <div className="bounceball"></div>
-        <div className="text">NOW LOADING</div>
+        <div className="text">CHARGEMENT</div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ body {
 }
 
 .text {
-  color: #fbae17;
+  color: var(--gold);
   display: inline-block;
   margin-left: 5px;
 }
@@ -33,7 +33,7 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #fbae17;
+  background-color: var(--gold);
   transform-origin: 50%;
   -webkit-animation: bounce 500ms alternate infinite ease;
   animation: bounce 500ms alternate infinite ease;
