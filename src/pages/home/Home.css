@@ -40,12 +40,24 @@
   font-size: 60px;
   margin-right: auto;
   color: var(--gold);
+  animation: showToMiddle 1s linear;
+}
+
+.beautiful-letter {
+  color: var(--dark);
+  font-weight: bolder;
+  font-size: 150%;
 }
 
 .wrapper-first-layout p {
   font-size: 48px;
   margin-left: auto;
   color: var(--dark);
+}
+
+@keyframes showToMiddle {
+  0% {
+  }
 }
 
 @media screen and (max-width: 50rem) {
