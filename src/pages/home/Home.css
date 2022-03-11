@@ -4,15 +4,63 @@
 
 .wrapper-first-layout {
   width: 100%;
-  height: auto;
-}
-
-.wrapper-first-layout {
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: calc(100 * var(--vh));
-  background-image: url(https://res.cloudinary.com/flowww-dev/image/upload/v1646948278/L%27institut%20d%27Aur%C3%A9/275115826_357468106255254_1478927441923213647_n_zjs85p.jpg);
+  background-image: url("https://res.cloudinary.com/flowww-dev/image/upload/v1646954600/L%27institut%20d%27Aur%C3%A9/luca-iaconelli-GmoHIZ61eMo-unsplash_zgykyg.jpg");
+}
+
+.wrapper-first-layout::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wrapper-first-layout p,
+.wrapper-first-layout h1 {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Zizio";
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3), -1px -3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper-first-layout h1 {
+  font-size: 48px;
+  margin-right: auto;
+  color: var(--gold);
+}
+
+.wrapper-first-layout p {
+  font-size: 36px;
+  margin-left: auto;
+  color: var(--dark);
+}
+
+@media screen and (max-width: 50rem) {
+  .wrapper-first-layout h1 {
+    font-size: 36px;
+  }
+  .wrapper-first-layout p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .wrapper-first-layout h1 {
+    font-size: 24px;
+  }
+  .wrapper-first-layout p {
+    font-size: 20px;
+  }
 }

@@ -89,6 +89,10 @@ nav ul li a.active {
   text-decoration-color: var(--gold);
 }
 
+.navbar-link.active:hover span:after {
+  display: none;
+}
+
 a.navbar-link {
   display: inline-flex;
   height: 100%;

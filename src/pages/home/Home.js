@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <div id="homepage">
       <div className="wrapper-first-layout">
-        <p>Hello</p>
+        <h1>L'institut d'Auré</h1>
+        <br />
+        <p>Spécialisé dans la beauté du regard</p>
       </div>
       <p>
         Le lorem ipsum est, en imprimerie, une suite de mots sans signification

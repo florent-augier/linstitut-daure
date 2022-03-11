@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if (scrollPosition > 10) {
+    if (scrollPosition > 1) {
       headerRef.current.classList.add("border-show");
     } else {
       headerRef.current.classList.remove("border-show");

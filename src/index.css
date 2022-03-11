@@ -24,3 +24,15 @@ body,
   font-display: swap;
   src: url("./fonts/Tahu.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Particle";
+  font-display: swap;
+  src: url("./fonts/Particle-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Zizio";
+  font-display: swap;
+  src: url("./fonts/ZIzio.ttf") format("truetype");
+}
