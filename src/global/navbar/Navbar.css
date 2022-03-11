@@ -6,11 +6,9 @@ header {
   font-family: "Tahu";
   border-top: 4px solid var(--gold);
   transition: all 0.7s ease;
-
-  height: auto;
+  height: 80px;
   width: 100%;
   z-index: 9999;
-
   overflow: hidden;
 }
 header.border-show {
@@ -19,18 +17,18 @@ header.border-show {
   border-top: none;
   box-shadow: 0 8px 32px 0 var(--dark);
 }
-header.border-show #navbar-logo {
+/* header.border-show #navbar-logo {
   margin: auto 12px;
   display: flex;
-}
-header.border-show #navbar-logo img {
+} */
+/* header.border-show #navbar-logo img {
   transition: all 0.7s ease;
   width: calc(1048px * 0.05);
   height: calc(1338px * 0.05);
   margin: 0;
-}
+} */
 
-#navbar-logo {
+/* #navbar-logo {
   transition: all 0.7s ease;
   width: fit-content;
   height: fit-content;
@@ -44,7 +42,7 @@ header.border-show #navbar-logo img {
 
   max-width: 1048px;
   max-height: 1338px;
-}
+} */
 
 nav,
 nav ul,
@@ -181,13 +179,13 @@ a.navbar-link span {
     height: auto;
   }
 
-  header.active #navbar-logo {
+  /* header.active #navbar-logo {
     display: none;
   }
   #navbar-logo {
     margin: 0;
     margin-left: 50px;
-  }
+  } */
 
   nav.active {
     height: calc(100 * var(--vh));
@@ -269,7 +267,7 @@ a.navbar-link span {
 }
 
 @media screen and (max-width: 520px) {
-  header.border-show #navbar-logo {
+  /* header.border-show #navbar-logo {
     margin: auto 12px;
   }
   #navbar-logo {
@@ -279,5 +277,5 @@ a.navbar-link span {
     transition: all 0.7s ease;
     width: calc(1048px * 0.06);
     height: calc(1338px * 0.06);
-  }
+  } */
 }

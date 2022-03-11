@@ -36,3 +36,9 @@ body,
   font-display: swap;
   src: url("./fonts/ZIzio.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Mea-Culpa";
+  font-display: swap;
+  src: url("./fonts/MeaCulpa-Regular.woff2") format("truetype");
+}

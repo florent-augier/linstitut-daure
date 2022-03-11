@@ -5,7 +5,7 @@ export default function Home() {
     <div id="homepage">
       <div className="wrapper-first-layout">
         <h1>
-          L'institut d'<span className="beautiful-letter">A</span>uré
+          L'institut d'<span className="beautiful-letter">Auré</span>
         </h1>
         <br />
         <p>Spécialisé dans la beauté du regard</p>

@@ -93,14 +93,14 @@ export default function Navbar() {
 
   return (
     <header ref={headerRef}>
-      <div id="navbar-logo">
+      {/* <div id="navbar-logo">
         <img
           src="https://res.cloudinary.com/flowww-dev/image/upload/v1646825243/L%27institut%20d%27Aur%C3%A9/logo_swz799.webp"
           alt="logo de l'institut d'Auré"
           width="1070px"
           height="1338px"
         />
-      </div>
+      </div> */}
       <nav ref={navbarRef} role="navigation">
         <ul>
           <li id="accueil" className="navbar-item" ref={homeRef}>

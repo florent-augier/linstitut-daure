@@ -25,38 +25,48 @@
 .wrapper-first-layout p,
 .wrapper-first-layout h1 {
   display: flex;
-  width: 70%;
-  height: 50%;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
-  font-family: "Tahu";
+  font-family: "Mea-Culpa";
   /* text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3), -1px -3px 8px rgba(0, 0, 0, 0.3); */
-  text-shadow: 1px 0 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .wrapper-first-layout h1 {
-  font-size: 96px;
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
   margin-right: auto;
-  color: var(--gold);
-  animation: showToMiddle 1s linear;
+  color: var(--dark);
+  animation: showToMiddle 2s ease;
 }
 
 .beautiful-letter {
-  color: var(--dark);
-  font-weight: bolder;
-  font-size: 150%;
+  color: var(--gold);
+  /* font-weight: bolder; */
+  /* font-size: 150%; */
 }
 
 .wrapper-first-layout p {
   font-size: 84px;
   margin-left: auto;
   color: var(--dark);
+  animation: appearAfterHeading 3s ease 3s;
 }
 
 @keyframes showToMiddle {
   0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -81,11 +91,10 @@
 @media screen and (max-width: 580px) {
   .wrapper-first-layout h1,
   .wrapper-first-layout p {
-    width: 70%;
     padding: 0;
   }
   .wrapper-first-layout h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
   .wrapper-first-layout p {
     font-size: 24px;
