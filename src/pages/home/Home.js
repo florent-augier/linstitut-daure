@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div id="homepage">
       <div className="wrapper-first-layout">
-        <h1>L'institut d'Auré</h1>
+        <h1>L'INSTITUT D'AURE</h1>
         <br />
         <p>Spécialisé dans la beauté du regard</p>
       </div>
