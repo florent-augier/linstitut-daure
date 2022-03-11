@@ -24,9 +24,9 @@
 
 .wrapper-first-layout p,
 .wrapper-first-layout h1 {
-  width: 50%;
-  height: 50%;
   display: flex;
+  width: 70%;
+  height: 50%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .wrapper-first-layout h1 {
-  font-size: 60px;
+  font-size: 96px;
   margin-right: auto;
   color: var(--gold);
   animation: showToMiddle 1s linear;
@@ -50,7 +50,7 @@
 }
 
 .wrapper-first-layout p {
-  font-size: 48px;
+  font-size: 84px;
   margin-left: auto;
   color: var(--dark);
 }
@@ -60,12 +60,21 @@
   }
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 70rem) {
   .wrapper-first-layout h1 {
-    font-size: 48px;
+    font-size: 84px;
   }
   .wrapper-first-layout p {
-    font-size: 36px;
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .wrapper-first-layout h1 {
+    font-size: 72px;
+  }
+  .wrapper-first-layout p {
+    font-size: 60px;
   }
 }
 
