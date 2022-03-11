@@ -32,6 +32,7 @@
   font-family: "Mea-Culpa";
   /* text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3), -1px -3px 8px rgba(0, 0, 0, 0.3); */
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+  font-weight: lighter;
 }
 
 .wrapper-first-layout h1 {
@@ -45,8 +46,6 @@
 
 .beautiful-letter {
   color: var(--gold);
-  /* font-weight: bolder; */
-  /* font-size: 150%; */
 }
 
 .wrapper-first-layout p {
