@@ -71,11 +71,11 @@
 
 @media screen and (max-width: 70rem) {
   .wrapper-first-layout h1 {
-    font-size: 84px;
+    font-size: 96px;
   }
-  .wrapper-first-layout p {
+  /* .wrapper-first-layout p {
     font-size: 72px;
-  }
+  } */
 }
 
 @media screen and (max-width: 50rem) {

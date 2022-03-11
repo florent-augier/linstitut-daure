@@ -7,8 +7,8 @@ export default function Home() {
         <h1>
           L'institut d'<span className="beautiful-letter">Auré</span>
         </h1>
-        <br />
-        <p>Spécialisé dans la beauté du regard</p>
+        {/* <br />
+        <p>Spécialisé dans la beauté du regard</p> */}
       </div>
       <p>
         Le lorem ipsum est, en imprimerie, une suite de mots sans signification
