@@ -14,6 +14,7 @@ html,
 body,
 #root {
   min-height: calc(100 * var(--vh)) !important;
+  height: auto;
   margin: 0 !important;
   padding: 0 !important;
   min-width: 100vw;
@@ -41,4 +42,30 @@ body,
   font-family: "Mea-Culpa";
   font-display: swap;
   src: url("./fonts/MeaCulpa-Regular.woff2") format("truetype");
+}
+
+@font-face {
+  font-family: "Helius-Black";
+  font-display: swap;
+  src: url("./fonts/Helius-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helius-Bold";
+  font-display: swap;
+  src: url("./fonts/Helius-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helius-Light";
+  font-display: swap;
+  src: url("./fonts/Helius-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helius-Medium";
+  font-display: swap;
+  src: url("./fonts/Helius-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helius-Regular";
+  font-display: swap;
+  src: url("./fonts/Helius-Regular.ttf") format("truetype");
 }

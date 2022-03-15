@@ -19,8 +19,13 @@ header.border-show {
 }
 header.border-show #wrapper-menu {
   margin: auto 12px;
-  display: flex;
 }
+/* header span:first-child {
+  font-family: "Mea-Culpa";
+  letter-spacing: 8px;
+  font-weight: bolder;
+} */
+
 /* header.border-show #wrapper-menu img {
   transition: all 0.7s ease;
   width: calc(1048px * 0.05);
@@ -38,15 +43,11 @@ header.border-show #wrapper-menu {
   justify-content: center;
   align-items: center;
 }
-/* #wrapper-menu img {
-  transition: all 0.7s ease;
 
-  width: calc(1048px * 0.1);
-  height: calc(1338px * 0.1);
-
-  max-width: 1048px;
-  max-height: 1338px;
-} */
+#wrapper-menu span {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
 
 nav,
 nav ul,
