@@ -135,10 +135,16 @@ export default function Home() {
           <p>
             Outre le fait d'avoir une prestation de qualité, Aurélie saura
             prendre le temps de vous accueillir dans une ambiance calme et
-            détendue. Vous apprécier
+            détendue. Vous apprécierez la délicatesse et la minutie de son
+            travail.
           </p>
         </section>
-        <img src="" alt="Présentation de l'institut d'Auré" />
+        <img
+          src="https://res.cloudinary.com/flowww-dev/image/upload/v1647443849/L%27institut%20d%27Aur%C3%A9/Presentation_zrwbms.webp"
+          alt="Présentation de l'institut d'Auré"
+          width="6720px"
+          height="4480px"
+        />
       </div>
       <p>
         Le lorem ipsum est, en imprimerie, une suite de mots sans signification
