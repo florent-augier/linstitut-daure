@@ -1,6 +1,7 @@
 import "./Home.css";
 import React, { useEffect } from "react";
 import useWindowWidth from "./../../hooks/WindowWidth";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   const width = useWindowWidth();
@@ -68,6 +69,37 @@ export default function Home() {
     );
   }
 
+  const dataCard = [
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647431588/L%27institut%20d%27Aur%C3%A9/Micropigmentation_jckwjc.webp",
+      title: "MICROPIGMENTATION",
+      body: "Dessinez votre sourcils afin de lui redonner un forme homogène",
+      footerLink: "/sourcils",
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647431087/L%27institut%20d%27Aur%C3%A9/Extensions-de-cils_sk3zwu.webp",
+      title: "EXTENSION DE CILS",
+      body: "Créez des cils qui sublimeront votre regard",
+      footerLink: "/cils",
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647431187/L%27institut%20d%27Aur%C3%A9/Dermopigmentation_pny4sp.webp",
+      title: "DERMOPIGMENTATION",
+      body: "Modelez vos sourcils ou lèvres dans le but de redonner du volume",
+      footerLink: "/sourcils",
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647442043/L%27institut%20d%27Aur%C3%A9/Soins-visage_hn4gvq.webp",
+      title: "SOIN DU VISAGE",
+      body: "Dessinez votre sourcils afin de lui redonner ",
+      footerLink: "/soin-du-visage",
+    },
+  ];
+
   return (
     <div id="homepage">
       <div className="wrapper-first-layout">
@@ -81,48 +113,32 @@ export default function Home() {
         ></SplitText>
       </div>
       <div className="grid-home">
-        <div className="card-grid first">
-          <div className="header-card-grid">
-            <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1646948278/L%27institut%20d%27Aur%C3%A9/275115826_357468106255254_1478927441923213647_n_zjs85p.jpg"
-              alt="cil à cil"
-            />
-          </div>
-          <div className="body-card-grid"></div>
-          <div className="footer-card-grid"></div>
-        </div>
-        <div className="card-grid second">
-          <div className="header-card-grid">
-            <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1646948278/L%27institut%20d%27Aur%C3%A9/275115826_357468106255254_1478927441923213647_n_zjs85p.jpg"
-              alt="cil à cil"
-            />
-          </div>
-          <div className="body-card-grid"></div>
-          <div className="footer-card-grid"></div>
-        </div>
-        <div className="card-grid third">
-          <div className="header-card-grid">
-            <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1646948278/L%27institut%20d%27Aur%C3%A9/275115826_357468106255254_1478927441923213647_n_zjs85p.jpg"
-              alt="cil à cil"
-            />
-          </div>
-          <div className="body-card-grid"></div>
-          <div className="footer-card-grid"></div>
-        </div>
-        <div className="card-grid fourth">
-          <div className="header-card-grid">
-            <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1646825243/L%27institut%20d%27Aur%C3%A9/logo_swz799.webp"
-              alt="cil à cil"
-            />
-          </div>
-          <div className="body-card-grid">
-            <p>Beauté des cils</p>
-          </div>
-          <div className="footer-card-grid"></div>
-        </div>
+        {dataCard.map((card, index) => {
+          return (
+            <div className="card-grid first" key={index.toString()}>
+              <div className="image-card-grid">
+                <img src={card.imgUrl} alt={card.title} />
+              </div>
+              <div className="title-card-grid">{card.title}</div>
+              <div className="body-card-grid">{card.body}</div>
+              <hr />
+              <div className="footer-card-grid">
+                <NavLink to={card.footerLink}>En savoir plus ➝ </NavLink>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div id="presentation">
+        <section>
+          <h2>Des prestations de qualité depuis plus d'un an</h2>
+          <p>
+            Outre le fait d'avoir une prestation de qualité, Aurélie saura
+            prendre le temps de vous accueillir dans une ambiance calme et
+            détendue. Vous apprécier
+          </p>
+        </section>
+        <img src="" alt="Présentation de l'institut d'Auré" />
       </div>
       <p>
         Le lorem ipsum est, en imprimerie, une suite de mots sans signification

@@ -78,29 +78,63 @@
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(220, 199, 127, 0.2),
+    0 6px 20px 0 rgba(220, 199, 127, 0.2);
+  color: var(--dark);
 }
-.header-card-grid {
+.image-card-grid {
   height: auto;
 }
-.header-card-grid img {
+.image-card-grid img {
   max-width: 100%;
   height: auto;
   /* border-radius: 8px 8px 0 0; */
 }
 
+.title-card-grid {
+  font-family: "Louis-George-Cafe-Bold";
+  font-size: 18px;
+  height: auto;
+  padding: 8px;
+}
+
 .body-card-grid {
   height: auto;
   padding: 8px;
-  font-family: "Helius-Black";
-  font-size: 24px;
+  font-family: "Louis-George-Cafe";
+  font-size: 16px;
 }
-/* .body-card-grid p {
-
-} */
 
 .footer-card-grid {
   height: auto;
+  font-family: "Louis-George-Cafe";
+  text-decoration: underline;
+  padding: 8px;
+}
+
+.card-grid hr {
+  border-top: 1px solid var(--dark);
+  width: 90%;
+  margin: auto;
+}
+#presentation {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+#presentation section {
+  background-color: white;
+  padding: 10%;
+}
+
+#presentation section h2 {
+  font-size: 48px;
+}
+
+#presentation section p {
+  font-size: 22px;
 }
 
 @keyframes showToMiddle {

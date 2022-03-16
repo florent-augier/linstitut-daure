@@ -18,6 +18,9 @@ body,
   margin: 0 !important;
   padding: 0 !important;
   min-width: 100vw;
+  background-color: var(--dark);
+  background-blend-mode: lighten;
+  font-family: "Louis-George-Cafe";
 }
 
 @font-face {
@@ -45,27 +48,33 @@ body,
 }
 
 @font-face {
-  font-family: "Helius-Black";
+  font-family: "Louis-George-Cafe-Bold";
   font-display: swap;
-  src: url("./fonts/Helius-Black.ttf") format("truetype");
+  src: url("./fonts/Louis-George-Cafe-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Helius-Bold";
+  font-family: "Louis-George-Cafe-Bold-Italic";
   font-display: swap;
-  src: url("./fonts/Helius-Bold.ttf") format("truetype");
+  src: url("./fonts/Louis-George-Cafe-Bold-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Helius-Light";
+  font-family: "Louis-George-Cafe-Italic";
   font-display: swap;
-  src: url("./fonts/Helius-Light.ttf") format("truetype");
+  src: url("./fonts/Louis-George-Cafe-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Helius-Medium";
+  font-family: "Louis-George-Cafe-Light-Italic";
   font-display: swap;
-  src: url("./fonts/Helius-Medium.ttf") format("truetype");
+  src: url("./fonts/Louis-George-Cafe-Light-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Helius-Regular";
+  font-family: "Louis-George-Cafe-Light";
   font-display: swap;
-  src: url("./fonts/Helius-Regular.ttf") format("truetype");
+  src: url("./fonts/Louis-George-Cafe-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Louis-George-Cafe";
+  font-display: swap;
+  src: url("./fonts/Louis-George-Cafe.ttf") format("truetype");
 }
