@@ -197,4 +197,7 @@
   .wrapper-first-layout p {
     font-size: 24px;
   }
+  .grid-home {
+    grid-template-columns: auto;
+  }
 }

@@ -108,7 +108,7 @@ export default function Home() {
         </h1>
         <br />
         <SplitText
-          copy="Spécialisé dans la beauté du regard"
+          copy="Spécialisé dans la beauté du visage"
           role="heading"
         ></SplitText>
       </div>
