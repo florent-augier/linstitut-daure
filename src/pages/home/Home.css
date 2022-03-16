@@ -119,9 +119,13 @@
 }
 #presentation {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: white;
   position: relative;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 #presentation section {
@@ -131,10 +135,17 @@
 
 #presentation section h2 {
   font-size: 48px;
+  font-family: "Louis-George-Cafe-Bold";
 }
 
 #presentation section p {
   font-size: 22px;
+  margin-top: 50px;
+}
+
+#presentation img {
+  max-width: calc(6720px * 0.1);
+  max-height: calc(4480px * 0.1);
 }
 
 @keyframes showToMiddle {
@@ -175,6 +186,9 @@
   .wrapper-first-layout p {
     font-size: 24px;
   }
+  #presentation {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 50rem) {
@@ -183,6 +197,10 @@
   }
   .wrapper-first-layout p {
     font-size: 24px;
+  }
+  #presentation img {
+    max-width: calc(6720px * 0.07);
+    max-height: calc(4480px * 0.07);
   }
 }
 
@@ -199,5 +217,9 @@
   }
   .grid-home {
     grid-template-columns: auto;
+  }
+  #presentation img {
+    max-width: calc(6720px * 0.04);
+    max-height: calc(4480px * 0.04);
   }
 }
