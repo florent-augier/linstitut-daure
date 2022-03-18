@@ -17,6 +17,7 @@ function App() {
     // TagManager.initialize({ gtmId: "GTM-5DQ87FJ" });
 
     window.addEventListener("resize", handleResizing);
+
     document
       .querySelector(":root")
       .style.setProperty("--vh", window.innerHeight / 100 + "px");

@@ -81,7 +81,17 @@
   box-shadow: 0 4px 8px 0 rgba(220, 199, 127, 0.2),
     0 6px 20px 0 rgba(220, 199, 127, 0.2);
   color: var(--dark);
+  opacity: 0;
+  transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+  transition: all 1s;
 }
+.is-shown {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  opacity: 1;
+}
+
 .image-card-grid {
   height: auto;
 }
@@ -117,7 +127,7 @@
   width: 90%;
   margin: auto;
 }
-#presentation {
+.container-show {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,24 +138,68 @@
   padding-top: 100px;
 }
 
-#presentation section {
+.container-show:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.container-show section {
   background-color: white;
   padding: 10%;
 }
 
-#presentation section h2 {
+.container-show section h2 {
   font-size: 48px;
   font-family: "Louis-George-Cafe-Bold";
+  color: var(--dark);
+  border-radius: 8px 36px;
+  background-color: var(--gold);
+  padding: 36px;
+  text-decoration: underline;
+  box-shadow: 4px 8px var(--dark);
 }
 
-#presentation section p {
+.container-show section p {
   font-size: 22px;
   margin-top: 50px;
 }
 
-#presentation img {
+.container-show img {
   max-width: calc(6720px * 0.1);
   max-height: calc(4480px * 0.1);
+  position: relative;
+  float: left;
+}
+
+.container-img {
+  position: relative;
+  height: auto;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container-show:nth-child(2n) .container-img::after {
+  content: url("https://res.cloudinary.com/flowww-dev/image/upload/v1647527059/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_1_hqfjm0.png");
+  left: 80%;
+  background-color: var(--dark);
+}
+.container-img:after {
+  content: url("https://res.cloudinary.com/flowww-dev/image/upload/v1647522810/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_vexkoc.png");
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  background-color: var(--gold);
+  right: 80%;
+  top: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-show:nth-child(2n) h2 {
+  background-color: var(--dark);
+  color: var(--gold);
 }
 
 @keyframes showToMiddle {
@@ -182,11 +236,22 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .container-show section {
+    padding: 4%;
+  }
+  .container-show img {
+    max-width: calc(6720px * 0.08);
+    max-height: calc(4480px * 0.08);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .wrapper-first-layout p {
     font-size: 24px;
   }
-  #presentation {
+  .container-show,
+  .container-show:nth-child(2n) {
     flex-direction: column;
   }
 }
@@ -198,7 +263,7 @@
   .wrapper-first-layout p {
     font-size: 24px;
   }
-  #presentation img {
+  .container-show img {
     max-width: calc(6720px * 0.07);
     max-height: calc(4480px * 0.07);
   }
@@ -218,7 +283,7 @@
   .grid-home {
     grid-template-columns: auto;
   }
-  #presentation img {
+  .container-show img {
     max-width: calc(6720px * 0.04);
     max-height: calc(4480px * 0.04);
   }

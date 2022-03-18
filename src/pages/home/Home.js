@@ -5,10 +5,49 @@ import { NavLink } from "react-router-dom";
 
 export default function Home() {
   const width = useWindowWidth();
-  useEffect(() => {
-    console.log(width);
-  }, [width]);
 
+  useEffect(() => {
+    // const pageContainer = document.querySelector("page-container");
+    const targeElement =
+      width > 580
+        ? document.querySelectorAll(".grid-home")
+        : document.querySelectorAll(".card-grid");
+    const toArray = Array.from(targeElement);
+
+    // setAllMyElements(toArray);
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6,
+    };
+    const callbackFunction = (entries) => {
+      const [entry] = entries;
+
+      if (entry.isIntersecting) {
+        if (entry.target.classList[0] === "grid-home") {
+          entry.target.childNodes.forEach((child, i) => {
+            console.log(child);
+            setTimeout(() => {
+              child.classList.add("is-shown");
+            }, 200 * i);
+          });
+          console.log(entry.target.classList);
+        } else {
+          entry.target.classList.add("is-shown");
+        }
+      }
+    };
+    console.log(toArray);
+
+    const observer = new IntersectionObserver(callbackFunction, options);
+
+    toArray.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [width]);
   function SplitText({ copy, role }) {
     let copyArray = [...copy];
     return (
@@ -100,8 +139,35 @@ export default function Home() {
     },
   ];
 
+  const containerShow = [
+    {
+      title: "Des prestations de qualité depuis plus d'un an",
+      content:
+        "Outre le fait d'avoir une prestation de qualité, Aurélie saura prendre le temps de vous accueillir dans une ambiance calme et détendue. Vous apprécierez la délicatesse et la minutie de son travail.",
+      imgSrc:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647443849/L%27institut%20d%27Aur%C3%A9/Presentation_zrwbms.webp",
+      imgAlt: "technique d'extension de cil",
+    },
+    {
+      title: "Un savoir faire unique",
+      content:
+        "Outre le fait d'avoir une prestation de qualité, Aurélie saura prendre le temps de vous accueillir dans une ambiance calme et détendue. Vous apprécierez la délicatesse et la minutie de son travail.",
+      imgSrc:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647443849/L%27institut%20d%27Aur%C3%A9/Presentation_zrwbms.webp",
+      imgAlt: "technique d'extension de cil",
+    },
+    {
+      title: "Des ",
+      content:
+        "Outre le fait d'avoir une prestation de qualité, Aurélie saura prendre le temps de vous accueillir dans une ambiance calme et détendue. Vous apprécierez la délicatesse et la minutie de son travail.",
+      imgSrc:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647443849/L%27institut%20d%27Aur%C3%A9/Presentation_zrwbms.webp",
+      imgAlt: "technique d'extension de cil",
+    },
+  ];
+
   return (
-    <div id="homepage">
+    <div id="homepage" className="page-container">
       <div className="wrapper-first-layout">
         <h1>
           L'institut d'<span className="beautiful-letter">Auré</span>
@@ -115,7 +181,7 @@ export default function Home() {
       <div className="grid-home">
         {dataCard.map((card, index) => {
           return (
-            <div className="card-grid first" key={index.toString()}>
+            <div className={`card-grid ${index}`} key={index.toString()}>
               <div className="image-card-grid">
                 <img src={card.imgUrl} alt={card.title} />
               </div>
@@ -129,23 +195,35 @@ export default function Home() {
           );
         })}
       </div>
-      <div id="presentation">
-        <section>
-          <h2>Des prestations de qualité depuis plus d'un an</h2>
-          <p>
-            Outre le fait d'avoir une prestation de qualité, Aurélie saura
-            prendre le temps de vous accueillir dans une ambiance calme et
-            détendue. Vous apprécierez la délicatesse et la minutie de son
-            travail.
-          </p>
-        </section>
-        <img
-          src="https://res.cloudinary.com/flowww-dev/image/upload/v1647443849/L%27institut%20d%27Aur%C3%A9/Presentation_zrwbms.webp"
-          alt="Présentation de l'institut d'Auré"
-          width="6720px"
-          height="4480px"
-        />
-      </div>
+      {containerShow.map((container, index) => {
+        return (
+          <div className="container-show" id="presentation" key={index}>
+            <section>
+              <h2>
+                <img
+                  src={
+                    index % 2 === 0
+                      ? "https://res.cloudinary.com/flowww-dev/image/upload/v1647522810/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_vexkoc.png"
+                      : "https://res.cloudinary.com/flowww-dev/image/upload/v1647527059/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_1_hqfjm0.png"
+                  }
+                  alt="graphique de cil"
+                  style={{ marginInline: "20px" }}
+                />
+                {container.title}
+              </h2>
+              <p>{container.content}</p>
+            </section>
+            <div className="container-img">
+              <img
+                src={container.imgSrc}
+                alt="Présentation de l'institut d'Auré"
+                width="6720px"
+                height="4480px"
+              />
+            </div>
+          </div>
+        );
+      })}
       <p>
         Le lorem ipsum est, en imprimerie, une suite de mots sans signification
         utilisée à titre provisoire pour calibrer une mise en page, le texte
