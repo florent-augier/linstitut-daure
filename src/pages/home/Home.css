@@ -86,9 +86,14 @@
   -webkit-transform: translateY(25%);
   transition: all 1s;
 }
-.is-shown {
+.card-grid.is-shown {
   transform: translateY(0);
   -webkit-transform: translateY(0);
+  opacity: 1;
+}
+
+.card-grid.is-shown > .image-card-grid > img {
+  transition: all 3s;
   opacity: 1;
 }
 
@@ -98,6 +103,7 @@
 .image-card-grid img {
   max-width: 100%;
   height: auto;
+  opacity: 0;
   /* border-radius: 8px 8px 0 0; */
 }
 

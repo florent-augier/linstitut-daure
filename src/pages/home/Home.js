@@ -7,40 +7,56 @@ export default function Home() {
   const width = useWindowWidth();
 
   useEffect(() => {
-    // const pageContainer = document.querySelector("page-container");
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6,
+    };
+
     const targeElement =
       width > 580
         ? document.querySelectorAll(".grid-home")
         : document.querySelectorAll(".card-grid");
     const toArray = Array.from(targeElement);
 
-    // setAllMyElements(toArray);
+    const images = document.getElementsByTagName("img");
+    const imagesToArray = Array.from(images);
 
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.6,
-    };
     const callbackFunction = (entries) => {
       const [entry] = entries;
 
       if (entry.isIntersecting) {
         if (entry.target.classList[0] === "grid-home") {
           entry.target.childNodes.forEach((child, i) => {
-            console.log(child);
             setTimeout(() => {
               child.classList.add("is-shown");
             }, 200 * i);
           });
-          console.log(entry.target.classList);
         } else {
           entry.target.classList.add("is-shown");
         }
       }
     };
-    console.log(toArray);
+
+    const imgCallbackFunction = (entries) => {
+      const [entry] = entries;
+      console.log(entry);
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-shown");
+      }
+    };
 
     const observer = new IntersectionObserver(callbackFunction, options);
+
+    const imageObserver = new IntersectionObserver(
+      imgCallbackFunction,
+      options
+    );
+
+    imagesToArray.forEach((image) => {
+      imageObserver.observe(image);
+    });
 
     toArray.forEach((element) => {
       observer.observe(element);
