@@ -99,7 +99,7 @@ export default function Home() {
               display: "inline-flex",
               padding: "4px",
               animationName: "reveal",
-              animationDelay: `${index * 0.05 + 3}s`,
+              animationDelay: `${index * 0.03 + 3}s`,
               animationDuration: "2s",
             };
 
@@ -238,6 +238,7 @@ export default function Home() {
           </div>
         );
       })}
+      <section id=""></section>
       <p>
         Le lorem ipsum est, en imprimerie, une suite de mots sans signification
         utilisée à titre provisoire pour calibrer une mise en page, le texte

@@ -241,7 +241,6 @@ a.navbar-link span {
 
 @media only screen and (orientation: landscape) and (max-width: 680px) {
   .hamburger-button-wrapper {
-    margin-top: 20px;
     width: 15%;
   }
   .hamburger-button img {

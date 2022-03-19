@@ -107,7 +107,7 @@
 }
 
 .title-card-grid {
-  font-family: "Louis-George-Cafe-Bold";
+  font-family: "Garamond-ExtraBold";
   font-size: 18px;
   height: auto;
   padding: 8px;
@@ -116,13 +116,13 @@
 .body-card-grid {
   height: auto;
   padding: 8px;
-  font-family: "Louis-George-Cafe";
+  font-family: "Garamond-Medium";
   font-size: 16px;
 }
 
 .footer-card-grid {
   height: auto;
-  font-family: "Louis-George-Cafe";
+  font-family: "Garamond-Medium";
   text-decoration: underline;
   padding: 8px;
 }
@@ -174,7 +174,7 @@
 
 .container-show section h2 {
   font-size: 48px;
-  font-family: "Louis-George-Cafe-Bold";
+  font-family: "Garamond-ExtraBold";
   color: var(--dark);
   border-radius: 8px 36px;
   background-color: var(--gold);

@@ -20,7 +20,7 @@ body,
   min-width: 100vw;
   background-color: var(--dark);
   background-blend-mode: lighten;
-  font-family: "Louis-George-Cafe";
+  font-family: "Garamond-Regular";
 }
 
 @font-face {
@@ -30,51 +30,67 @@ body,
 }
 
 @font-face {
-  font-family: "Particle";
-  font-display: swap;
-  src: url("./fonts/Particle-Regular.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Zizio";
-  font-display: swap;
-  src: url("./fonts/ZIzio.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Mea-Culpa";
   font-display: swap;
   src: url("./fonts/MeaCulpa-Regular.woff2") format("truetype");
 }
 
 @font-face {
-  font-family: "Louis-George-Cafe-Bold";
+  font-family: "Garamond-Bold";
   font-display: swap;
-  src: url("./fonts/Louis-George-Cafe-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Louis-George-Cafe-Bold-Italic";
-  font-display: swap;
-  src: url("./fonts/Louis-George-Cafe-Bold-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Louis-George-Cafe-Italic";
-  font-display: swap;
-  src: url("./fonts/Louis-George-Cafe-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Louis-George-Cafe-Light-Italic";
-  font-display: swap;
-  src: url("./fonts/Louis-George-Cafe-Light-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Louis-George-Cafe-Light";
-  font-display: swap;
-  src: url("./fonts/Louis-George-Cafe-Light.ttf") format("truetype");
+  src: url("./fonts/Garamond-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Louis-George-Cafe";
+  font-family: "Garamond-BoldItalic";
   font-display: swap;
-  src: url("./fonts/Louis-George-Cafe.ttf") format("truetype");
+  src: url("./fonts/Garamond-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-ExtraBold";
+  font-display: swap;
+  src: url("./fonts/Garamond-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-ExtraBoldItalic";
+  font-display: swap;
+  src: url("./fonts/Garamond-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-Italic";
+  font-display: swap;
+  src: url("./fonts/Garamond-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-Medium";
+  font-display: swap;
+  src: url("./fonts/Garamond-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-MediumItalic";
+  font-display: swap;
+  src: url("./fonts/Garamond-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-Regular";
+  font-display: swap;
+  src: url("./fonts/Garamond-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-SemiBold";
+  font-display: swap;
+  src: url("./fonts/Garamond-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond-SemiBoldItalic";
+  font-display: swap;
+  src: url("./fonts/Garamond-SemiBoldItalic.ttf") format("truetype");
 }

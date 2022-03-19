@@ -1,10 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 .wrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: "Tahu";
 }
 
 .text {
