@@ -142,6 +142,7 @@
   position: relative;
   padding-bottom: 100px;
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .container-show:nth-child(2n) {
