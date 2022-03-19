@@ -143,6 +143,11 @@
   padding-bottom: 100px;
   padding-top: 100px;
   overflow: hidden;
+  opacity: 0;
+}
+
+.container-show.is-shown {
+  opacity: 1;
 }
 
 .container-show:nth-child(2n) {
