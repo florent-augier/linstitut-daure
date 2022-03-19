@@ -19,8 +19,8 @@ export default function Home() {
         : document.querySelectorAll(".card-grid");
     const toArray = Array.from(targeElement);
 
-    const images = document.getElementsByTagName("img");
-    const imagesToArray = Array.from(images);
+    const containerShow = document.getElementsByClassName("container-show");
+    const containerShowArray = Array.from(containerShow);
 
     const callbackFunction = (entries) => {
       const [entry] = entries;
@@ -38,10 +38,8 @@ export default function Home() {
       }
     };
 
-    const imgCallbackFunction = (entries) => {
+    const containerShowCallback = (entries) => {
       const [entry] = entries;
-      console.log(entry);
-
       if (entry.isIntersecting) {
         entry.target.classList.add("is-shown");
       }
@@ -49,13 +47,13 @@ export default function Home() {
 
     const observer = new IntersectionObserver(callbackFunction, options);
 
-    const imageObserver = new IntersectionObserver(
-      imgCallbackFunction,
+    const containerObserver = new IntersectionObserver(
+      containerShowCallback,
       options
     );
 
-    imagesToArray.forEach((image) => {
-      imageObserver.observe(image);
+    containerShowArray.forEach((image) => {
+      containerObserver.observe(image);
     });
 
     toArray.forEach((element) => {
