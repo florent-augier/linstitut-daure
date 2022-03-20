@@ -2,6 +2,7 @@ import React, { useEffect, Suspense } from "react";
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import Navbar from "./global/navbar/Navbar";
+import Footer from "./global/footer/Footer";
 
 // import ScrollDown from "./components/scrolldown/ScrollDown";
 // import TagManager from "react-gtm-module";
@@ -10,7 +11,7 @@ import Navbar from "./global/navbar/Navbar";
 import Loading from "./global/loading/Loading";
 // import Cursor from "./cursor/Cursor";
 // import Footer from "./components/footer/Footer";
-// import ScrollTop from "./components/scolltop/ScrollTop";
+import ScrollTop from "./global/scrolltop/ScrollTop";
 
 function App() {
   useEffect(() => {
@@ -35,12 +36,14 @@ function App() {
   return (
     <Suspense fallback={<Loading />}>
       <Navbar />
-      {/* <ScrollTop />
-      <MessengerCustomerChat pageId="111253084700995" appId="261838472668128" />
+      <ScrollTop />
+
+      {/* <MessengerCustomerChat pageId="111253084700995" appId="261838472668128" />
       <Cursor /> */}
       <Outlet />
       {/* <ScrollDown />
       <Footer /> */}
+      <Footer />
     </Suspense>
   );
 }

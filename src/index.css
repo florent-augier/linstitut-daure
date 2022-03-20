@@ -21,6 +21,7 @@ body,
   background-color: var(--dark);
   background-blend-mode: lighten;
   font-family: "Garamond-Regular";
+  color: white;
 }
 
 @font-face {

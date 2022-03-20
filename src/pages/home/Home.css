@@ -144,6 +144,7 @@
   padding-top: 100px;
   overflow: hidden;
   opacity: 0;
+  color: var(--dark);
 }
 
 .container-show.is-shown {
@@ -174,13 +175,14 @@
 
 .container-show section h2 {
   font-size: 48px;
-  font-family: "Garamond-ExtraBold";
+  font-family: "Mea-Culpa";
   color: var(--dark);
   border-radius: 8px 36px;
   background-color: var(--gold);
   padding: 36px;
   text-decoration: underline;
   box-shadow: 4px 8px var(--dark);
+  text-underline-offset: 2px;
 }
 
 .container-show section p {
@@ -231,6 +233,23 @@
 .container-show:nth-child(2n) h2 {
   background-color: var(--dark);
   color: var(--gold);
+  box-shadow: 4px 8px var(--gold);
+}
+
+#contact-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#contact-link a {
+  text-align: center;
+  padding: auto;
+  color: var(--gold);
+  font-family: "Garamond-ExtraBold";
+  font-size: 36px;
 }
 
 @keyframes showToMiddle {

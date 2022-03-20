@@ -10,6 +10,7 @@ header {
   width: 100%;
   z-index: 9999;
   overflow: hidden;
+  color: var(--dark);
 }
 header.border-show {
   transition: all 0.7s ease;
