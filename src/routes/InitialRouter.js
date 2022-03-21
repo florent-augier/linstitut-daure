@@ -11,9 +11,13 @@ import Loading from "./../global/loading/Loading";
 const App = lazy(() => import("../App"));
 const Home = lazy(() => import("./../pages/home/Home"));
 const Lash = lazy(() => import("./../pages/lash/Lash"));
-const Eyebrow = lazy(() => import("./../pages/eyebrow/Eyebrow"));
-const FacialCare = lazy(() => import("./../pages/facial-care/FacialCare"));
-const Sun = lazy(() => import("./../pages/sun/Sun"));
+const Micropigmentation = lazy(() =>
+  import("./../pages/micropigmentation/Micropigmentation")
+);
+const FacialCare = lazy(() => import("./../pages/body-care/BodyCare"));
+const Dermopigmentation = lazy(() =>
+  import("./../pages/dermopigmentation/Dermopigmentation")
+);
 const Journey = lazy(() => import("./../pages/journey/Journey"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 
@@ -42,9 +46,9 @@ const InitialRouter = () => {
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
             <Route path="cils" element={<Lash />} />
-            <Route path="sourcils" element={<Eyebrow />} />
-            <Route path="soin-du-visage" element={<FacialCare />} />
-            <Route path="sun" element={<Sun />} />
+            <Route path="micropigmentation" element={<Micropigmentation />} />
+            <Route path="dermopigmentation" element={<Dermopigmentation />} />
+            <Route path="soins-corporel" element={<FacialCare />} />
             <Route path="mon-parcours" element={<Journey />} />
             <Route path="contact" element={<Contact />} />
           </Route>

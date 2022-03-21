@@ -125,18 +125,19 @@ export default function Home() {
   const dataCard = [
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1647431588/L%27institut%20d%27Aur%C3%A9/Micropigmentation_jckwjc.webp",
-      title: "MICROPIGMENTATION",
-      body: "Dessinez votre sourcils afin de lui redonner un forme homogène",
-      footerLink: "/sourcils",
-    },
-    {
-      imgUrl:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1647431087/L%27institut%20d%27Aur%C3%A9/Extensions-de-cils_sk3zwu.webp",
       title: "EXTENSION DE CILS",
       body: "Créez des cils qui sublimeront votre regard",
       footerLink: "/cils",
     },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647431588/L%27institut%20d%27Aur%C3%A9/Micropigmentation_jckwjc.webp",
+      title: "MICROPIGMENTATION",
+      body: "Dessinez votre sourcils afin de lui redonner un forme homogène",
+      footerLink: "/micropigmentaion",
+    },
+
     {
       imgUrl:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1647431187/L%27institut%20d%27Aur%C3%A9/Dermopigmentation_pny4sp.webp",
@@ -147,9 +148,9 @@ export default function Home() {
     {
       imgUrl:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1647442043/L%27institut%20d%27Aur%C3%A9/Soins-visage_hn4gvq.webp",
-      title: "SOIN DU VISAGE",
+      title: "SOINS VISAGE",
       body: "Dessinez votre sourcils afin de lui redonner ",
-      footerLink: "/soin-du-visage",
+      footerLink: "/soins-corporel",
     },
   ];
 

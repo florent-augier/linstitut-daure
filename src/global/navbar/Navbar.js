@@ -34,18 +34,18 @@ export default function Navbar() {
 
   const homeRef = useRef(null);
   const lashRef = useRef(null);
-  const eyebrowRef = useRef(null);
-  const facialCareRef = useRef(null);
-  const sunRef = useRef(null);
+  const microRef = useRef(null);
+  const bodyCareRef = useRef(null);
+  const dermoRef = useRef(null);
   const journeyRef = useRef(null);
   const contactRef = useRef(null);
 
   const allRefs = [
     homeRef,
     lashRef,
-    eyebrowRef,
-    facialCareRef,
-    sunRef,
+    microRef,
+    bodyCareRef,
+    dermoRef,
     journeyRef,
     contactRef,
   ];
@@ -113,34 +113,35 @@ export default function Navbar() {
               className="navbar-link"
               onClick={() => handleClickOnLinks(lashRef)}
             >
-              <span>Cils</span>
+              <span>Extensions de Cils</span>
             </NavLink>
           </li>
-          <li id="eyebrow" className="navbar-item" ref={eyebrowRef}>
+          <li id="micropigmentation" className="navbar-item" ref={microRef}>
             <NavLink
-              to="/sourcils"
+              to="/micropigmentation"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(eyebrowRef)}
+              onClick={() => handleClickOnLinks(microRef)}
             >
-              <span>Sourcils</span>
+              <span>Micropigmentation</span>
             </NavLink>
           </li>
-          <li id="facial-care" className="navbar-item" ref={facialCareRef}>
+
+          <li id="dermopigmentation" className="navbar-item" ref={dermoRef}>
             <NavLink
-              to="/soin-du-visage"
+              to="/dermopigmentation"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(facialCareRef)}
+              onClick={() => handleClickOnLinks(dermoRef)}
             >
-              <span>Soin du visage</span>
+              <span>Dermopigmentation</span>
             </NavLink>
           </li>
-          <li id="sun" className="navbar-item" ref={sunRef}>
+          <li id="facial-care" className="navbar-item" ref={bodyCareRef}>
             <NavLink
-              to="/sun"
+              to="/soins-corporel"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(sunRef)}
+              onClick={() => handleClickOnLinks(bodyCareRef)}
             >
-              <span>Sun</span>
+              <span>Soins Corporel</span>
             </NavLink>
           </li>
           <li id="contact" className="navbar-item" ref={contactRef}>

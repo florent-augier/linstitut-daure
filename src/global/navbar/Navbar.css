@@ -21,23 +21,10 @@ header.border-show {
 header.border-show #wrapper-menu {
   margin: auto 12px;
 }
-/* header span:first-child {
-  font-family: "Mea-Culpa";
-  letter-spacing: 8px;
-  font-weight: bolder;
-} */
-
-/* header.border-show #wrapper-menu img {
-  transition: all 0.7s ease;
-  width: calc(1048px * 0.05);
-  height: calc(1338px * 0.05);
-  margin: 0;
-} */
 
 #wrapper-menu {
   transition: all 0.7s ease;
   width: auto;
-  /* margin: auto; */
   height: auto;
   margin: 24px;
   display: none;
@@ -46,7 +33,7 @@ header.border-show #wrapper-menu {
 }
 
 #wrapper-menu span {
-  font-family: "Louis-George-Cafe-Bold";
+  font-family: "Garamond-ExtraBold";
 }
 
 nav,
@@ -108,11 +95,6 @@ a.navbar-link span {
   margin: auto;
   position: relative;
 }
-
-/* .active-li::before {
-  transition: all 0.5s;
-  top: -100px;
-} */
 
 .navbar-link span::after {
   content: "";

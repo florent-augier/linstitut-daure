@@ -63,6 +63,8 @@
 
 .progress-wrap:hover::before {
   opacity: 1;
+  background: var(--gold);
+  border-radius: 50%;
 }
 
 .progress-wrap svg path {

@@ -1,0 +1,153 @@
+footer {
+  width: 100%;
+  min-height: 400px;
+  font-size: 16px;
+  padding-block: 100px;
+}
+
+#footer-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+}
+
+#footer-grid div {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  align-items: center;
+}
+
+/* #footer-grid div ul li {
+  display: flex;
+  flex-direction: column;
+} */
+
+.title-column-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Garamond-ExtraBold";
+}
+
+.title-column-footer h3:hover {
+  background-size: 100% 88%;
+  color: var(--gold);
+}
+
+.title-column-footer h3 {
+  font-size: 24px;
+  color: var(--gold);
+  background-image: linear-gradient(180deg, var(--dark) 0%, var(--gold) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  margin-bottom: 50px;
+}
+
+#first-column-footer nav {
+  padding: 0;
+}
+
+#first-column-footer nav ul {
+  display: flex;
+  flex-direction: column;
+}
+#first-column-footer nav ul li {
+  display: flex;
+  justify-content: flex-start;
+  margin-block: 4px;
+}
+#first-column-footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a {
+  position: relative;
+  text-decoration: none;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background-color: var(--gold);
+  transition: all 0.45s;
+}
+footer a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+#footer-grid div section {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-grid div section p {
+  color: white;
+  text-align: center;
+}
+
+#footer-grid div section a {
+  color: var(--gold);
+}
+
+#second-column-footer {
+  justify-content: center;
+}
+
+#second-column-footer ul li {
+  list-style: none;
+  padding-block: 8px;
+}
+
+#second-column-footer ul li p {
+  margin-block: 12px;
+}
+#second-column-footer ul li img {
+  max-width: calc(470px * 0.5);
+  max-height: calc(316px * 0.5);
+  display: block;
+  margin: auto;
+}
+
+#third-column-footer {
+  justify-content: flex-end;
+}
+
+#third-column-footer ul {
+  list-style: none;
+  display: block;
+}
+
+#third-column-footer ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#third-column-footer ul li img {
+  max-width: 64px;
+  max-height: 64px;
+  padding: 8px;
+}
+
+#third-column-footer ul li a {
+  display: contents;
+  color: white;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
