@@ -98,7 +98,7 @@ export default function Navbar() {
       </div>
       <nav ref={navbarRef} role="navigation">
         <ul>
-          <li id="accueil" className="navbar-item" ref={homeRef}>
+          <li className="navbar-item" ref={homeRef}>
             <NavLink
               to="/"
               className="navbar-link"
@@ -107,7 +107,7 @@ export default function Navbar() {
               <span>Accueil</span>
             </NavLink>
           </li>
-          <li id="lash" className="navbar-item" ref={lashRef}>
+          <li className="navbar-item" ref={lashRef}>
             <NavLink
               to="/cils"
               className="navbar-link"
@@ -116,7 +116,7 @@ export default function Navbar() {
               <span>Extensions de Cils</span>
             </NavLink>
           </li>
-          <li id="micropigmentation" className="navbar-item" ref={microRef}>
+          <li className="navbar-item" ref={microRef}>
             <NavLink
               to="/micropigmentation"
               className="navbar-link"
@@ -126,7 +126,7 @@ export default function Navbar() {
             </NavLink>
           </li>
 
-          <li id="dermopigmentation" className="navbar-item" ref={dermoRef}>
+          <li className="navbar-item" ref={dermoRef}>
             <NavLink
               to="/dermopigmentation"
               className="navbar-link"
@@ -135,7 +135,7 @@ export default function Navbar() {
               <span>Dermopigmentation</span>
             </NavLink>
           </li>
-          <li id="facial-care" className="navbar-item" ref={bodyCareRef}>
+          <li className="navbar-item" ref={bodyCareRef}>
             <NavLink
               to="/soins-corporel"
               className="navbar-link"
@@ -144,7 +144,7 @@ export default function Navbar() {
               <span>Soins Corporel</span>
             </NavLink>
           </li>
-          <li id="contact" className="navbar-item" ref={contactRef}>
+          <li className="navbar-item" ref={contactRef}>
             <NavLink
               to="/contact"
               className="navbar-link"
@@ -153,7 +153,7 @@ export default function Navbar() {
               <span>Contact</span>
             </NavLink>
           </li>
-          <li id="journey" className="navbar-item" ref={journeyRef}>
+          <li className="navbar-item" ref={journeyRef}>
             <NavLink
               to="/mon-parcours"
               className="navbar-link"

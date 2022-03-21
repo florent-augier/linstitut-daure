@@ -1,5 +1,5 @@
 import "./Contact.css";
 
 export default function Contact() {
-  return <h1>Contact</h1>;
+  return <div id="contact" className="page-container"></div>;
 }
