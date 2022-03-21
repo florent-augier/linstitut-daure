@@ -48,7 +48,7 @@ const InitialRouter = () => {
             <Route path="cils" element={<Lash />} />
             <Route path="micropigmentation" element={<Micropigmentation />} />
             <Route path="dermopigmentation" element={<Dermopigmentation />} />
-            <Route path="soins-corporel" element={<FacialCare />} />
+            <Route path="soins-corporels" element={<FacialCare />} />
             <Route path="mon-parcours" element={<Journey />} />
             <Route path="contact" element={<Contact />} />
           </Route>

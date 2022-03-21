@@ -147,11 +147,11 @@ export default function Navbar() {
           </li>
           <li className="navbar-item" ref={bodyCareRef}>
             <NavLink
-              to="/soins-corporel"
+              to="/soins-corporels"
               className="navbar-link"
               onClick={() => handleClickOnLinks(bodyCareRef)}
             >
-              <span>Soins Corporel</span>
+              <span>Soins Corporels</span>
             </NavLink>
           </li>
           <li className="navbar-item" ref={contactRef}>

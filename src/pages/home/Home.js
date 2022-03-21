@@ -150,7 +150,7 @@ export default function Home() {
         "https://res.cloudinary.com/flowww-dev/image/upload/v1647442043/L%27institut%20d%27Aur%C3%A9/Soins-visage_hn4gvq.webp",
       title: "SOINS VISAGE",
       body: "Dessinez votre sourcils afin de lui redonner ",
-      footerLink: "/soins-corporel",
+      footerLink: "/soins-corporels",
     },
   ];
 
