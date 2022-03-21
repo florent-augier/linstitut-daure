@@ -93,8 +93,18 @@ export default function Navbar() {
 
   return (
     <header ref={headerRef}>
-      <div id="wrapper-menu">
-        <span>MENU</span>
+      <div id="wrapper-phone">
+        <span>
+          <a href="tel:+33671445775">
+            <img
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1647901258/L%27institut%20d%27Aur%C3%A9/icons8-call-85_dbvgkt.webp"
+              alt="logo de téléphone"
+              width="85px"
+              height="85px"
+            />
+            06 71 44 57 75
+          </a>
+        </span>
       </div>
       <nav ref={navbarRef} role="navigation">
         <ul>

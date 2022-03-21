@@ -18,11 +18,11 @@ header.border-show {
   border-top: none;
   box-shadow: 0 8px 32px 0 var(--dark);
 }
-header.border-show #wrapper-menu {
+header.border-show #wrapper-phone {
   margin: auto 12px;
 }
 
-#wrapper-menu {
+#wrapper-phone {
   transition: all 0.7s ease;
   width: auto;
   height: auto;
@@ -32,7 +32,7 @@ header.border-show #wrapper-menu {
   align-items: center;
 }
 
-#wrapper-menu span {
+#wrapper-phone span {
   font-family: "Garamond-ExtraBold";
 }
 
@@ -145,15 +145,8 @@ a.navbar-link span {
   width: 50px;
   height: 50px;
 }
-@media screen and (max-width: 75rem) {
-}
 
 @media screen and (max-width: 1000px) {
-  /* html.no-scroll header {
-    position: relative;
-    display: flex;
-  } */
-
   header {
     position: sticky;
     top: 0;
@@ -166,13 +159,27 @@ a.navbar-link span {
     height: auto;
   }
 
-  header.active #wrapper-menu {
+  header.active #wrapper-phone {
     display: none;
   }
-  #wrapper-menu {
+  #wrapper-phone {
     margin: 0;
     margin-left: 50px;
     display: flex;
+  }
+
+  #wrapper-phone a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    width: 200px;
+  }
+  #wrapper-phone img {
+    padding: 8px;
+    display: block;
+    max-width: 36px;
+    max-height: 36px;
   }
 
   nav.active {
@@ -254,15 +261,10 @@ a.navbar-link span {
 }
 
 @media screen and (max-width: 520px) {
-  header.border-show #wrapper-menu {
+  header.border-show #wrapper-phone {
     margin: auto 12px;
   }
-  #wrapper-menu {
+  #wrapper-phone {
     margin: auto 12px;
   }
-  /* #wrapper-menu img {
-    transition: all 0.7s ease;
-    width: calc(1048px * 0.06);
-    height: calc(1338px * 0.06);
-  } */
 }
