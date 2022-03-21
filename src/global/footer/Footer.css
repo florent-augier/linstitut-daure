@@ -151,3 +151,16 @@ footer a:hover::after {
   font-size: 16px;
   letter-spacing: 1px;
 }
+
+@media screen and (max-width: 1000px) {
+  #footer-grid {
+    grid-template-columns: auto auto;
+    row-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #footer-grid {
+    grid-template-columns: auto;
+  }
+}

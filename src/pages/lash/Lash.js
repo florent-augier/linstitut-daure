@@ -1,5 +1,5 @@
 import "./Lash.css";
 
 export default function Lash() {
-  return <h1>Lash</h1>;
+  return <div id="lash" className="page-container"></div>;
 }
