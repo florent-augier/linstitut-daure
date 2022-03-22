@@ -1,3 +1,115 @@
 #lash {
   min-height: calc(100 * var(--vh));
 }
+
+#wrapper-title {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px;
+}
+
+#wrapper-title h1 {
+  font-size: 100px;
+  font-family: "Garamond-Bold";
+  white-space: nowrap;
+}
+
+
+#wrapper-title p {
+  font-size: 36px;
+  font-family: "Garamond-BoldItalic";
+  color: var(--gold);
+}
+
+
+#container-show {
+  display: flex;
+  justify-content: space-around;
+}
+
+#container-show img {
+  max-width: calc(960px * 0.5);
+  max-height: calc(960px * 0.5);
+  padding: 48px;
+  margin-block: auto;
+}
+
+
+#text-container-show {
+  width: auto;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+#text-container-show p {
+  text-underline-offset: 4px;
+  font-size: 48px;
+  text-decoration: underline;
+  padding: 24px;
+}
+
+#text-container-show span {
+  font-size: 24px;
+}
+
+#text-container-show ul {
+  margin-top: auto;
+}
+
+
+
+#text-container-show ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-position: inside;
+  padding: 12px;
+} 
+
+#text-container-show ul li img{
+  max-width: 50px;
+  max-height: 50px;
+  padding: 0;
+}
+
+#text-container-show ul li span {
+  margin-left: 24px;
+}
+
+#text-container-show ul li span {
+  margin-left: 12px;
+}
+
+#text-container-show ul li p {
+  font-size: 24px;
+}
+
+
+#text-container-show ul li strong {
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+  #text-container-show p{
+    font-size: 36px;
+  }
+  #container-show img {
+    max-width: calc(960px * 0.4);
+    max-height: calc(960px * 0.4);
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  #container-show {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
