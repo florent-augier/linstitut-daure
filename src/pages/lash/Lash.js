@@ -11,7 +11,7 @@ export default function Lash() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5,
+      threshold: 0.4,
     };
 
     // const targeElement =
@@ -69,14 +69,28 @@ export default function Lash() {
   const containerShow = [
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1647428756/L%27institut%20d%27Aur%C3%A9/Extension-de-cils_l0divs.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1648047114/L%27institut%20d%27Aur%C3%A9/cil-a-cil_xqqol6.webp",
       imageWidth: "960px",
       imageHeight: "960px",
       alt: "technique: cil à cil",
-      content: "Un visage à votre image. Frais et équilibré.",
+      content:
+        "Une extension de cil délicatement posée pour venir rallonger le cil naturel: Effet mascara garanti !",
       technical: "Cil à cil",
       duration: "1 heure et 30 minutes",
       price: "42 euros",
+    },
+
+    {
+      imageUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1647428756/L%27institut%20d%27Aur%C3%A9/Extension-de-cils_l0divs.webp",
+      imageWidth: "960px",
+      imageHeight: "960px",
+      alt: "technique: pose mixte",
+      content:
+        "Le mélange parfait pour agrandir votre regard sans trop le dénaturer.",
+      technical: "Pose mixte",
+      duration: "1 heure et 30 minutes",
+      price: "52 euros",
     },
     {
       imageUrl:
@@ -99,6 +113,13 @@ export default function Lash() {
       technical: "Méga Volume Russe",
       duration: "2 heures et 30 minutes",
       price: "72 euros",
+    },
+  ];
+
+  const descriptionContainers = [
+    {
+      title: "Cil à Cil",
+      description: "Ola",
     },
   ];
 
@@ -159,7 +180,14 @@ export default function Lash() {
       })}
 
       <div id="description-container">
-        <section className="descritption-section"></section>
+        {descriptionContainers.map((container, index) => {
+          return (
+            <section className="descritption-section">
+              <h2>Hello world</h2>
+              <p>Hey hey coucou les gens</p>
+            </section>
+          );
+        })}
       </div>
     </div>
   );
