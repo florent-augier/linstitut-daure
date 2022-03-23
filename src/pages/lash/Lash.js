@@ -14,32 +14,10 @@ export default function Lash() {
       threshold: 0.5,
     };
 
-    // const targeElement =
-    //   width > 580
-    //     ? document.querySelectorAll(".grid-home")
-    //     : document.querySelectorAll(".card-grid");
-    // const toArray = Array.from(targeElement);
-
     const containerShow = document.getElementsByClassName(
       "container-show-lash"
     );
     const containerShowArray = Array.from(containerShow);
-
-    // const callbackFunction = (entries) => {
-    //   const [entry] = entries;
-
-    //   if (entry.isIntersecting) {
-    //     if (entry.target.classList[0] === "grid-home") {
-    //       entry.target.childNodes.forEach((child, i) => {
-    //         setTimeout(() => {
-    //           child.classList.add("is-shown");
-    //         }, 200 * i);
-    //       });
-    //     } else {
-    //       entry.target.classList.add("is-shown");
-    //     }
-    //   }
-    // };
 
     const containerShowCallback = (entries) => {
       const [entry] = entries;
@@ -47,8 +25,6 @@ export default function Lash() {
         entry.target.classList.add("is-shown");
       }
     };
-
-    // const observer = new IntersectionObserver(callbackFunction, options);
 
     const containerObserver = new IntersectionObserver(
       containerShowCallback,
@@ -58,12 +34,6 @@ export default function Lash() {
     containerShowArray.forEach((image) => {
       containerObserver.observe(image);
     });
-
-    // toArray.forEach((element) => {
-    //   observer.observe(element);
-    // });
-
-    // // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [width]);
 
   const containerShow = [
@@ -119,7 +89,23 @@ export default function Lash() {
   const descriptionContainers = [
     {
       title: "Cil à Cil",
-      description: "Ola",
+      description:
+        "Le cil à cil est une technique de pose de faux cils qui consiste à coller un faux cil sur un seul vrai cil. Le rendu attendu est d'uniformiser les cils sans avoir un volume conséquent et donc de garder son regard naturel.",
+    },
+    {
+      title: "Pose Mixte",
+      description:
+        "C'est le mélange entre le Cil à Cil et le Volume Russe. Un cil posé de type Cil à Cil pour un cil de type Volume Russe.",
+    },
+    {
+      title: "Volume Russe",
+      description:
+        "Pour cette prestation ce sera un bouquet de plusieurs cils qui sera posé par cil. Le volume ciliaire augmentera et rendra votre regard intense.",
+    },
+    {
+      title: "Méga Volume Russe",
+      description:
+        "Les bouquets de cils posés sont plus fournis que le Volume Russe, votre regard ne sera allongé et réhaussé.",
     },
   ];
 
@@ -183,8 +169,8 @@ export default function Lash() {
         {descriptionContainers.map((container, index) => {
           return (
             <section className="descritption-section">
-              <h2>Hello world</h2>
-              <p>Hey hey coucou les gens</p>
+              <h2>{container.title}</h2>
+              <p>{container.description}</p>
             </section>
           );
         })}
