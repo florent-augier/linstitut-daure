@@ -1,5 +1,6 @@
-import React, { createContext, lazy, Suspense } from "react";
+import React, { createContext, lazy, Suspense, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 // import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 // import { useTransition, animated } from "react-spring";
 
@@ -7,7 +8,6 @@ import { Routes, Route } from "react-router-dom";
 // import "react-toastify/dist/ReactToastify.css";
 import Loading from "./../global/loading/Loading";
 
-// const Navbar = lazy(() => import("./../global/navbar/Navbar"));
 const App = lazy(() => import("../App"));
 const Home = lazy(() => import("./../pages/home/Home"));
 const Lash = lazy(() => import("./../pages/lash/Lash"));
@@ -24,6 +24,11 @@ const Contact = lazy(() => import("../pages/contact/Contact"));
 export const ToastContext = createContext();
 
 const InitialRouter = () => {
+  let location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   // let history = useNavigate();
   // let location = useLocation();
 
