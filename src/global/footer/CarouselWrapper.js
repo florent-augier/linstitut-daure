@@ -29,10 +29,10 @@ export default function CarouselWrapper() {
   ];
 
   return (
-    <div class="slider">
+    <div className="slider">
       <div id="container-swipe">↔︎</div>
 
-      <div class="slides">
+      <div className="slides">
         {items.map((item, index) => {
           return (
             <div id={`slide-${index}`} key={index}>

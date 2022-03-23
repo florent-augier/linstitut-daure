@@ -1,9 +1,71 @@
 /* eslint-disable no-undef */
-import React from "react";
+import React, { useEffect } from "react";
 import "./Lash.css";
 import SectionWipes from "./SectionWipes";
+import useWindowWidth from "./../../hooks/WindowWidth";
 
 export default function Lash() {
+  const width = useWindowWidth();
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    // const targeElement =
+    //   width > 580
+    //     ? document.querySelectorAll(".grid-home")
+    //     : document.querySelectorAll(".card-grid");
+    // const toArray = Array.from(targeElement);
+
+    const containerShow = document.getElementsByClassName(
+      "container-show-lash"
+    );
+    const containerShowArray = Array.from(containerShow);
+
+    // const callbackFunction = (entries) => {
+    //   const [entry] = entries;
+
+    //   if (entry.isIntersecting) {
+    //     if (entry.target.classList[0] === "grid-home") {
+    //       entry.target.childNodes.forEach((child, i) => {
+    //         setTimeout(() => {
+    //           child.classList.add("is-shown");
+    //         }, 200 * i);
+    //       });
+    //     } else {
+    //       entry.target.classList.add("is-shown");
+    //     }
+    //   }
+    // };
+
+    const containerShowCallback = (entries) => {
+      const [entry] = entries;
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-shown");
+      }
+    };
+
+    // const observer = new IntersectionObserver(callbackFunction, options);
+
+    const containerObserver = new IntersectionObserver(
+      containerShowCallback,
+      options
+    );
+
+    containerShowArray.forEach((image) => {
+      containerObserver.observe(image);
+    });
+
+    // toArray.forEach((element) => {
+    //   observer.observe(element);
+    // });
+
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [width]);
+
   const containerShow = [
     {
       imageUrl:
@@ -51,7 +113,7 @@ export default function Lash() {
       <SectionWipes />
       {containerShow.map((container, index) => {
         return (
-          <div className="container-show" key={index}>
+          <div className="container-show-lash" key={index}>
             <img
               src={container.imageUrl}
               alt={container.alt}
@@ -95,6 +157,10 @@ export default function Lash() {
           </div>
         );
       })}
+
+      <div id="description-container">
+        <section className="descritption-section"></section>
+      </div>
     </div>
   );
 }

@@ -212,7 +212,11 @@ export default function Home() {
       </div>
       {containerShow.map((container, index) => {
         return (
-          <div className="container-show" id="presentation" key={index}>
+          <div
+            className="container-show"
+            id={`presentation-${index}`}
+            key={index}
+          >
             <section>
               <h2>
                 <img
