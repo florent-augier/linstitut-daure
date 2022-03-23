@@ -17,6 +17,7 @@
 .wrapper-slide-text {
   display: flex;
   font-size: 24px;
+  padding: 8px;
 }
 
 .slider #container-swipe {

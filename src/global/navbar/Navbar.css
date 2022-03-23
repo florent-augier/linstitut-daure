@@ -155,7 +155,7 @@ a.navbar-link span {
 
   header.active {
     position: fixed;
-    overflow: hidden scroll;
+    overflow: clip;
     height: auto;
   }
 

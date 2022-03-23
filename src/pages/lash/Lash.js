@@ -22,8 +22,7 @@ export default function Lash() {
       imageWidth: "8258px",
       imageHeight: "6192px",
       alt: "technique: volume russe",
-      content:
-        "La technique parfait pour donner de l'intensité à votre regard.",
+      content: "La technique idéale pour donner de l'intensité à votre regard.",
       technical: "Volume Russe",
       duration: "2 heures",
       price: "62 euros",
@@ -34,7 +33,7 @@ export default function Lash() {
       imageWidth: "5472px",
       imageHeight: "3648px",
       alt: "technique: volume russe",
-      content: "Vos yeux seront attirer l'attention inévitabelement.",
+      content: "Vos yeux sauront attirer l'attention.",
       technical: "Méga Volume Russe",
       duration: "2 heures et 30 minutes",
       price: "72 euros",

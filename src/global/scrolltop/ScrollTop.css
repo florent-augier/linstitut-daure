@@ -1,3 +1,7 @@
+html.no-scroll .progress-wrap {
+  display: none;
+}
+
 .progress-wrap {
   position: fixed;
   right: 50px;
