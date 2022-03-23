@@ -24,41 +24,42 @@
   color: var(--gold);
 }
 
-#container-show {
+.container-show {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-block: 200px;
 }
 
-#container-show img {
+.container-show img {
   max-width: calc(960px * 0.5);
   max-height: calc(960px * 0.5);
   padding: 48px;
   margin-block: auto;
 }
 
-#text-container-show {
-  width: auto;
+.text-container-show {
+  width: 100%;
   padding: 48px;
   display: flex;
   flex-direction: column;
 }
 
-#text-container-show p {
+.text-container-show p {
   text-underline-offset: 4px;
-  font-size: 48px;
+  font-size: 36px;
   text-decoration: underline;
   padding: 24px;
 }
 
-#text-container-show span {
+.text-container-show span {
   font-size: 24px;
 }
 
-#text-container-show ul {
+.text-container-show ul {
   margin-top: auto;
 }
 
-#text-container-show ul li {
+.text-container-show ul li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -66,41 +67,41 @@
   padding: 12px;
 }
 
-#text-container-show ul li img {
+.text-container-show ul li img {
   max-width: 50px;
   max-height: 50px;
   padding: 0;
 }
 
-#text-container-show ul li span {
+.text-container-show ul li span {
   margin-left: 24px;
 }
 
-#text-container-show ul li span {
+.text-container-show ul li span {
   margin-left: 12px;
 }
 
-#text-container-show ul li p {
+.text-container-show ul li p {
   font-size: 24px;
 }
 
-#text-container-show ul li strong {
+.text-container-show ul li strong {
   color: var(--gold);
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 1000px) {
-  #text-container-show p {
+  .text-container-show p {
     font-size: 36px;
   }
-  #container-show img {
+  .container-show img {
     max-width: calc(960px * 0.4);
     max-height: calc(960px * 0.4);
   }
 }
 
 @media screen and (max-width: 720px) {
-  #container-show {
+  .container-show {
     flex-direction: column;
     align-items: center;
   }
@@ -112,12 +113,12 @@
     white-space: pre-wrap;
   }
 
-  #container-show img {
+  .container-show img {
     max-width: calc(960px * 0.3);
     max-height: calc(960px * 0.3);
     padding: 8px;
   }
-  #text-container-show {
+  .text-container-show {
     padding: 8px;
   }
 }

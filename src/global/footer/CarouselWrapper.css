@@ -1,0 +1,90 @@
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  display: grid;
+  font-size: 16px;
+  border: 2px solid var(--gold);
+}
+
+.slider #container-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-slide-text {
+  display: flex;
+  font-size: 24px;
+}
+
+.slider #container-swipe {
+  font-size: 24px;
+}
+
+.slider img {
+  max-width: calc(470px * 0.5);
+  max-height: calc(316px * 0.5);
+  display: block;
+  margin: 4px;
+  border-radius: 24px;
+}
+
+.slides {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: var(--dark);
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+div.slides div#slide-3 {
+  margin-right: 0;
+}
+
+/* Don't need button navigation */
+/* @supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+} */
