@@ -25,7 +25,7 @@ export default function Footer() {
                 <Link to="micropigmentation">MICROPIGMENTATION</Link>
               </li>
               <li>
-                <Link to="dermopigmentation">DERMOPIGMENTAION</Link>
+                <Link to="dermopigmentation">DERMOPIGMENTATION</Link>
               </li>
               <li>
                 <Link to="soins-corporels">SOINS CORPORELS</Link>

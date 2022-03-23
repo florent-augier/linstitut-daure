@@ -135,7 +135,7 @@ export default function Home() {
         "https://res.cloudinary.com/flowww-dev/image/upload/v1647431588/L%27institut%20d%27Aur%C3%A9/Micropigmentation_jckwjc.webp",
       title: "MICROPIGMENTATION",
       body: "Dessinez votre sourcils afin de lui redonner un forme homogène",
-      footerLink: "/micropigmentaion",
+      footerLink: "/micropigmentation",
     },
 
     {
