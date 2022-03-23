@@ -54,7 +54,7 @@
   text-decoration-color: var(--gold);
   padding: 24px;
   font-family: "Garamond-Medium";
-  transition: all 2s 0.5s;
+  transition: all 2s 1s;
   transform: translateY(50px);
   opacity: 0;
 }
