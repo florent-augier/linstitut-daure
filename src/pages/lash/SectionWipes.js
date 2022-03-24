@@ -87,6 +87,7 @@ const SectionWipes2Styled = styled.div`
     .panel.gold.mega {
       font-size: 90px;
     }
+  }
 `;
 
 const SectionWipes2 = () => (
