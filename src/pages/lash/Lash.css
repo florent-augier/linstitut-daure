@@ -149,6 +149,16 @@
 }
 
 @media screen and (max-width: 1000px) {
+  #wrapper-title {
+    padding: 12px;
+  }
+  #wrapper-title h1 {
+    font-size: 84px;
+  }
+  #wrapper-title p {
+    font-size: 30px;
+  }
+
   .text-container-show p {
     font-size: 36px;
   }

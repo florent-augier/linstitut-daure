@@ -143,7 +143,7 @@ export default function Home() {
         "https://res.cloudinary.com/flowww-dev/image/upload/v1647431187/L%27institut%20d%27Aur%C3%A9/Dermopigmentation_pny4sp.webp",
       title: "DERMOPIGMENTATION",
       body: "Modelez vos sourcils ou lèvres dans le but de redonner du volume",
-      footerLink: "/sourcils",
+      footerLink: "/dermopigmentation",
     },
     {
       imgUrl:
