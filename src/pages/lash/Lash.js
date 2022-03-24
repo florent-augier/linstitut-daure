@@ -78,9 +78,9 @@ export default function Lash() {
         "https://res.cloudinary.com/flowww-dev/image/upload/v1648025210/L%27institut%20d%27Aur%C3%A9/beautiful-girl-with-colorful-makeup-crop_g33yhn.webp",
       imageWidth: "5472px",
       imageHeight: "3648px",
-      alt: "technique: volume russe",
+      alt: "technique: Méga volume",
       content: "Vos yeux sauront attirer l'attention.",
-      technical: "Méga Volume Russe",
+      technical: "Méga Volume",
       duration: "2 heures et 30 minutes",
       price: "72 euros",
     },
@@ -103,7 +103,7 @@ export default function Lash() {
         "Pour cette prestation ce sera un bouquet de plusieurs cils qui sera posé par cil. Le volume ciliaire augmentera et rendra votre regard intense.",
     },
     {
-      title: "Méga Volume Russe",
+      title: "Méga Volume",
       description:
         "Les bouquets de cils posés sont plus fournis que le Volume Russe, votre regard ne sera allongé et réhaussé.",
     },
@@ -168,10 +168,21 @@ export default function Lash() {
       <div id="description-container">
         {descriptionContainers.map((container, index) => {
           return (
-            <section className="descritption-section">
-              <h2>{container.title}</h2>
-              <p>{container.description}</p>
-            </section>
+            <>
+              <section className="descritption-section" key={index}>
+                <h2>{container.title}</h2>
+                <p>{container.description}</p>
+              </section>
+              {index !== descriptionContainers.length - 1 && (
+                <img
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1648118758/L%27institut%20d%27Aur%C3%A9/floral-g4ddcf5316_1280_o7cyy6.png"
+                  alt="diviseur de contenu"
+                  width="1280px"
+                  height="640px"
+                  className="divider"
+                />
+              )}
+            </>
           );
         })}
       </div>

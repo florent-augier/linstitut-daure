@@ -31,7 +31,7 @@
 }
 
 .container-show-lash img {
-  transition: all 3s;
+  transition: all 2s;
   max-width: calc(960px * 0.5);
   max-height: calc(960px * 0.5);
   padding: 48px;
@@ -119,7 +119,8 @@
 #description-container {
   display: flex;
   flex-direction: column;
-  background: var(--gold);
+  /* background: var(--gold); */
+  background: radial-gradient(var(--gold), 80%, white);
   color: var(--dark);
   padding: 48px;
 }
@@ -139,6 +140,12 @@
 #description-container section p {
   font-size: 32px;
   font-family: "Garamond-Regular";
+}
+
+#description-container img.divider {
+  max-width: 50%;
+  margin: auto;
+  height: auto;
 }
 
 @media screen and (max-width: 1000px) {
