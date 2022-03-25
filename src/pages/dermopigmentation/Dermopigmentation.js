@@ -18,8 +18,11 @@ const Image = styled(a.div)`
 
 export default function Dermopigmentation() {
   return (
-    <div className="page-container">
-      <h1>Dermopigmentation</h1>
+    <div className="page-container" id="dermopigmentation">
+      <div id="wrapper-title">
+        <h1>Dermopigmentation</h1>
+        <p>Redonner de la couleur à votre peau</p>
+      </div>
       <Slider items={items}>
         {({ css }, i) => (
           <Content>

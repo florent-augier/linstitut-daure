@@ -1,3 +1,142 @@
 #contact {
   min-height: calc(100 * var(--vh));
 }
+
+.contact-first-screen {
+  width: 100%;
+}
+
+.header-contact-first-screen {
+  padding: 10px;
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+.body-contact-first-screen,
+.body-contact-second-screen {
+  width: 90%;
+  margin: auto;
+  padding: 60px;
+}
+
+.body-contact-first-screen p {
+  font-size: 24px;
+}
+
+.body-contact-second-screen p {
+  padding: 10px;
+  font-size: 28px;
+}
+
+.body-contact-second-screen ul {
+  margin: auto;
+  width: 70%;
+}
+
+.body-contact-second-screen ul li {
+  padding: 8px;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.contact-items-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+
+.contact-item p {
+  margin-left: 5%;
+  font-size: 36px;
+}
+
+.content-contact-item {
+  background-image: linear-gradient(120deg, var(--gold) 0%, var(--dark) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.content-contact-item:hover {
+  background-size: 100% 88%;
+}
+
+.container-icon {
+  height: auto;
+  margin-left: 8px;
+}
+
+strong.content-contact-item,
+.button-item {
+  margin-left: 12px;
+}
+
+.button-item {
+  background-color: white;
+}
+.button-item:hover {
+  background-color: var(--gold);
+}
+
+.button-item img {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+.button-item.clicked:focus:before,
+.button-item.clicked:before {
+  content: "▼";
+  position: absolute;
+  transform: translateY(-50px) translateX(4px); /* on centre horizontalement  */
+  -webkit-transform: translateY(-50px) translateX(4px);
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.button-item.clicked:focus::after,
+.button-item.clicked:after {
+  content: "Copié!";
+  position: absolute;
+  transform: translateY(-80px) translateX(-70%); /* on centre horizontalement  */
+  -webkit-transform: translateY(-80px) translateX(-70%);
+  font-size: 20px;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .body-contact-first-screen,
+  .body-contact-second-screen {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-contact-first-screen h2 {
+    font-size: 28px;
+  }
+  .body-contact-first-screen {
+    width: 100%;
+  }
+  .body-contact-first-screen p,
+  .body-contact-second-screen p {
+    font-size: 18px;
+  }
+  .contact-item p {
+    margin-left: 0;
+    font-size: 16px;
+  }
+}

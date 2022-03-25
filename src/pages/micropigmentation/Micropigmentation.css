@@ -1,0 +1,4 @@
+#micropigmentation {
+  min-height: calc(100 * var(--vh));
+  width: 100%;
+}

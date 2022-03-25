@@ -120,7 +120,7 @@
   display: flex;
   flex-direction: column;
   /* background: var(--gold); */
-  background: radial-gradient(var(--gold), 80%, white);
+  background-color: var(--gold);
   color: var(--dark);
   padding: 48px;
 }
@@ -142,10 +142,56 @@
   font-family: "Garamond-Regular";
 }
 
+#description-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #description-container img.divider {
   max-width: 50%;
   margin: auto;
   height: auto;
+}
+
+#recommandations {
+  padding: 24px;
+}
+#recommandations h3 {
+  font-size: 48px;
+  font-family: "Garamond-BoldItalic";
+  margin-bottom: 24px;
+}
+
+#recommandations p {
+  font-size: 24px;
+  /* font-family: "Garamond-BoldItalic"; */
+}
+
+#grid-recommandations {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 150px;
+}
+
+.item-card-recommandations {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-card-recommandations img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.item-card-recommandations p {
+  margin-top: 50px;
+  font-family: "Garamond-Medium";
+  font-size: 24px;
+  padding: 24px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -158,13 +204,19 @@
   #wrapper-title p {
     font-size: 30px;
   }
+  .text-container-show {
+    padding: 24px;
+  }
 
   .text-container-show p {
-    font-size: 36px;
+    font-size: 28px;
   }
   .container-show-lash img {
     max-width: calc(960px * 0.4);
     max-height: calc(960px * 0.4);
+  }
+  #grid-recommandations {
+    grid-template-columns: auto auto;
   }
 }
 
@@ -189,6 +241,10 @@
   .text-container-show {
     padding: 8px;
   }
+
+  .text-container-show p {
+    font-size: 24px;
+  }
   #description-container {
     padding: 12px;
   }
@@ -197,5 +253,14 @@
   }
   #description-container section p {
     font-size: 24px;
+  }
+  #grid-recommandations {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #recommandations h3 {
+    font-size: 28px;
   }
 }

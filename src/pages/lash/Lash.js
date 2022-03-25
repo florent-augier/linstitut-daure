@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import "./Lash.css";
 import SectionWipes from "./SectionWipes";
 import useWindowWidth from "./../../hooks/WindowWidth";
+import Strong from "./../../global/html/Strong";
 
 export default function Lash() {
   const width = useWindowWidth();
@@ -168,8 +169,8 @@ export default function Lash() {
       <div id="description-container">
         {descriptionContainers.map((container, index) => {
           return (
-            <>
-              <section className="descritption-section" key={index}>
+            <div key={index}>
+              <section className="description-section">
                 <h2>{container.title}</h2>
                 <p>{container.description}</p>
               </section>
@@ -182,9 +183,71 @@ export default function Lash() {
                   className="divider"
                 />
               )}
-            </>
+            </div>
           );
         })}
+      </div>
+      <div id="recommandations">
+        <h3>Recommandations</h3>
+        <div id="grid-recommandations">
+          <div className="item-card-recommandations">
+            <img
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1648211938/L%27institut%20d%27Aur%C3%A9/photos-by-lanty-T-VS-7y_fAY-unsplash_bgjzy7.webp"
+              alt="recommandation numéro une"
+              width="5472px"
+              height="3648px"
+            />
+            <p>
+              Pour toutes les prestations d'extensions de cils, il est
+              recommandé de{" "}
+              <Strong
+                color="var(--gold)"
+                fontSize="24px"
+                text="ne pas mouiller les cils pendant, au minimum, 48 heures."
+              />{" "}
+              La colle posée sur vos cils requiert ce temps là pour être
+              totalement sec et par conséquent de tenir le faux cil.
+            </p>
+          </div>
+          <div className="item-card-recommandations">
+            <img
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1648212468/L%27institut%20d%27Aur%C3%A9/david-libeert-zcZ7rIUJwT0-unsplash_mpze4w.webp"
+              alt="recommandation numéro deux"
+              width="3073px"
+              height="4610px"
+            />
+            <p>
+              Nettoyez quotidiennement vos cils avec le DÉMAQUILLANT, en
+              utilisant le bout des doigts, matin et soir. Nettoyer vos cils en
+              profondeur 2 à 3 fois par semaine avec le SHAMPOOING POUR CILS. À
+              noter: La shampooing permet de retirer les résidus de maquillage,
+              le sébum, le sel de l’eau de mer ou des larmes. C’est aussi un
+              excellent choix pour celles qui ont tendance à souffrir
+              d’allergies saisonnières ou qui ont tendance à porter du
+              maquillage sur et autour des yeux. Il est aussi recommandé pour
+              une peau mixte à grasse.
+            </p>
+          </div>
+          <div className="item-card-recommandations">
+            <img
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1648213099/L%27institut%20d%27Aur%C3%A9/justus-menke-bWDXFaBTnL8-unsplash_ay83bl.webp"
+              alt="recommandation numéro trois"
+              width="4000px"
+              height="6000px"
+            />
+            <p>
+              Nettoyez quotidiennement vos cils avec le DÉMAQUILLANT, en
+              utilisant le bout des doigts, matin et soir. Nettoyer vos cils en
+              profondeur 2 à 3 fois par semaine avec le SHAMPOOING POUR CILS. À
+              noter: La shampooing permet de retirer les résidus de maquillage,
+              le sébum, le sel de l’eau de mer ou des larmes. C’est aussi un
+              excellent choix pour celles qui ont tendance à souffrir
+              d’allergies saisonnières ou qui ont tendance à porter du
+              maquillage sur et autour des yeux. Il est aussi recommandé pour
+              une peau mixte à grasse.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

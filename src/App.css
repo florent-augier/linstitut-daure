@@ -2,6 +2,28 @@ html.no-scroll {
   overflow: hidden;
 }
 
+#wrapper-title {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px;
+}
+
+#wrapper-title h1 {
+  font-size: 100px;
+  font-family: "Garamond-Bold";
+  white-space: nowrap;
+}
+
+#wrapper-title p {
+  font-size: 36px;
+  font-family: "Garamond-BoldItalic";
+  color: var(--gold);
+}
+
 @keyframes slidein {
   0% {
     transform: translateY(-50%);
@@ -27,5 +49,31 @@ html.no-scroll {
     transform: translateY(0);
     -webkit-transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #wrapper-title {
+    padding: 12px;
+  }
+  #wrapper-title h1 {
+    font-size: 84px;
+  }
+  #wrapper-title p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #wrapper-title {
+    padding: 8px;
+  }
+  #wrapper-title h1 {
+    font-size: 32px;
+    white-space: pre-wrap;
+  }
+  #wrapper-title p {
+    font-size: 24px;
+    white-space: pre-wrap;
   }
 }

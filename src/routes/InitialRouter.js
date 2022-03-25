@@ -14,7 +14,7 @@ const Lash = lazy(() => import("./../pages/lash/Lash"));
 const Micropigmentation = lazy(() =>
   import("./../pages/micropigmentation/Micropigmentation")
 );
-const FacialCare = lazy(() => import("./../pages/body-care/BodyCare"));
+const BodyCare = lazy(() => import("./../pages/body-care/BodyCare"));
 const Dermopigmentation = lazy(() =>
   import("./../pages/dermopigmentation/Dermopigmentation")
 );
@@ -53,7 +53,7 @@ const InitialRouter = () => {
             <Route path="cils" element={<Lash />} />
             <Route path="micropigmentation" element={<Micropigmentation />} />
             <Route path="dermopigmentation" element={<Dermopigmentation />} />
-            <Route path="soins-corporels" element={<FacialCare />} />
+            <Route path="soins-corporels" element={<BodyCare />} />
             <Route path="mon-parcours" element={<Journey />} />
             <Route path="contact" element={<Contact />} />
           </Route>

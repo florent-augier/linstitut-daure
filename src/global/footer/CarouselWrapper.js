@@ -26,11 +26,44 @@ export default function CarouselWrapper() {
       linkSrc: "https://icons8",
       text: "Icônes par Icons8",
     },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1648211938/L%27institut%20d%27Aur%C3%A9/photos-by-lanty-T-VS-7y_fAY-unsplash_bgjzy7.webp",
+      linkSrc:
+        "https://unsplash.com/@photos_by_lanty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+      text: "Photos by Lanty on Unsplash",
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1648212468/L%27institut%20d%27Aur%C3%A9/david-libeert-zcZ7rIUJwT0-unsplash_mpze4w.webp",
+      linkSrc:
+        "https://unsplash.com/@deefbelgium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+      text: "Photos by David Libeert on Unsplash",
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1648213099/L%27institut%20d%27Aur%C3%A9/justus-menke-bWDXFaBTnL8-unsplash_ay83bl.webp",
+      linkSrc:
+        "https://unsplash.com/@justusmenke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+      text: "Photos by Justus Menke on Unsplash",
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1648214746/L%27institut%20d%27Aur%C3%A9/young-woman-getting-beauty-treatment-her-eyebrows_jwkos3.webp",
+      linkSrc: "https://www.freepik.com/photos/brows",
+      text: "Brows photo created by freepik - www.freepik.com",
+    },
+    {
+      imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1648215343/L%27institut%20d%27Aur%C3%A9/beautician-doing-eyebrow-treatment-her-female-client_vnhb2g.webp",
+      linkSrc: "https://www.freepik.com/photos/brows",
+      text: "Brows photo created by freepik - www.freepik.com",
+    },
   ];
 
   return (
     <div className="slider">
-      <div id="container-swipe">↔︎</div>
+      <div id="container-swipe">Faites défiler les images</div>
 
       <div className="slides">
         {items.map((item, index) => {
