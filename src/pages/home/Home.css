@@ -197,7 +197,13 @@
   text-decoration: underline;
   box-shadow: 4px 8px var(--dark);
   text-underline-offset: 2px;
+  display: inline-flex;
 }
+
+/* .container-show section h2 img {
+  width: 10%;
+  height: 10%;
+} */
 
 .container-show section p {
   font-size: 22px;
@@ -350,5 +356,14 @@
   .container-show img {
     max-width: calc(6720px * 0.04);
     max-height: calc(4480px * 0.04);
+  }
+
+  .container-show section h2 {
+    font-size: 28px;
+    padding: 12px;
+  }
+  .container-show section h2 img {
+    width: calc(50px * 0.5);
+    height: calc(50px * 0.5);
   }
 }
