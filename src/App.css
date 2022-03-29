@@ -54,7 +54,7 @@ html.no-scroll {
 
 @media screen and (max-width: 1120px) {
   #wrapper-title {
-    padding: 12px;
+    padding: 60px;
   }
   #wrapper-title h1 {
     font-size: 84px;
@@ -66,14 +66,28 @@ html.no-scroll {
 
 @media screen and (max-width: 780px) {
   #wrapper-title {
-    padding: 8px;
+    padding: 40px;
+  }
+  #wrapper-title h1 {
+    font-size: 60px;
+    white-space: pre-wrap;
+  }
+  #wrapper-title p {
+    font-size: 24px;
+    white-space: pre-wrap;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #wrapper-title {
+    padding: 20px;
   }
   #wrapper-title h1 {
     font-size: 32px;
     white-space: pre-wrap;
   }
   #wrapper-title p {
-    font-size: 24px;
+    font-size: 20px;
     white-space: pre-wrap;
   }
 }

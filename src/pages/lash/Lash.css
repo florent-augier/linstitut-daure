@@ -1,29 +1,6 @@
 #lash {
   min-height: calc(100 * var(--vh));
 }
-
-#wrapper-title {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 100px;
-}
-
-#wrapper-title h1 {
-  font-size: 100px;
-  font-family: "Garamond-Bold";
-  white-space: nowrap;
-}
-
-#wrapper-title p {
-  font-size: 36px;
-  font-family: "Garamond-BoldItalic";
-  color: var(--gold);
-}
-
 .container-show-lash {
   display: flex;
   justify-content: space-between;
@@ -195,15 +172,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #wrapper-title {
-    padding: 12px;
-  }
-  #wrapper-title h1 {
-    font-size: 84px;
-  }
-  #wrapper-title p {
-    font-size: 30px;
-  }
   .text-container-show {
     padding: 24px;
   }
@@ -225,14 +193,6 @@
     flex-direction: column;
     align-items: center;
   }
-  #wrapper-title {
-    padding: 8px;
-  }
-  #wrapper-title h1 {
-    font-size: 54px;
-    white-space: pre-wrap;
-  }
-
   .container-show-lash img {
     max-width: calc(960px * 0.3);
     max-height: calc(960px * 0.3);
@@ -260,6 +220,9 @@
 }
 
 @media screen and (max-width: 580px) {
+  #recommandations {
+    padding: 8px;
+  }
   #recommandations h3 {
     font-size: 28px;
   }

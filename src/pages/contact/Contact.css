@@ -2,43 +2,24 @@
   min-height: calc(100 * var(--vh));
 }
 
-.contact-first-screen {
-  width: 100%;
+.container-contact {
+  padding: 60px;
 }
 
-.header-contact-first-screen {
+.header-container-contact {
   padding: 10px;
   font-size: 36px;
   margin-top: 40px;
 }
 
-.body-contact-first-screen,
-.body-contact-second-screen {
+.container-contact {
   width: 90%;
   margin: auto;
   padding: 60px;
 }
 
-.body-contact-first-screen p {
+.container-contact p {
   font-size: 24px;
-}
-
-.body-contact-second-screen p {
-  padding: 10px;
-  font-size: 28px;
-}
-
-.body-contact-second-screen ul {
-  margin: auto;
-  width: 70%;
-}
-
-.body-contact-second-screen ul li {
-  padding: 8px;
-  font-size: 28px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  list-style: none;
 }
 
 .contact-items-wrapper {
@@ -117,22 +98,40 @@ strong.content-contact-item,
   padding: 4px;
 }
 
+#container-map {
+  min-height: calc(100 * var(--vh));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#google-map {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 @media screen and (max-width: 1000px) {
-  .body-contact-first-screen,
-  .body-contact-second-screen {
+  .container-contact,
+  .container-contact-second-screen {
     padding: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .header-contact-first-screen h2 {
+  .header-container-contact h2 {
     font-size: 28px;
   }
-  .body-contact-first-screen {
+  .container-contact {
     width: 100%;
   }
-  .body-contact-first-screen p,
-  .body-contact-second-screen p {
+  .container-contact p,
+  .container-contact-second-screen p {
     font-size: 18px;
   }
   .contact-item p {

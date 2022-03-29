@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Contact.css";
+
+import Strong from "../../global/html/Strong";
+
 // import { Helmet } from "react-helmet";
 
 // import Icon from "@mdi/react";
@@ -33,66 +36,86 @@ export default function Contact() {
         <p>Prenez rendez-vous pour vos prestations</p>
       </div>
 
-      {/* begin */}
-
-      <div className="contact-first-screen">
-        <div className="body-contact-first-screen">
-          <div className="header-contact-first-screen">
-            <h2>Me contacter</h2>
+      <section className="container-contact">
+        <div className="header-container-contact">
+          <h2>Me contacter</h2>
+        </div>
+        <p>Vous pouvez me joindre par téléphone ou par mail.</p>
+        <div className="contact-items-wrapper">
+          <div className="contact-item">
+            <p>
+              Email:{" "}
+              <strong className="content-contact-item">
+                lescilsdaurelie@gmail.com
+              </strong>
+              <span className="container-icon">
+                <button
+                  ref={emailButton}
+                  className="button-item"
+                  onClick={(e) => handleClickOnEmail(e)}
+                  type="button"
+                  aria-label="copy email"
+                >
+                  <img
+                    src="https://res.cloudinary.com/flowww-dev/image/upload/v1648206506/L%27institut%20d%27Aur%C3%A9/icons8-at-sign-50_yayf8q.webp"
+                    alt="logo de téléphone"
+                    width="50px"
+                    height="50px"
+                  />
+                </button>
+              </span>
+            </p>
           </div>
-          <p>Vous pouvez me joindre par téléphone ou par mail.</p>
-          <div className="contact-items-wrapper">
-            <div className="contact-item">
-              <p>
-                Email:{" "}
-                <strong className="content-contact-item">
-                  lescilsdaurelie@gmail.com
-                </strong>
-                <span className="container-icon">
-                  <button
-                    ref={emailButton}
-                    className="button-item"
-                    onClick={(e) => handleClickOnEmail(e)}
-                    type="button"
-                    aria-label="copy email"
-                  >
+          <div className="contact-item">
+            <p>
+              Téléphone:{" "}
+              <strong className="content-contact-item">06 71 44 57 75</strong>
+              <span className="container-icon">
+                <button
+                  className="button-item"
+                  type="button"
+                  aria-label="phone call +33671445775"
+                >
+                  <a href="tel:+33671445775">
                     <img
-                      src="https://res.cloudinary.com/flowww-dev/image/upload/v1648206506/L%27institut%20d%27Aur%C3%A9/icons8-at-sign-50_yayf8q.webp"
-                      alt="logo de téléphone"
+                      src="https://res.cloudinary.com/flowww-dev/image/upload/v1648206425/L%27institut%20d%27Aur%C3%A9/icons8-phone-50_figont.webp"
+                      alt="logo téléphone"
                       width="50px"
                       height="50px"
                     />
-                  </button>
-                </span>
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                Téléphone:{" "}
-                <strong className="content-contact-item">06 71 44 57 75</strong>
-                <span className="container-icon">
-                  <button
-                    className="button-item"
-                    type="button"
-                    aria-label="phone call +33671445775"
-                  >
-                    <a href="tel:+33671445775">
-                      <img
-                        src="https://res.cloudinary.com/flowww-dev/image/upload/v1648206425/L%27institut%20d%27Aur%C3%A9/icons8-phone-50_figont.webp"
-                        alt="logo téléphone"
-                        width="50px"
-                        height="50px"
-                      />
-                    </a>
-                  </button>
-                </span>
-              </p>
-            </div>
+                  </a>
+                </button>
+              </span>
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* end */}
+      <section className="container-contact">
+        <div className="header-container-contact">
+          <h2>Me trouver</h2>
+        </div>
+        <p>
+          Toutes visites quelles qu'elles soient doivent faire l'objet d'un{" "}
+          <Strong text=" rendez-vous" fontSize="28px" color="var(--gold)" />{" "}
+          préalablement défini.
+        </p>
+
+        <div id="container-map">
+          <div id="google-map">
+            <iframe
+              title="google map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11574.265351542594!2d4.9974892!3d43.5113815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b13f90cc9462ec2!2sLes%20Cils%20d&#39;Aur%C3%A9!5e0!3m2!1sfr!2sfr!4v1648556615207!5m2!1sfr!2sfr"
+              width="600"
+              height="450"
+              style={{ border: "0" }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
