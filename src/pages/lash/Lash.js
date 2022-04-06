@@ -4,6 +4,7 @@ import "./Lash.css";
 import SectionWipes from "./SectionWipes";
 import useWindowWidth from "./../../hooks/WindowWidth";
 import Strong from "./../../global/html/Strong";
+import { Helmet } from "react-helmet";
 
 export default function Lash() {
   const width = useWindowWidth();
@@ -112,6 +113,11 @@ export default function Lash() {
 
   return (
     <div id="lash" className="page-container">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Extensions de cils</title>
+        <link rel="canonical" href="https://linstitut-daure.netlify.app/cils" />
+      </Helmet>
       <div id="wrapper-title">
         <h1>Extensions de cils</h1>
         <p>

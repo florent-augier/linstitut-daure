@@ -2,6 +2,11 @@ html.no-scroll {
   overflow: hidden;
 }
 
+.page-container {
+  min-height: calc(100 * var(--vh));
+  overflow: visible;
+}
+
 #wrapper-title {
   height: 400px;
   width: 100%;

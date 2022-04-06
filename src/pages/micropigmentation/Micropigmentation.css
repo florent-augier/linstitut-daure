@@ -1,4 +1,27 @@
 #micropigmentation {
   min-height: calc(100 * var(--vh));
   width: 100%;
+  overflow: auto;
 }
+
+/* .box {
+  height: calc(100 * var(--vh));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 48px;
+  color: black;
+  overflow-y: auto;
+}
+#box1 {
+  background-color: aqua;
+}
+#box2 {
+  background-color: red;
+}
+#box3 {
+  background-color: yellow;
+  position: static;
+} */

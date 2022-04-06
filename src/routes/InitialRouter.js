@@ -21,6 +21,24 @@ const Dermopigmentation = lazy(() =>
 const Journey = lazy(() => import("./../pages/journey/Journey"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 
+//pages/dermopigmentation/nested Dermmopigmentation
+const Microshading = lazy(() =>
+  import("../pages/dermopigmentation/nested/Microshading")
+);
+const Combo = lazy(() => import("../pages/dermopigmentation/nested/Combo"));
+const EyeLiner = lazy(() =>
+  import("../pages/dermopigmentation/nested/EyeLiner")
+);
+const LipsContour = lazy(() =>
+  import("../pages/dermopigmentation/nested/LipsContour")
+);
+const LipsFull = lazy(() =>
+  import("../pages/dermopigmentation/nested/LipsFull")
+);
+const LipsFilling = lazy(() =>
+  import("../pages/dermopigmentation/nested/LipsFilling")
+);
+
 export const ToastContext = createContext();
 
 const InitialRouter = () => {
@@ -52,7 +70,15 @@ const InitialRouter = () => {
             <Route index element={<Home />} />
             <Route path="cils" element={<Lash />} />
             <Route path="micropigmentation" element={<Micropigmentation />} />
-            <Route path="dermopigmentation" element={<Dermopigmentation />} />
+            <Route path="dermopigmentation" element={<Dermopigmentation />}>
+              <Route index element={<Microshading />} />
+              <Route path="microshading" element={<Microshading />} />
+              <Route path="combo" element={<Combo />} />
+              <Route path="eyeliner" element={<EyeLiner />} />
+              <Route path="contour-des-levres" element={<LipsContour />} />
+              <Route path="levres-complet" element={<LipsFull />} />
+              <Route path="remplissage-des-levres" element={<LipsFilling />} />
+            </Route>
             <Route path="soins-corporels" element={<BodyCare />} />
             <Route path="mon-parcours" element={<Journey />} />
             <Route path="contact" element={<Contact />} />

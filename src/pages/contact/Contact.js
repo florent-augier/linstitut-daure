@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Contact.css";
+import { Helmet } from "react-helmet";
 
 import Strong from "../../global/html/Strong";
 
@@ -31,6 +32,14 @@ export default function Contact() {
 
   return (
     <div className="page-container" id="contact">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact</title>
+        <link
+          rel="canonical"
+          href="https://linstitut-daure.netlify.app/contact"
+        />
+      </Helmet>
       <div id="wrapper-title">
         <h1>Contact</h1>
         <p>Prenez rendez-vous pour vos prestations</p>

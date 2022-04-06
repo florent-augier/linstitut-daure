@@ -2,6 +2,7 @@ import React, { useRef, useCallback, useState } from "react";
 import { useDrag } from "react-use-gesture";
 import { useSprings, a, useSpring } from "react-spring";
 import { debounce } from "lodash";
+import Loading from "./../../global/loading/Loading";
 
 const styles = {
   container: {
@@ -11,6 +12,7 @@ const styles = {
     overflow: "hidden",
     height: "100%",
     width: "100%",
+    float: "right",
   },
   item: { position: "absolute", height: "100%", willChange: "transform" },
   dotcontainer: {
@@ -79,7 +81,7 @@ export default function SliderContainer(props) {
             {props.children}
           </Slider>
         ) : (
-          "null"
+          <Loading />
         )}
       </div>
     </>

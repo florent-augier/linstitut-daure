@@ -1,0 +1,17 @@
+.nested-container {
+  direction: ltr;
+}
+
+.nested-wrapper-body p {
+  margin: 30px;
+  font-size: 28px;
+  margin-block: 100px;
+}
+
+@media screen and (max-width: 580px) {
+  .nested-wrapper-body p {
+    font-size: 20px;
+    margin: 0;
+    margin-block: 50px;
+  }
+}

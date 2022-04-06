@@ -2,6 +2,7 @@ import "./Home.css";
 import React, { useEffect } from "react";
 import useWindowWidth from "./../../hooks/WindowWidth";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const width = useWindowWidth();
@@ -183,6 +184,11 @@ export default function Home() {
 
   return (
     <div id="homepage" className="page-container">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Accueil</title>
+        <link rel="canonical" href="https://linstitut-daure.netlify.app" />
+      </Helmet>
       <div className="wrapper-first-layout">
         <h1>
           L'institut d'<span className="beautiful-letter">Auré</span>
