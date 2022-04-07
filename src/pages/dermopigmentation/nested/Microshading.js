@@ -1,5 +1,6 @@
 import React from "react";
 import "./CommonNested.css";
+import Strong from "../../../global/html/Strong";
 
 export default function Microshading() {
   return (
@@ -10,67 +11,52 @@ export default function Microshading() {
 
       <div className="nested-wrapper-body">
         <p>
-          By having this new dynamic yet nested route, we need to create a
-          matching nested Route component for it in the App component. First,
-          since it is a so called Nested Route (or child route) of the /users
-          route, we can nest it in this respective parent Route component. In
-          addition, since it is a so called Dynamic Route, it uses a dynamic
-          route defined as :userId whereas a user's identifier matches
-          dynamically (e.g. user with id of '1' would be matched to /users/1):
+          C’est une technique qui permet de redessiner la ligne naturelle du
+          sourcil et de combler les manques tout en apportant de l’intensité au
+          sourcil.
         </p>
         <p>
-          By having this new dynamic yet nested route, we need to create a
-          matching nested Route component for it in the App component. First,
-          since it is a so called Nested Route (or child route) of the /users
-          route, we can nest it in this respective parent Route component. In
-          addition, since it is a so called Dynamic Route, it uses a dynamic
-          route defined as :userId whereas a user's identifier matches
-          dynamically (e.g. user with id of '1' would be matched to /users/1):
+          A l'aide d'une machine (
+          <Strong text="le dermographe*" />
+          ), la technique du{" "}
+          <Strong
+            text="Microshading"
+            color="var(--gold)"
+            uppercase={true}
+          />{" "}
+          sert à produire un effet d’ombrage semblable à celui du crayon à
+          sourcils. Les pigments sont insérés sous forme de minuscules points
+          aux contours fondus.
+          <details id="dermographe">
+            <summary>Qu'est ce qu'un dermographe ?</summary>Pour exercer son
+            métier, l’esthéticienne ou la technicienne utilise un appareil qui
+            porte le nom de « dermographe ». Elle se servira donc de cet outil
+            pour réaliser votre maquillage permanent. Il existe deux types de
+            dermographes : le dermographe électrique et le dermographe manuel.
+            Le premier est plus facile à utiliser, tandis que le dermographe
+            manuel requiert plus d’expérience. Le choix du dermographe est très
+            important pour l’esthéticienne, car cela peut avoir un impact plus
+            ou moins important sur les résultats de son travail et sur sa
+            manière de faire.
+          </details>
         </p>
         <p>
-          By having this new dynamic yet nested route, we need to create a
-          matching nested Route component for it in the App component. First,
-          since it is a so called Nested Route (or child route) of the /users
-          route, we can nest it in this respective parent Route component. In
-          addition, since it is a so called Dynamic Route, it uses a dynamic
-          route defined as :userId whereas a user's identifier matches
-          dynamically (e.g. user with id of '1' would be matched to /users/1):
+          Le but est de remplir le sourcil avec un effet d'ombrage ("shade"
+          signifiant "ombre" en français) afin d'harmoniser le sourcil.
         </p>
+      </div>
+      <div className="pertinent-question">
+        <h3>Peut-il y avoir des effets secondaires ?</h3>
+      </div>
+      <div className="pertinent-answer">
+        <div className="custom-border"></div>
         <p>
-          By having this new dynamic yet nested route, we need to create a
-          matching nested Route component for it in the App component. First,
-          since it is a so called Nested Route (or child route) of the /users
-          route, we can nest it in this respective parent Route component. In
-          addition, since it is a so called Dynamic Route, it uses a dynamic
-          route defined as :userId whereas a user's identifier matches
-          dynamically (e.g. user with id of '1' would be matched to /users/1):
-        </p>
-        <p>
-          By having this new dynamic yet nested route, we need to create a
-          matching nested Route component for it in the App component. First,
-          since it is a so called Nested Route (or child route) of the /users
-          route, we can nest it in this respective parent Route component. In
-          addition, since it is a so called Dynamic Route, it uses a dynamic
-          route defined as :userId whereas a user's identifier matches
-          dynamically (e.g. user with id of '1' would be matched to /users/1):
-        </p>
-        <p>
-          By having this new dynamic yet nested route, we need to create a
-          matching nested Route component for it in the App component. First,
-          since it is a so called Nested Route (or child route) of the /users
-          route, we can nest it in this respective parent Route component. In
-          addition, since it is a so called Dynamic Route, it uses a dynamic
-          route defined as :userId whereas a user's identifier matches
-          dynamically (e.g. user with id of '1' would be matched to /users/1):
-        </p>
-        <p>
-          By having this new dynamic yet nested route, we need to create a
-          matching nested Route component for it in the App component. First,
-          since it is a so called Nested Route (or child route) of the /users
-          route, we can nest it in this respective parent Route component. In
-          addition, since it is a so called Dynamic Route, it uses a dynamic
-          route defined as :userId whereas a user's identifier matches
-          dynamically (e.g. user with id of '1' would be matched to /users/1):
+          La technique du microshading est sans danger. Cependant, la peau peut
+          être irritée après la séance et peut alors présenter des
+          démangeaisons, un gonflement et/ou des rougeurs. Généralement, ces
+          symptômes disparaissent très vite après la procédure. Si vous
+          ressentez une vive douleur et remarquez des cloques, rendez-vous
+          immédiatement chez votre médecin.
         </p>
       </div>
     </div>

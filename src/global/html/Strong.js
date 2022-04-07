@@ -1,17 +1,15 @@
 import React from "react";
 
-const styles = {
-  fontFamily: "Garamond-BoldItalic",
-  textDecoration: "underline",
-  textDecorationUnderline: "1px solid var(--gold)",
-  letterSpacing: "2px",
-  textTransform: "uppercase",
-};
+export default function Strong({ text, fontSize, color, italic, uppercase }) {
+  const styles = {
+    fontFamily: italic ? "Garamond-BoldItalic" : "Garamond-Bold",
+    textDecoration: "underline",
+    textDecorationUnderline: "1px solid var(--gold)",
+    letterSpacing: "2px",
+    textTransform: uppercase === true ? "uppercase" : "none",
+    color: color,
+    fontSize: fontSize,
+  };
 
-export default function Strong({ text, fontSize, color }) {
-  return (
-    <strong style={{ ...styles, fontSize: fontSize, color: color }}>
-      {text}
-    </strong>
-  );
+  return <strong style={{ ...styles }}>{text}</strong>;
 }

@@ -15,13 +15,21 @@
 #nested-navigation {
   height: calc(100 * var(--vh) - 140px);
   font-size: 18px;
+  background: linear-gradient(
+    to top,
+    var(--dark),
+    var(--gold) 5%,
+    var(--gold) 95%,
+    var(--dark)
+  );
   background-color: var(--gold);
   width: 20%;
   float: left;
   position: sticky;
   position: -webkit-sticky;
   top: 110px;
-  margin-block: 200px;
+  margin-top: 200px;
+  padding-block: 1%;
 }
 
 #nested-main {
@@ -42,16 +50,29 @@
 
 #nested-navigation ul li a {
   white-space: pre-wrap;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  color: var(--dark);
+}
+
+#nested-navigation ul li a:active {
+  color: var(--pink);
+  background-color: var(--dark);
 }
 
 .nested-wrapper-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
   font-family: "Garamond-Bold";
+  position: sticky;
+  position: -webkit-sticky;
+  top: 80px;
+  background-color: var(--dark);
+}
+.nested-wrapper-header h2 {
+  color: var(--gold);
+  font-size: 42px;
 }
 
 @media screen and (max-width: 580px) {

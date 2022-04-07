@@ -96,7 +96,6 @@
 #description-container {
   display: flex;
   flex-direction: column;
-  /* background: var(--gold); */
   background-color: var(--gold);
   color: var(--dark);
   padding: 48px;
@@ -130,6 +129,32 @@
   max-width: 50%;
   margin: auto;
   height: auto;
+}
+
+#comparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#comparison p {
+  font-size: 36px;
+  padding: 10%;
+}
+
+figure {
+  margin-block: 100px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 24px;
+}
+
+figure img {
+  max-width: calc(1076px * 0.5);
+  max-height: calc(934px * 0.5);
 }
 
 #recommandations {

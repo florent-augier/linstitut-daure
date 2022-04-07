@@ -13,7 +13,7 @@ export default function Lash() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5,
+      threshold: 0.45,
     };
 
     const containerShow = document.getElementsByClassName(
@@ -92,22 +92,22 @@ export default function Lash() {
     {
       title: "Cil à Cil",
       description:
-        "Le cil à cil est une technique de pose de faux cils qui consiste à coller un faux cil sur un seul vrai cil. Le rendu attendu est d'uniformiser les cils sans avoir un volume conséquent et donc de garder son regard naturel.",
+        "Une technique d'extension soigneusement choisie (longueur, épaisseur, courbure) pour venir rallonger le cil naturel. Effet mascarat garanti.",
     },
     {
       title: "Pose Mixte",
       description:
-        "C'est le mélange entre le Cil à Cil et le Volume Russe. Un cil posé de type Cil à Cil pour un cil de type Volume Russe.",
+        "Un mélange de cil à cil et de bouquets (du 2d au 4d) délicatement posés sur les cils naturels afin d'apporter une légère épaisseur, pour un regard plus soutenu. Idéal pour les pseronnes hésitant entre le cil à cil et le volume russe.",
     },
     {
       title: "Volume Russe",
       description:
-        "Pour cette prestation ce sera un bouquet de plusieurs cils qui sera posé par cil. Le volume ciliaire augmentera et rendra votre regard intense.",
+        "Oubliez l'idée des faux cils super longs et épais, le volume russe est minutieusement travaillé pour les personnes ayant les cils naturels fins, courts et parsemés. Les bouquets allant du 5d au 10d seront mettre en valeur vos yeux afin de faire sortir la biche qui est en vous.",
     },
     {
       title: "Méga Volume",
       description:
-        "Les bouquets de cils posés sont plus fournis que le Volume Russe, votre regard ne sera allongé et réhaussé.",
+        "Pour celles qui adorent ne pas passer inaperçu. Les bouquets allant du 10d au 16d seront méticuleusement travaillés afin de combiner longueur et épaisseur. Effet glamour assuré",
     },
   ];
 
@@ -193,6 +193,25 @@ export default function Lash() {
           );
         })}
       </div>
+      <div id="comparison">
+        <p>
+          Un cil bien collé est un cil permettra une meilleure tenue du faux cil
+          sur le vrai cil et permettra d'avoir une extension qui durera plus
+          longtemps.
+          <figure>
+            <img
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1649341995/L%27institut%20d%27Aur%C3%A9/difference-cils_vdaolr.webp"
+              alt="différence entre des cils mal collés et un cil bien collé"
+              width="1076px"
+              height="934px"
+            />
+            <figcaption>
+              Différence entre des cils mal collés et un cil bien collé
+            </figcaption>
+          </figure>
+        </p>
+      </div>
+
       <div id="recommandations">
         <h3>Recommandations</h3>
         <div id="grid-recommandations">
