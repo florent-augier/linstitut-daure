@@ -141,6 +141,10 @@
   padding: 8px;
 }
 
+.footer-card-grid a {
+  color: var(--blue);
+}
+
 .card-grid hr {
   border-top: 1px solid var(--dark);
   width: 90%;

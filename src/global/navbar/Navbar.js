@@ -1,10 +1,11 @@
 import "./Navbar.css";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const navbarRef = useRef(null);
@@ -74,7 +75,9 @@ export default function Navbar() {
     checkLocation();
   });
 
-  const handleClickOnLinks = (ref) => {
+  const handleClickOnLinks = (e, ref) => {
+    e.preventDefault();
+    console.log(ref.current.firstChild.pathname);
     let myHtml = document.firstElementChild;
     navbarRef.current.classList.remove("active");
     headerRef.current.classList.remove("active");
@@ -89,6 +92,7 @@ export default function Navbar() {
     if (myHtml.className === "no-scroll") {
       myHtml.classList.remove("no-scroll");
     }
+    return navigate(ref.current.firstChild.pathname);
   };
 
   return (
@@ -112,7 +116,7 @@ export default function Navbar() {
             <NavLink
               to="/"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(homeRef)}
+              onClick={(e) => handleClickOnLinks(e, homeRef)}
             >
               <span>Accueil</span>
             </NavLink>
@@ -121,7 +125,7 @@ export default function Navbar() {
             <NavLink
               to="/cils"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(lashRef)}
+              onClick={(e) => handleClickOnLinks(e, lashRef)}
             >
               <span>Extensions de Cils</span>
             </NavLink>
@@ -130,7 +134,7 @@ export default function Navbar() {
             <NavLink
               to="/micropigmentation"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(microRef)}
+              onClick={(e) => handleClickOnLinks(e, microRef)}
             >
               <span>Micropigmentation</span>
             </NavLink>
@@ -140,7 +144,7 @@ export default function Navbar() {
             <NavLink
               to="/dermopigmentation"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(dermoRef)}
+              onClick={(e) => handleClickOnLinks(e, dermoRef)}
             >
               <span>Dermopigmentation</span>
             </NavLink>
@@ -149,7 +153,7 @@ export default function Navbar() {
             <NavLink
               to="/soins-corporels"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(bodyCareRef)}
+              onClick={(e) => handleClickOnLinks(e, bodyCareRef)}
             >
               <span>Soins Corporels</span>
             </NavLink>
@@ -158,7 +162,7 @@ export default function Navbar() {
             <NavLink
               to="/contact"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(contactRef)}
+              onClick={(e) => handleClickOnLinks(e, contactRef)}
             >
               <span>Contact</span>
             </NavLink>
@@ -167,7 +171,7 @@ export default function Navbar() {
             <NavLink
               to="/mon-parcours"
               className="navbar-link"
-              onClick={() => handleClickOnLinks(journeyRef)}
+              onClick={(e) => handleClickOnLinks(e, journeyRef)}
             >
               <span>Mon parcours</span>
             </NavLink>

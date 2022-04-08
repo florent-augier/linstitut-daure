@@ -45,7 +45,23 @@ const InitialRouter = () => {
   let location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    console.log("locatio in initial router", location);
+    const navigation = document.getElementById("nested-navigation");
+
+    const regex = /\/dermopigmentation\//;
+
+    if (location.pathname.match(regex)) {
+      if (navigation) {
+        const offset = navigation.offsetTop;
+        console.log(offset);
+        // navigation.scrollIntoView();
+        window.scrollTo(
+          0,
+          offset - document.getElementsByTagName("header")[0].offsetHeight
+        );
+        console.log("true", location);
+      }
+    }
   }, [location]);
   // let history = useNavigate();
   // let location = useLocation();

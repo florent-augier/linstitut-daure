@@ -1,13 +1,6 @@
 import "./Dermopigmentation.css";
-import React, {
-  lazy,
-  useLayoutEffect,
-  useEffect,
-  useState,
-  useRef,
-  useCallback,
-} from "react";
-import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
+import React, { lazy } from "react";
+import { Link, Outlet } from "react-router-dom";
 import { items } from "./items";
 import styled from "styled-components";
 import { a } from "react-spring";
@@ -28,23 +21,6 @@ const Image = styled(a.div)`
 `;
 
 export default function Dermopigmentation() {
-  let location = useLocation();
-  const navigate = useNavigate();
-
-  const navigationContainerRef = useRef(null);
-  const [positionY, setPositionY] = useState(0);
-
-  function getOffset() {
-    const navigationContainer = navigationContainerRef.current;
-    const rect = navigationContainer.getBoundingClientRect();
-
-    return setPositionY(rect.top + window.scrollY);
-  }
-
-  useEffect(() => {
-    console.log("hello from : ", location);
-  }, [location]);
-
   const urls = [
     "Microshading",
     "Combo",
@@ -89,7 +65,7 @@ export default function Dermopigmentation() {
         </ul>
       </nav>
 
-      <div id="nested-main" ref={navigationContainerRef}>
+      <div id="nested-main">
         <Outlet />
       </div>
     </div>

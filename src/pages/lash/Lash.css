@@ -108,9 +108,32 @@
 }
 
 #description-container section h2 {
+  position: relative;
+  display: inline-block;
   font-size: 56px;
   font-family: "Mea-Culpa";
   margin-bottom: 50px;
+}
+
+#description-container section h2::after {
+  content: "";
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  border-radius: 12px;
+  bottom: 15%;
+  left: 0;
+  background-color: var(--red);
+  opacity: 0.4;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+}
+
+#description-container section h2:hover:after {
+  height: 100%;
+  background-color: var(--dark);
 }
 
 #description-container section p {
@@ -135,6 +158,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -242,6 +266,23 @@ figure img {
   #grid-recommandations {
     grid-template-columns: auto;
   }
+  #comparison p {
+    font-size: 24px;
+    padding: 4%;
+  }
+
+  figure {
+    margin-block: 100px;
+  }
+
+  figcaption {
+    font-size: 18px;
+  }
+
+  figure img {
+    max-width: calc(1076px * 0.3);
+    max-height: calc(934px * 0.3);
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -250,5 +291,9 @@ figure img {
   }
   #recommandations h3 {
     font-size: 28px;
+  }
+  figure img {
+    max-width: calc(1076px * 0.2);
+    max-height: calc(934px * 0.2);
   }
 }

@@ -195,21 +195,21 @@ export default function Lash() {
       </div>
       <div id="comparison">
         <p>
-          Un cil bien collé est un cil permettra une meilleure tenue du faux cil
+          Un cil bien collé est un cil qu iaura une meilleure tenue du faux cil
           sur le vrai cil et permettra d'avoir une extension qui durera plus
           longtemps.
-          <figure>
-            <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1649341995/L%27institut%20d%27Aur%C3%A9/difference-cils_vdaolr.webp"
-              alt="différence entre des cils mal collés et un cil bien collé"
-              width="1076px"
-              height="934px"
-            />
-            <figcaption>
-              Différence entre des cils mal collés et un cil bien collé
-            </figcaption>
-          </figure>
         </p>
+        <figure>
+          <img
+            src="https://res.cloudinary.com/flowww-dev/image/upload/v1649341995/L%27institut%20d%27Aur%C3%A9/difference-cils_vdaolr.webp"
+            alt="différence entre des cils mal collés et un cil bien collé"
+            width="1076px"
+            height="934px"
+          />
+          <figcaption>
+            Différence entre des cils mal collés et un cil bien collé
+          </figcaption>
+        </figure>
       </div>
 
       <div id="recommandations">
