@@ -54,7 +54,11 @@ export default function Footer() {
           </div>
           <ul>
             <li>
-              <a href="https://instagram.com/lescilsdaure13800?utm_medium=copy_link">
+              <a
+                href="https://instagram.com/lescilsdaure13800?utm_medium=copy_link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="https://res.cloudinary.com/flowww-dev/image/upload/v1647864006/L%27institut%20d%27Aur%C3%A9/icons8-instagram-old-64_offg4g.webp"
                   alt="logo d'Instagram"
@@ -65,7 +69,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/linstitutdaurelie">
+              <a
+                href="https://www.facebook.com/linstitutdaurelie"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="https://res.cloudinary.com/flowww-dev/image/upload/v1647864732/L%27institut%20d%27Aur%C3%A9/icons8-facebook-64_wnnucb.webp"
                   alt="logo de Facebook"

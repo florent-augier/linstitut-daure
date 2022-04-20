@@ -202,6 +202,7 @@
   box-shadow: 4px 8px var(--dark);
   text-underline-offset: 2px;
   display: inline-flex;
+  text-align: center;
 }
 
 .container-show section h2 img {

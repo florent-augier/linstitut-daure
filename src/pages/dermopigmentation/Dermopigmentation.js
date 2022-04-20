@@ -21,6 +21,8 @@ const Image = styled(a.div)`
 `;
 
 export default function Dermopigmentation() {
+  // const location = useLocation();
+
   const urls = [
     "Microshading",
     "Combo",
@@ -51,6 +53,7 @@ export default function Dermopigmentation() {
           </Content>
         )}
       </Slider>
+      <div id="invisible-element"></div>
 
       {/* <div id="container-nested-navigation" ref={sidebarRef}> */}
       <nav id="nested-navigation">

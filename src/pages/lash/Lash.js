@@ -13,7 +13,7 @@ export default function Lash() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.45,
+      threshold: 0.6,
     };
 
     const containerShow = document.getElementsByClassName(
@@ -195,7 +195,7 @@ export default function Lash() {
       </div>
       <div id="comparison">
         <p>
-          Un cil bien collé est un cil qu iaura une meilleure tenue du faux cil
+          Un cil bien collé est un cil qui aura une meilleure tenue du faux cil
           sur le vrai cil et permettra d'avoir une extension qui durera plus
           longtemps.
         </p>

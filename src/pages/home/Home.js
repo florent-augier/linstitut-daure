@@ -225,18 +225,7 @@ export default function Home() {
             key={index}
           >
             <section>
-              <h2>
-                <img
-                  src={
-                    index % 2 === 0
-                      ? "https://res.cloudinary.com/flowww-dev/image/upload/v1647522810/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_vexkoc.png"
-                      : "https://res.cloudinary.com/flowww-dev/image/upload/v1647527059/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_1_hqfjm0.png"
-                  }
-                  alt="graphique de cil"
-                  style={{ marginInline: "20px" }}
-                />
-                {container.title}
-              </h2>
+              <h2>{container.title}</h2>
               <p>{container.content}</p>
             </section>
             <div className="container-img">

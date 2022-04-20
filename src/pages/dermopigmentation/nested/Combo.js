@@ -3,7 +3,7 @@ import React from "react";
 export default function Combo() {
   return (
     <div id="combo" className="nested-container">
-      <div className="nested-wrapper-header">
+      <div id="nested-wrapper-header">
         <h2>Combo</h2>
       </div>
       <div className="nested-wrapper-body">

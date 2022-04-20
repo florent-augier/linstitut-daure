@@ -57,12 +57,12 @@ html.no-scroll {
   }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1200px) {
   #wrapper-title {
     padding: 60px;
   }
   #wrapper-title h1 {
-    font-size: 84px;
+    font-size: 70px;
   }
   #wrapper-title p {
     font-size: 30px;

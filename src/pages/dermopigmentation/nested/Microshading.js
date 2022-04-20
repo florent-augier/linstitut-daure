@@ -1,21 +1,71 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./CommonNested.css";
 import { Link } from "react-router-dom";
 import Strong from "../../../global/html/Strong";
+import useWindowWidth from "../../../hooks/WindowWidth";
 
 export default function Microshading() {
+  const width = useWindowWidth();
+  const containerRef = useRef(null);
+
   // const navigate = useNavigate();
 
   // const handleClick = () => {
   //   navigate("/micropigmentation");
   // };
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.7,
+    };
+
+    const containerShow = document.getElementsByClassName(
+      "container-show-lash"
+    );
+
+    const containerShowArray = Array.from(containerShow);
+
+    const containerShowCallback = (entries) => {
+      const [entry] = entries;
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-shown");
+      }
+    };
+
+    // const checkIfIsEmpty = () => {
+    //   if (containerShowArray === Array && containerShowArray.length > 0) {
+    //     console.log("containerShowArray", containerShowArray);
+    //   }
+    // };
+
+    const containerObserver = new IntersectionObserver(
+      containerShowCallback,
+      options
+    );
+
+    containerShowArray.forEach((container) => {
+      containerObserver.observe(container);
+    });
+  }, [width]);
+
+  const container = {
+    imageUrl:
+      "https://res.cloudinary.com/flowww-dev/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1649683469/L%27institut%20d%27Aur%C3%A9/cthe-lose-up-face-pretty-girl-with-beautiful-big-blue-eyes_wanjqc.webp",
+    imageWidth: "1000px",
+    imageHeight: "1000px",
+    alt: "technique: Microshading",
+    content: "Pour avoir un effet remplissage crayon.",
+    technical: "Microshading",
+    duration: "1 Heure",
+    price: "140 euros",
+  };
 
   return (
     <div id="microshading" className="nested-container">
-      <div className="nested-wrapper-header">
+      <div id="nested-wrapper-header">
         <h2>Microshading</h2>
       </div>
-
       <div className="nested-wrapper-body">
         <p>
           C’est une technique qui permet de redessiner la ligne naturelle du
@@ -52,6 +102,49 @@ export default function Microshading() {
           signifiant "ombre" en français) afin d'harmoniser le sourcil.
         </p>
       </div>
+
+      <div className="container-show-lash" ref={containerRef}>
+        <img
+          src={container.imageUrl}
+          alt={container.alt}
+          width={container.imageWidth}
+          height={container.imageHeight}
+        />
+
+        <div className="text-container-show">
+          <ul>
+            <li id="technique">
+              <img
+                src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
+                alt="icone de sourcil"
+              />{" "}
+              <span>
+                Technique: <strong>{container.technical}</strong>
+              </span>
+            </li>
+            <li id="duration">
+              <img
+                src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
+                alt="icone d'horloge"
+              />{" "}
+              <span>
+                Durée initiale: <strong>{container.duration}</strong>
+              </span>
+            </li>
+            <li id="cost">
+              <img
+                src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
+                alt="icone d'horloge"
+              />
+              <span>
+                Prix de la prestation initiale:{" "}
+                <strong>{container.price}</strong>
+              </span>
+            </li>
+          </ul>
+          <p>{container.content}</p>
+        </div>
+      </div>
       <div className="pertinent-question">
         <h3>Peut-il y avoir des effets secondaires ?</h3>
       </div>
@@ -61,9 +154,7 @@ export default function Microshading() {
           La technique du microshading est sans danger. Cependant, la peau peut
           être irritée après la séance et peut alors présenter des
           démangeaisons, un gonflement et/ou des rougeurs. Généralement, ces
-          symptômes disparaissent très vite après la procédure. Si vous
-          ressentez une vive douleur et remarquez des cloques, rendez-vous
-          immédiatement chez votre médecin.
+          symptômes disparaissent très vite après la prestation.
         </p>
       </div>
       <div className="pertinent-question">
@@ -78,7 +169,7 @@ export default function Microshading() {
           à l’aide du maquillage grâce à un crayon (Crayon à sourcils) ou une
           poudre. Si votre cœur balance entre le microshading et le{" "}
           <Link to="/micropigmentation" className="nested-link">
-            <Strong text="microblading" />
+            <Strong text="microblading" textDecoration="none" />
           </Link>
           , les deux techniques peuvent également être combinées pour un look
           sur mesure.

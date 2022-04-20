@@ -69,11 +69,13 @@ export default function SliderContainer(props) {
     <>
       <div
         ref={measuredRef}
+        id="slider-dermo"
         style={{
           height: "calc(100 * var(--vh) - 200px)",
           position: "relative",
           width: "80%",
           margin: "auto",
+          marginBlock: "200px",
         }}
       >
         {width !== 0 ? (

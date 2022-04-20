@@ -1,4 +1,4 @@
-import React, { createContext, lazy, Suspense, useEffect } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 // import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
@@ -39,30 +39,74 @@ const LipsFilling = lazy(() =>
   import("../pages/dermopigmentation/nested/LipsFilling")
 );
 
-export const ToastContext = createContext();
+// export const ToastContext = createContext();
 
 const InitialRouter = () => {
   let location = useLocation();
+  const [isFound, setIsFound] = useState(false);
+  const [myElement, setMyElement] = useState(null);
+  // const myElementRef = useRef(null);
 
   useEffect(() => {
-    console.log("locatio in initial router", location);
-    const navigation = document.getElementById("nested-navigation");
+    console.log("location is changed");
 
+    async function elementSearch() {
+      return new Promise(function (successCallback, failureCallback) {
+        console.log("fired promise");
+
+        setTimeout(() => {
+          const element = document.getElementById("invisible-element");
+          if (element) {
+            successCallback(element);
+          } else {
+            failureCallback("L'élément ciblé n'a pas été trouvé. Dommage!");
+          }
+        }, 400);
+      });
+    }
+    let promise = elementSearch();
+
+    promise.then(
+      (result) => setMyElement(result),
+      (error) => console.log(error)
+    );
+  }, [location]);
+
+  useEffect(() => {
     const regex = /\/dermopigmentation\//;
 
-    if (location.pathname.match(regex)) {
-      if (navigation) {
-        const offset = navigation.offsetTop;
-        console.log(offset);
-        // navigation.scrollIntoView();
-        window.scrollTo(
-          0,
-          offset - document.getElementsByTagName("header")[0].offsetHeight
-        );
-        console.log("true", location);
-      }
+    function scrollToInvisibleElement() {
+      return new Promise(function (success, failure) {
+        console.log("scroll function fired");
+
+        setTimeout(() => {
+          if (location.pathname.match(regex)) {
+            if (myElement) {
+              const offset = myElement.offsetTop;
+
+              const resizedOffset = offset - 100;
+
+              console.log(resizedOffset);
+
+              myElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          } else {
+            window.scrollTo(0, 0);
+          }
+        }, 200);
+      });
     }
-  }, [location]);
+
+    let promise = scrollToInvisibleElement();
+
+    promise.then(
+      (result) => setMyElement(result),
+      (error) => console.log(error)
+    );
+  }, [myElement, location]);
   // let history = useNavigate();
   // let location = useLocation();
 
