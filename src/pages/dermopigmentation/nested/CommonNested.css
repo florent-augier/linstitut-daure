@@ -251,6 +251,9 @@ summary {
 }
 
 @media screen and (max-width: 580px) {
+  .container-show-lash {
+    flex-direction: column;
+  }
   .container-show-lash.is-shown img {
     max-width: calc(960px * 0.2);
     max-height: calc(960px * 0.2);

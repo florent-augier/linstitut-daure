@@ -42,11 +42,28 @@
   text-align: center;
 }
 
+#nested-navigation ul li {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 #nested-navigation ul li a {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
   white-space: pre-wrap;
   font-size: 16px;
   text-align: center;
   color: var(--dark);
+  width: 100%;
+  padding-inline: 12px;
+}
+
+#nested-navigation ul li img {
+  max-width: 20px;
+  max-height: 20px;
 }
 
 #nested-navigation ul li a:active {

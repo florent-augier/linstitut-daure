@@ -85,9 +85,11 @@ export default function Home() {
                 width >= 1000
                   ? index * -3 + 50
                   : width >= 580
-                  ? index * -2 + 35
+                  ? index * -1.8 + 32
                   : index === 0 && width <= 580
-                  ? index * 1.5 + 18.5
+                  ? index * -1.2 + 23
+                  : width < 580 && index !== 0
+                  ? index * -1.2 + 22
                   : width <= 480
                   ? index * -1 + 17
                   : width < 400

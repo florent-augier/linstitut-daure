@@ -179,3 +179,8 @@ footer a:hover::after {
     grid-template-columns: auto;
   }
 }
+@media screen and (max-width: 580px) {
+  #footer-grid {
+    padding: 0;
+  }
+}
