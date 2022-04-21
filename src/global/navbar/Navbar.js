@@ -77,7 +77,6 @@ export default function Navbar() {
 
   const handleClickOnLinks = (e, ref) => {
     e.preventDefault();
-    console.log(ref.current.firstChild.pathname);
     let myHtml = document.firstElementChild;
     navbarRef.current.classList.remove("active");
     headerRef.current.classList.remove("active");

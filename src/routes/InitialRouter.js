@@ -43,17 +43,12 @@ const LipsFilling = lazy(() =>
 
 const InitialRouter = () => {
   let location = useLocation();
-  const [isFound, setIsFound] = useState(false);
   const [myElement, setMyElement] = useState(null);
   // const myElementRef = useRef(null);
 
   useEffect(() => {
-    console.log("location is changed");
-
     async function elementSearch() {
       return new Promise(function (successCallback, failureCallback) {
-        console.log("fired promise");
-
         setTimeout(() => {
           const element = document.getElementById("invisible-element");
           if (element) {
@@ -77,17 +72,9 @@ const InitialRouter = () => {
 
     function scrollToInvisibleElement() {
       return new Promise(function (success, failure) {
-        console.log("scroll function fired");
-
         setTimeout(() => {
           if (location.pathname.match(regex)) {
             if (myElement) {
-              const offset = myElement.offsetTop;
-
-              const resizedOffset = offset - 100;
-
-              console.log(resizedOffset);
-
               myElement.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
