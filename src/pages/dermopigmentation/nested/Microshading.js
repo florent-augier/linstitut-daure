@@ -33,12 +33,6 @@ export default function Microshading() {
       }
     };
 
-    // const checkIfIsEmpty = () => {
-    //   if (containerShowArray === Array && containerShowArray.length > 0) {
-    //     console.log("containerShowArray", containerShowArray);
-    //   }
-    // };
-
     const containerObserver = new IntersectionObserver(
       containerShowCallback,
       options
