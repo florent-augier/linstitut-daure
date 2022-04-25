@@ -36,6 +36,12 @@ export default function Lash() {
     containerShowArray.forEach((image) => {
       containerObserver.observe(image);
     });
+
+    return () => {
+      containerShowArray.forEach((image) => {
+        containerObserver.unobserve(image);
+      });
+    };
   }, [width]);
 
   const containerShow = [
@@ -54,9 +60,9 @@ export default function Lash() {
 
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1647428756/L%27institut%20d%27Aur%C3%A9/Extension-de-cils_l0divs.webp",
-      imageWidth: "960px",
-      imageHeight: "960px",
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1650629890/L%27institut%20d%27Aur%C3%A9/pose-mixte_wucf0o.webp",
+      imageWidth: "580px",
+      imageHeight: "506px",
       alt: "technique: pose mixte",
       content:
         "Le mélange parfait pour agrandir votre regard sans trop le dénaturer.",
@@ -194,6 +200,27 @@ export default function Lash() {
         })}
       </div>
       <div id="comparison">
+        <p>
+          Les faux cils ont tous des courbures différentes. Cela dépendra du
+          mapping* réalisé par Aurély.
+        </p>
+        <details id="lash-details">
+          <summary>Qu'est ce qu'un mapping ?</summary>Pour définir la courbure
+          du faux cil à poser sur le vrai cil, Aurély procédera a un mapping.
+          Elle regardera la forme des yeux, si les yeux sont creusés, la qualité
+          de vrai cil et le rendu voulu par la cliente.
+        </details>
+        <figure>
+          <img
+            src="https://res.cloudinary.com/flowww-dev/image/upload/v1650889545/L%27institut%20d%27Aur%C3%A9/differences-faux-cils_fzsuaj.webp"
+            alt="Différence entre plusieurs courbures d'extensions de cils"
+            width="1000px"
+            height="1000px"
+          />
+          <figcaption>
+            Différence entre plusieurs courbures d'extensions de cils.
+          </figcaption>
+        </figure>
         <p>
           Un cil bien collé est un cil qui aura une meilleure tenue du faux cil
           sur le vrai cil et permettra d'avoir une extension qui durera plus

@@ -58,16 +58,16 @@ summary {
   margin-block: 20px;
 }
 
-.container-show-lash {
+.container-show-common {
   display: flex;
   justify-content: space-between;
   padding-block: 200px;
 }
 
-.container-show-lash img {
+.container-show-common img {
   transition: all 2s;
-  max-width: calc(960px * 0.4);
-  max-height: calc(960px * 0.4);
+  max-width: calc(1000px * 0.4);
+  max-height: calc(1000px * 0.4);
   padding: 12px;
   margin-block: auto;
   opacity: 0;
@@ -92,7 +92,7 @@ summary {
   transform: translateY(50px);
   opacity: 0;
 }
-.container-show-lash.is-shown .text-container-show p {
+.container-show-common.is-shown .text-container-show p {
   transform: translateY(0);
   opacity: 1;
 }
@@ -116,7 +116,7 @@ summary {
   transform: translateY(50px);
 }
 
-.container-show-lash.is-shown .text-container-show ul li img {
+.container-show-common.is-shown .text-container-show ul li img {
   max-width: 50px;
   max-height: 50px;
   padding: 0;
@@ -140,29 +140,28 @@ summary {
   text-transform: uppercase;
 }
 
-.container-show-lash.is-shown img {
+.container-show-common.is-shown img {
   opacity: 1;
   transform: translateY(0);
 }
 
-.container-show-lash.is-shown .text-container-show ul li {
+.container-show-common.is-shown .text-container-show ul li {
   opacity: 1;
   transform: translateY(0);
 }
 
 .pertinent-question {
   margin-top: 72px;
-  position: relative;
   overflow: hidden;
-  border-radius: 12px;
   padding-inline: 30px;
 }
 
 .pertinent-question h3 {
   font-size: 32px;
   text-decoration: underline var(--gold);
+  -webkit-text-decoration: underline var(--gold);
   text-underline-offset: 22px;
-  text-decoration-thickness: 10px;
+  text-decoration-thickness: 6px;
   padding: 30px;
 }
 
@@ -201,15 +200,19 @@ summary {
 }
 
 @media screen and (max-width: 1000px) {
-  .container-show-lash.is-shown {
+  .container-show-common.is-shown {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  /* .container-show-lash.is-shown img {
-    max-width: calc(960px * 0.3);
-    max-height: calc(960px * 0.3);
-  } */
+  .container-show-common img {
+    max-width: calc(1000px * 0.3);
+    max-height: calc(1000px * 0.3);
+  }
+  .container-show-common.is-shown img {
+    max-width: calc(1000px * 0.3);
+    max-height: calc(1000px * 0.3);
+  }
 
   .text-container-show ul li img {
     max-width: 30px;
@@ -217,7 +220,7 @@ summary {
   }
 
   .text-container-show ul li span {
-    margin-left: 12px;
+    margin-left: 4px;
   }
 
   .text-container-show ul li p {
@@ -233,11 +236,10 @@ summary {
   }
 }
 @media screen and (max-width: 780px) {
-  .container-show-lash.is-shown img {
-    max-width: calc(960px * 0.3);
-    max-height: calc(960px * 0.3);
+  .container-show-common {
+    padding-block: 50px;
   }
-  .container-show-lash.is-shown .text-container-show ul li img {
+  .container-show-common.is-shown .text-container-show ul li img {
     max-width: 30px;
     max-height: 30px;
   }
@@ -246,25 +248,32 @@ summary {
     font-size: 24px;
   }
   .pertinent-question h3 {
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: 8px;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .container-show-lash {
+  .nested-wrapper-body {
+    padding: 0px;
+  }
+  .container-show-common {
     flex-direction: column;
   }
-  .container-show-lash.is-shown img {
-    max-width: calc(960px * 0.2);
-    max-height: calc(960px * 0.2);
+  .container-show-common img {
+    max-width: calc(1000px * 0.2);
+    max-height: calc(1000px * 0.2);
   }
-  .container-show-lash img {
-    max-width: calc(960px * 0.2);
-    max-height: calc(960px * 0.2);
+  .container-show-common.is-shown img {
+    max-width: calc(1000px * 0.2);
+    max-height: calc(1000px * 0.2);
+  }
+  .text-container-show ul li span {
+    margin-left: 8px;
+    font-size: 18px;
   }
 
   .nested-wrapper-body p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     margin-block: 50px;
   }
@@ -273,9 +282,17 @@ summary {
     margin: 0;
     padding: 12px;
     text-align: center;
+    font-size: 18px;
   }
   summary {
     margin-block: 4px;
+  }
+  .text-container-show {
+    padding: 0px;
+  }
+
+  .text-container-show ul li {
+    padding: 4px;
   }
 
   .text-container-show ul li p {

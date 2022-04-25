@@ -61,8 +61,17 @@ export default function Home() {
       observer.observe(element);
     });
 
-    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    return () => {
+      containerShowArray.forEach((image) => {
+        containerObserver.unobserve(image);
+      });
+
+      toArray.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
   }, [width]);
+
   function SplitText({ copy, role }) {
     let copyArray = [...copy];
     return (
@@ -86,10 +95,10 @@ export default function Home() {
                   ? index * -3 + 50
                   : width >= 580
                   ? index * -1.8 + 32
-                  : index === 0 && width <= 580
-                  ? index * -1.2 + 23
+                  : index === 0 && width < 580
+                  ? index * -1.2 + 20.5
                   : width < 580 && index !== 0
-                  ? index * -1.2 + 22
+                  ? index * -1.1 + 19
                   : width <= 480
                   ? index * -1 + 17
                   : width < 400

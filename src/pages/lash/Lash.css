@@ -114,6 +114,7 @@
   font-family: "Mea-Culpa";
   margin-bottom: 50px;
   width: max-content;
+  color: var(--dark);
 }
 
 #description-container section h2::after {
@@ -122,15 +123,16 @@
   -webkit-transition: all 1s;
   position: absolute;
   width: 120%;
-  height: 100%;
-  border-radius: 12px;
+  height: 120%;
+  border-radius: 100% 0% 100% 0% / 84% 0% 100% 16%;
   bottom: 15%;
   left: -10%;
+  top: -10%;
   background-size: 100% 0.2em;
-  background-color: var(--red);
-  opacity: 0.4;
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  background-color: fuchsia;
+  opacity: 0.3;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 /* #description-container section h2:hover {
@@ -220,6 +222,17 @@ figure img {
   font-family: "Garamond-Medium";
   font-size: 24px;
   padding: 24px;
+}
+
+details#lash-details {
+  margin: 50px;
+  padding: 30px;
+  border: 1px solid white;
+  font-size: 24px;
+}
+
+summary {
+  margin-block: 20px;
 }
 
 @media screen and (max-width: 1000px) {

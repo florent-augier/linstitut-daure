@@ -56,7 +56,7 @@ const InitialRouter = () => {
           } else {
             failureCallback("L'élément ciblé n'a pas été trouvé. Dommage!");
           }
-        }, 400);
+        }, 500);
       });
     }
     let promise = elementSearch();

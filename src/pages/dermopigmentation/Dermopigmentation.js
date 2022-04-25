@@ -5,6 +5,7 @@ import { items } from "./items";
 import styled from "styled-components";
 import { a } from "react-spring";
 import { Helmet } from "react-helmet";
+
 const Slider = lazy(() => import("./Slider"));
 
 const Content = styled.div`

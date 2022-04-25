@@ -8,11 +8,6 @@ export default function Microshading() {
   const width = useWindowWidth();
   const containerRef = useRef(null);
 
-  // const navigate = useNavigate();
-
-  // const handleClick = () => {
-  //   navigate("/micropigmentation");
-  // };
   useEffect(() => {
     const options = {
       root: null,
@@ -21,7 +16,7 @@ export default function Microshading() {
     };
 
     const containerShow = document.getElementsByClassName(
-      "container-show-lash"
+      "container-show-common"
     );
 
     const containerShowArray = Array.from(containerShow);
@@ -41,6 +36,12 @@ export default function Microshading() {
     containerShowArray.forEach((container) => {
       containerObserver.observe(container);
     });
+
+    return () => {
+      containerShowArray.forEach((container) => {
+        containerObserver.unobserve(container);
+      });
+    };
   }, [width]);
 
   const container = {
@@ -61,6 +62,9 @@ export default function Microshading() {
         <h2>Microshading</h2>
       </div>
       <div className="nested-wrapper-body">
+        <div className="pertinent-question">
+          <h3>Le microshading, c'est quoi ?</h3>
+        </div>
         <p>
           C’est une technique qui permet de redessiner la ligne naturelle du
           sourcil et de combler les manques tout en apportant de l’intensité au
@@ -97,7 +101,7 @@ export default function Microshading() {
         </p>
       </div>
 
-      <div className="container-show-lash" ref={containerRef}>
+      <div className="container-show-common" ref={containerRef}>
         <img
           src={container.imageUrl}
           alt={container.alt}
