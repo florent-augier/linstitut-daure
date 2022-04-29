@@ -174,8 +174,8 @@ export default function Home() {
       imgSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1649426541/L%27institut%20d%27Aur%C3%A9/Extension-de-cils_l0divs_rtsoel.webp",
       imgAlt: "technique d'extension de cil",
-      width: "960px",
-      height: "540px",
+      imgWidth: "960px",
+      imgHeight: "540px",
     },
     {
       title: "Un savoir faire unique",
@@ -185,8 +185,8 @@ export default function Home() {
         "https://res.cloudinary.com/flowww-dev/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647431187/L%27institut%20d%27Aur%C3%A9/Dermopigmentation_pny4sp.webp",
 
       imgAlt: "technique de BB glow | dermopigmentation",
-      width: "1000px",
-      height: "563px",
+      imgWidth: "1000px",
+      imgHeight: "563px",
     },
     {
       title: "Un rapport qualité/prix imbattable",
@@ -195,8 +195,8 @@ export default function Home() {
       imgSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647431588/L%27institut%20d%27Aur%C3%A9/Micropigmentation_jckwjc.webp",
       imgAlt: "technique d'extension microblading | micropigmentation",
-      width: "1000px",
-      height: "563px",
+      imgWidth: "1000px",
+      imgHeight: "563px",
     },
   ];
 
