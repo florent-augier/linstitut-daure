@@ -83,17 +83,6 @@ export default function Footer() {
                 PAGE FACEBOOK DE L'INSTITUT D'AURE
               </a>
             </li>
-            {/* <li>
-              <a href="https://www.facebook.com/messages/t/104278418453210">
-                <img
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1647865031/L%27institut%20d%27Aur%C3%A9/icons8-facebook-messenger-64_ysstrs.webp"
-                  alt="logo de Messenger"
-                  width="64px"
-                  height="64px"
-                />{" "}
-                DISCUTER AVEC L'INSTITUT D'AURE
-              </a>
-            </li> */}
           </ul>
         </div>
       </div>

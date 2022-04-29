@@ -72,9 +72,9 @@ export default function Lash() {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1648025467/L%27institut%20d%27Aur%C3%A9/woman-s-eye-with-black-eye-makeup-macro-style-image-long-eyelashes-crop_lctnbd.webp",
-      imageWidth: "8258px",
-      imageHeight: "6192px",
+        "https://res.cloudinary.com/flowww-dev/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,h_480,w_480/v1651220945/L'institut%20d'Aur%C3%A9/lash-mega_qtsmjm.webp",
+      imageWidth: "480px",
+      imageHeight: "480px",
       alt: "technique: volume russe",
       content: "La technique idéale pour donner de l'intensité à votre regard.",
       technical: "Volume Russe",
@@ -83,9 +83,9 @@ export default function Lash() {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1648025210/L%27institut%20d%27Aur%C3%A9/beautiful-girl-with-colorful-makeup-crop_g33yhn.webp",
-      imageWidth: "5472px",
-      imageHeight: "3648px",
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1651222309/L%27institut%20d%27Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
+      imageWidth: "480px",
+      imageHeight: "480px",
       alt: "technique: Méga volume",
       content: "Vos yeux sauront attirer l'attention.",
       technical: "Méga Volume",
@@ -244,10 +244,10 @@ export default function Lash() {
         <div id="grid-recommandations">
           <div className="item-card-recommandations">
             <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1648211938/L%27institut%20d%27Aur%C3%A9/photos-by-lanty-T-VS-7y_fAY-unsplash_bgjzy7.webp"
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1651225966/L%27institut%20d%27Aur%C3%A9/numero1_fruo2a.webp"
               alt="recommandation numéro une"
-              width="5472px"
-              height="3648px"
+              width="450px"
+              height="300px"
             />
             <p>
               Pour toutes les prestations d'extensions de cils, il est
@@ -263,10 +263,10 @@ export default function Lash() {
           </div>
           <div className="item-card-recommandations">
             <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1648212468/L%27institut%20d%27Aur%C3%A9/david-libeert-zcZ7rIUJwT0-unsplash_mpze4w.webp"
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1651226173/L%27institut%20d%27Aur%C3%A9/numero2_lijlkd.webp"
               alt="recommandation numéro deux"
-              width="3073px"
-              height="4610px"
+              width="300px"
+              height="450px"
             />
             <p>
               Nettoyez quotidiennement vos cils avec le DÉMAQUILLANT, en
@@ -282,10 +282,10 @@ export default function Lash() {
           </div>
           <div className="item-card-recommandations">
             <img
-              src="https://res.cloudinary.com/flowww-dev/image/upload/v1648213099/L%27institut%20d%27Aur%C3%A9/justus-menke-bWDXFaBTnL8-unsplash_ay83bl.webp"
+              src="https://res.cloudinary.com/flowww-dev/image/upload/v1651219226/L%27institut%20d%27Aur%C3%A9/number3_eps6wv.webp"
               alt="recommandation numéro trois"
-              width="4000px"
-              height="6000px"
+              width="300px"
+              height="450px"
             />
             <p>
               Nettoyez quotidiennement vos cils avec le DÉMAQUILLANT, en

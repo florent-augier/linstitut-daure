@@ -1,6 +1,6 @@
 export const items = [
   {
-    css: "url(https://res.cloudinary.com/flowww-dev/image/upload/v1648214746/L%27institut%20d%27Aur%C3%A9/young-woman-getting-beauty-treatment-her-eyebrows_jwkos3.webp)",
+    css: "url(https://res.cloudinary.com/flowww-dev/image/upload/v1651227097/L%27institut%20d%27Aur%C3%A9/microshading1_z9j6vf.webp)",
     height: 150,
   },
   {
@@ -8,11 +8,11 @@ export const items = [
     height: 150,
   },
   {
-    css: "url(https://res.cloudinary.com/flowww-dev/image/upload/v1648215343/L%27institut%20d%27Aur%C3%A9/beautician-doing-eyebrow-treatment-her-female-client_vnhb2g.webp)",
+    css: "url(https://res.cloudinary.com/flowww-dev/image/upload/v1651227531/L%27institut%20d%27Aur%C3%A9/microblading2_cvgs0x.webp)",
     height: 300,
   },
   {
-    css: "url(https://res.cloudinary.com/flowww-dev/image/upload/v1648215742/L%27institut%20d%27Aur%C3%A9/beautiful-young-woman-s-eyes-close-up-shot_v2zolh.webp)",
+    css: "url(https://res.cloudinary.com/flowww-dev/image/upload/v1651228003/L%27institut%20d%27Aur%C3%A9/beautiful-eyebrow_gxxeri.webp)",
     height: 300,
   },
 ];

@@ -48,11 +48,11 @@ export default function Combo() {
       "https://res.cloudinary.com/flowww-dev/image/upload/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
     imageWidth: "1000px",
     imageHeight: "1000px",
-    alt: "technique: Microshading",
+    alt: "technique: Combo microshading/microblading",
     content: "Pour avoir des sourcils parfaits.",
     technical: "Combo",
     duration: "2 Heures 30 Minutes",
-    price: "230 euros",
+    price: "170 euros",
   };
   return (
     <div id="combo" className="nested-container">
