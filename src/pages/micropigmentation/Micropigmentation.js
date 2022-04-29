@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from "react";
 import "./Micropigmentation.css";
 import { Helmet } from "react-helmet";
 
-import { Link } from "react-router-dom";
-import Strong from "../../global/html/Strong";
 import useWindowWidth from "../../hooks/WindowWidth";
 
 export default function Eyebrow() {
