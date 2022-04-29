@@ -75,7 +75,7 @@ export default function Home() {
   function SplitText({ copy, role }) {
     let copyArray = [...copy];
     return (
-      <p aria-label={copy} role={role}>
+      <p aria-label={copy} role={role} aria-level="1">
         <span
           style={{
             position: "relative",
