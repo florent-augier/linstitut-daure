@@ -65,7 +65,7 @@ summary {
 }
 
 .container-show-common img {
-  transition: all 2s;
+  transition: all 1s;
   max-width: calc(1000px * 0.4);
   max-height: calc(1000px * 0.4);
   padding: 12px;
@@ -88,7 +88,7 @@ summary {
   text-decoration-color: var(--gold);
   padding: 24px;
   font-family: "Garamond-Medium";
-  transition: all 2s 1s;
+  transition: all 1s 0.5s;
   transform: translateY(50px);
   opacity: 0;
 }
@@ -238,6 +238,7 @@ summary {
 @media screen and (max-width: 780px) {
   .container-show-common {
     padding-block: 50px;
+    flex-direction: column;
   }
   .container-show-common.is-shown .text-container-show ul li img {
     max-width: 30px;
