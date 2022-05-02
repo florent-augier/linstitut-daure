@@ -70,6 +70,7 @@ export default function Contact() {
                     alt="logo de téléphone"
                     width="50px"
                     height="50px"
+                    data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1648206506/L%27institut%20d%27Aur%C3%A9/icons8-at-sign-50_yayf8q.webp"
                   />
                 </button>
               </span>
@@ -91,6 +92,7 @@ export default function Contact() {
                       alt="logo téléphone"
                       width="50px"
                       height="50px"
+                      data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1648206425/L%27institut%20d%27Aur%C3%A9/icons8-phone-50_figont.webp"
                     />
                   </a>
                 </button>

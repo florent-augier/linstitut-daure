@@ -90,6 +90,7 @@ export default function CarouselWrapper() {
                 alt={item.alt}
                 width="235px"
                 height="158px"
+                data-src={item.imgUrl}
               />
               <div className="wrapper-slide-text">
                 →

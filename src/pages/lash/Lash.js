@@ -139,6 +139,7 @@ export default function Lash() {
               alt={container.alt}
               width={container.imageWidth}
               height={container.imageHeight}
+              data-src={container.imageUrl}
             />
 
             <div className="text-container-show">
@@ -147,6 +148,7 @@ export default function Lash() {
                   <img
                     src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                     alt="icone de sourcil"
+                    data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                   />{" "}
                   <span>
                     Technique: <strong>{container.technical}</strong>
@@ -156,6 +158,7 @@ export default function Lash() {
                   <img
                     src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                     alt="icone d'horloge"
+                    data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                   />{" "}
                   <span>
                     Durée initiale: <strong>{container.duration}</strong>
@@ -165,6 +168,7 @@ export default function Lash() {
                   <img
                     src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                     alt="icone d'horloge"
+                    data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                   />
                   <span>
                     Prix de la prestation initiale:{" "}
@@ -193,6 +197,7 @@ export default function Lash() {
                   width="1280px"
                   height="640px"
                   className="divider"
+                  data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1648118758/L%27institut%20d%27Aur%C3%A9/floral-g4ddcf5316_1280_o7cyy6.png"
                 />
               )}
             </div>
@@ -216,6 +221,7 @@ export default function Lash() {
             alt="Différence entre plusieurs courbures d'extensions de cils"
             width="1000px"
             height="1000px"
+            data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1650889545/L%27institut%20d%27Aur%C3%A9/differences-faux-cils_fzsuaj.webp"
           />
           <figcaption>
             Différence entre plusieurs courbures d'extensions de cils.
@@ -232,6 +238,7 @@ export default function Lash() {
             alt="différence entre des cils mal collés et un cil bien collé"
             width="1076px"
             height="934px"
+            data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1649341995/L%27institut%20d%27Aur%C3%A9/difference-cils_vdaolr.webp"
           />
           <figcaption>
             Différence entre des cils mal collés et un cil bien collé
@@ -248,6 +255,7 @@ export default function Lash() {
               alt="recommandation numéro une"
               width="450px"
               height="300px"
+              data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1651225966/L%27institut%20d%27Aur%C3%A9/numero1_fruo2a.webp"
             />
             <p>
               Pour toutes les prestations d'extensions de cils, il est
@@ -267,6 +275,7 @@ export default function Lash() {
               alt="recommandation numéro deux"
               width="300px"
               height="450px"
+              data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1651226173/L%27institut%20d%27Aur%C3%A9/numero2_lijlkd.webp"
             />
             <p>
               Nettoyez quotidiennement vos cils avec le DÉMAQUILLANT, en
@@ -286,6 +295,7 @@ export default function Lash() {
               alt="recommandation numéro trois"
               width="300px"
               height="450px"
+              data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1651219226/L%27institut%20d%27Aur%C3%A9/number3_eps6wv.webp"
             />
             <p>
               Nettoyez quotidiennement vos cils avec le DÉMAQUILLANT, en

@@ -227,6 +227,7 @@ export default function Home() {
                   alt={`Présentation de la prestation: ${card.title}`}
                   width="230px"
                   height="230px"
+                  data-src={card.imgUrl}
                 />
               </div>
               <div className="title-card-grid">{card.title}</div>
@@ -256,6 +257,7 @@ export default function Home() {
                 alt={container.imgAlt}
                 width={container.imgWidth}
                 height={container.imgHeight}
+                data-src={container.imgSrc}
               />
             </div>
           </div>
@@ -269,6 +271,7 @@ export default function Home() {
             alt="logo d'un sourcil dessiné"
             height="64px"
             width="64px"
+            data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647730702/L%27institut%20d%27Aur%C3%A9/icons8-eyebrow-64_qtvxv2.png"
           />
         </div>
         <NavLink to="contact">⇲ Contacter l'institut d'Auré</NavLink>

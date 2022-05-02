@@ -107,6 +107,7 @@ export default function Microshading() {
           alt={container.alt}
           width={container.imageWidth}
           height={container.imageHeight}
+          data-src={container.imageUrl}
         />
 
         <div className="text-container-show">
@@ -115,6 +116,7 @@ export default function Microshading() {
               <img
                 src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                 alt="icone de sourcil"
+                data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
               />{" "}
               <span>
                 Technique: <strong>{container.technical}</strong>
@@ -124,6 +126,7 @@ export default function Microshading() {
               <img
                 src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                 alt="icone d'horloge"
+                data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
               />{" "}
               <span>
                 Durée initiale: <strong>{container.duration}</strong>
@@ -133,6 +136,7 @@ export default function Microshading() {
               <img
                 src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                 alt="icone d'horloge"
+                data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
               />
               <span>
                 Prix de la prestation initiale:{" "}

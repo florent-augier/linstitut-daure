@@ -69,6 +69,7 @@ export default function Dermopigmentation() {
                     alt="logo d'un lien"
                     width="64px"
                     height="64px"
+                    data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1650528959/L%27institut%20d%27Aur%C3%A9/icons8-link-64-2_vqjlt7.webp"
                   />
                 </Link>
               </li>

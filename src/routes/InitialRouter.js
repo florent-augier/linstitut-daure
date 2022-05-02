@@ -47,6 +47,28 @@ const InitialRouter = () => {
   // const myElementRef = useRef(null);
 
   useEffect(() => {
+    console.log("hey");
+    const imageObserver = new IntersectionObserver((entries, imgObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const lazyImage = entry.target;
+          console.log("lazy loading ", lazyImage);
+          lazyImage.src = lazyImage.dataset.src;
+        }
+      });
+    });
+    const arr = document.querySelectorAll("img");
+    arr.forEach((v) => {
+      imageObserver.observe(v);
+    });
+    return () => {
+      arr.forEach((v) => {
+        imageObserver.unobserve(v);
+      });
+    };
+  }, []);
+
+  useEffect(() => {
     async function elementSearch() {
       return new Promise(function (successCallback, failureCallback) {
         setTimeout(() => {
@@ -65,6 +87,25 @@ const InitialRouter = () => {
       (result) => setMyElement(result),
       (error) => console.log(error)
     );
+
+    const imageObserver = new IntersectionObserver((entries, imgObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const lazyImage = entry.target;
+          console.log("lazy loading ", lazyImage);
+          lazyImage.src = lazyImage.dataset.src;
+        }
+      });
+    });
+    const arr = document.querySelectorAll("img");
+    arr.forEach((v) => {
+      imageObserver.observe(v);
+    });
+    return () => {
+      arr.forEach((v) => {
+        imageObserver.unobserve(v);
+      });
+    };
   }, [location]);
 
   useEffect(() => {
@@ -94,6 +135,7 @@ const InitialRouter = () => {
       (error) => console.log(error)
     );
   }, [myElement, location]);
+
   // let history = useNavigate();
   // let location = useLocation();
 

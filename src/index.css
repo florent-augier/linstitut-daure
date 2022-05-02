@@ -30,71 +30,52 @@ body,
 @font-face {
   font-family: "Tahu";
   font-display: swap;
-  src: url("./fonts/Tahu.ttf") format("truetype");
+  src: local("Tahu"), url("./fonts/Tahu.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Mea-Culpa";
   font-display: swap;
-  src: url("./fonts/MeaCulpa-Regular.woff2") format("truetype");
+  src: local("Mea-Culpa"),
+    url("./fonts/MeaCulpa-Regular.woff2") format("truetype");
 }
 
 @font-face {
   font-family: "Garamond-Bold";
   font-display: swap;
-  src: url("./fonts/Garamond-Bold.ttf") format("truetype");
+  src: local("Garamond-Bold"),
+    url("./fonts/Garamond-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Garamond-BoldItalic";
   font-display: swap;
-  src: url("./fonts/Garamond-BoldItalic.ttf") format("truetype");
+  src: local("Garamond-BoldItalic"),
+    url("./fonts/Garamond-BoldItalic.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "Garamond-ExtraBold";
   font-display: swap;
-  src: url("./fonts/Garamond-ExtraBold.ttf") format("truetype");
+  src: local("Garamond-ExtraBold"),
+    url("./fonts/Garamond-ExtraBold.ttf") format("truetype");
 }
-
-@font-face {
-  font-family: "Garamond-ExtraBoldItalic";
-  font-display: swap;
-  src: url("./fonts/Garamond-ExtraBoldItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Garamond-Italic";
-  font-display: swap;
-  src: url("./fonts/Garamond-Italic.ttf") format("truetype");
-}
-
 @font-face {
   font-family: "Garamond-Medium";
   font-display: swap;
-  src: url("./fonts/Garamond-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Garamond-MediumItalic";
-  font-display: swap;
-  src: url("./fonts/Garamond-MediumItalic.ttf") format("truetype");
+  src: local("Garamond-Medium"),
+    url("./fonts/Garamond-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Garamond-Regular";
   font-display: swap;
-  src: url("./fonts/Garamond-Regular.ttf") format("truetype");
+  src: local("Garamond-Regular"),
+    url("./fonts/Garamond-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Garamond-SemiBold";
   font-display: swap;
-  src: url("./fonts/Garamond-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Garamond-SemiBoldItalic";
-  font-display: swap;
-  src: url("./fonts/Garamond-SemiBoldItalic.ttf") format("truetype");
+  src: local("Garamond-SemiBold"),
+    url("./fonts/Garamond-SemiBold.ttf") format("truetype");
 }

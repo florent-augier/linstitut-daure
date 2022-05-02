@@ -64,6 +64,7 @@ export default function Footer() {
                   alt="logo d'Instagram"
                   width="64px"
                   height="64px"
+                  data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647864006/L%27institut%20d%27Aur%C3%A9/icons8-instagram-old-64_offg4g.webp"
                 />{" "}
                 PAGE INSTAGRAM DE L'INSTITUT D'AURE
               </a>
@@ -79,6 +80,7 @@ export default function Footer() {
                   alt="logo de Facebook"
                   width="64px"
                   height="64px"
+                  data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647864732/L%27institut%20d%27Aur%C3%A9/icons8-facebook-64_wnnucb.webp"
                 />{" "}
                 PAGE FACEBOOK DE L'INSTITUT D'AURE
               </a>

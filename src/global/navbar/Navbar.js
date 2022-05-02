@@ -104,6 +104,7 @@ export default function Navbar() {
               alt="logo de téléphone"
               width="85px"
               height="85px"
+              data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647901258/L%27institut%20d%27Aur%C3%A9/icons8-call-85_dbvgkt.webp"
             />
             06 71 44 57 75
           </a>
