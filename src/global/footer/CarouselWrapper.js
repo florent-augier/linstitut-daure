@@ -4,9 +4,9 @@ export default function CarouselWrapper() {
   const items = [
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647873448/L%27institut%20d%27Aur%C3%A9/image_uvjpsj_kfzbzs.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,w_235/v1647873448/L%27institut%20d%27Aur%C3%A9/image_uvjpsj_kfzbzs.webp",
       dataSrc:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1647873448/L%27institut%20d%27Aur%C3%A9/image_uvjpsj_kfzbzs.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1647873448/L%27institut%20d%27Aur%C3%A9/image_uvjpsj_kfzbzs.webp",
 
       linkSrc: "https://unsplash.com/@luxdamore",
       text: "Luca Iaconelli",
@@ -24,9 +24,9 @@ export default function CarouselWrapper() {
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,q_80,w_235/v1651222309/L'institut%20d'Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,w_235/v1651222309/L'institut%20d'Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
       dataSrc:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,q_80,w_235/v1651222309/L'institut%20d'Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1651222309/L'institut%20d'Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
 
       linkSrc: "https://fr.freepik.com/photos/femme",
       text: "Femme photo créé par valuavitaly",
@@ -36,7 +36,7 @@ export default function CarouselWrapper() {
       imgUrl:
         "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648039654/L%27institut%20d%27Aur%C3%A9/icons8-icons8-480_dqclsk.webp",
       dataSrc:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1648039654/L%27institut%20d%27Aur%C3%A9/icons8-icons8-480_dqclsk.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1648039654/L%27institut%20d%27Aur%C3%A9/icons8-icons8-480_dqclsk.webp",
 
       linkSrc: "https://icons8",
       text: "Icônes par Icons8",

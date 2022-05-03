@@ -362,8 +362,4 @@
     font-size: 28px;
     padding: 12px;
   }
-  .container-show section h2 img {
-    width: calc(50px * 0.5);
-    height: calc(50px * 0.5);
-  }
 }
