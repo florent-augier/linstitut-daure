@@ -1,8 +1,6 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-// import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
-// import { useTransition, animated } from "react-spring";
 
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
@@ -136,23 +134,12 @@ const InitialRouter = () => {
     );
   }, [myElement, location]);
 
-  // let history = useNavigate();
-  // let location = useLocation();
-
-  //   const transitions = useTransition(location, {
-  //     from: { opacity: 0.2 },
-  //     enter: { opacity: 1 },
-  //     leave: { opacity: 0.2 },
-  //     config: { duration: 200 },
-  //   });
-
   //   const notify = (alert) => toast(alert);
 
   return (
     <>
       {/* <ToastContainer /> */}
       {/* <ToastContext.Provider value={{ notify }}> */}
-      {/* <animated.div style={props}> */}
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<App />}>
@@ -174,7 +161,6 @@ const InitialRouter = () => {
           </Route>
         </Routes>
       </Suspense>
-      {/* </animated.div> */}
       {/* </ToastContext.Provider> */}
     </>
   );
