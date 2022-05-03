@@ -205,19 +205,14 @@
   text-align: center;
 }
 
-.container-show section h2 img {
-  width: 32px;
-  height: 32px;
-}
-
 .container-show section p {
   font-size: 22px;
   margin-top: 50px;
 }
 
 .container-show img {
-  max-width: calc(6720px * 0.1);
-  max-height: calc(4480px * 0.1);
+  max-width: 672px;
+  max-height: 448px;
   position: relative;
   float: left;
 }
