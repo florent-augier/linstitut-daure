@@ -10,7 +10,10 @@ export default function Eyebrow() {
 
   const container = {
     imageUrl:
+      "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
+    dataSrc:
       "https://res.cloudinary.com/flowww-dev/image/upload/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
+
     imageWidth: "1000px",
     imageHeight: "1000px",
     alt: "technique: Microblading",
@@ -76,6 +79,7 @@ export default function Eyebrow() {
           alt={container.alt}
           width={container.imageWidth}
           height={container.imageHeight}
+          data-src={container.dataSrc}
         />
 
         <div className="text-container-show">

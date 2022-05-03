@@ -42,29 +42,7 @@ const LipsFilling = lazy(() =>
 const InitialRouter = () => {
   let location = useLocation();
   const [myElement, setMyElement] = useState(null);
-  // const myElementRef = useRef(null);
-
-  useEffect(() => {
-    console.log("hey");
-    const imageObserver = new IntersectionObserver((entries, imgObserver) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const lazyImage = entry.target;
-          console.log("lazy loading ", lazyImage);
-          lazyImage.src = lazyImage.dataset.src;
-        }
-      });
-    });
-    const arr = document.querySelectorAll("img");
-    arr.forEach((v) => {
-      imageObserver.observe(v);
-    });
-    return () => {
-      arr.forEach((v) => {
-        imageObserver.unobserve(v);
-      });
-    };
-  }, []);
+  const [allImages, setAllImages] = useState([]);
 
   useEffect(() => {
     async function elementSearch() {
@@ -86,25 +64,47 @@ const InitialRouter = () => {
       (error) => console.log(error)
     );
 
+    async function imagesSearch() {
+      return new Promise(function (successCallback, failureCallback) {
+        setTimeout(() => {
+          const images = document.querySelectorAll("img");
+          if (images.length > 0) {
+            successCallback(images);
+          } else {
+            failureCallback("Les images n'ont pas été trouvées");
+          }
+        }, 1000);
+      });
+    }
+    let imagesPromise = imagesSearch();
+    imagesPromise.then(
+      (result) => setAllImages(result),
+      (error) => console.log(error)
+    );
+  }, [location]);
+
+  useEffect(() => {
     const imageObserver = new IntersectionObserver((entries, imgObserver) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
-          console.log("lazy loading ", lazyImage);
           lazyImage.src = lazyImage.dataset.src;
         }
       });
     });
-    const arr = document.querySelectorAll("img");
-    arr.forEach((v) => {
-      imageObserver.observe(v);
-    });
-    return () => {
-      arr.forEach((v) => {
-        imageObserver.unobserve(v);
-      });
-    };
-  }, [location]);
+    setTimeout(() => {
+      if (allImages.length > 0) {
+        allImages.forEach((v) => {
+          imageObserver.observe(v);
+        });
+        return () => {
+          allImages.forEach((v) => {
+            imageObserver.unobserve(v);
+          });
+        };
+      }
+    }, 1000);
+  }, [allImages, allImages.length, location]);
 
   useEffect(() => {
     const regex = /\/dermopigmentation\//;
