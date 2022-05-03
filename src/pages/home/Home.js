@@ -137,13 +137,18 @@ export default function Home() {
   const dataCard = [
     {
       imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,q_100,w_660/v1647431087/L'institut%20d'Aur%C3%A9/Extensions-de-cils_sk3zwu.webp",
+      dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,q_100,w_660/v1647431087/L'institut%20d'Aur%C3%A9/Extensions-de-cils_sk3zwu.webp",
+
       title: "EXTENSION DE CILS",
       body: "Créez des cils qui sublimeront votre regard",
       footerLink: "/cils",
     },
     {
       imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,q_100,w_230/v1647431588/L'institut%20d'Aur%C3%A9/Micropigmentation_jckwjc.webp",
+      dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,q_100,w_230/v1647431588/L'institut%20d'Aur%C3%A9/Micropigmentation_jckwjc.webp",
       title: "MICROPIGMENTATION",
       body: "Dessinez votre sourcils afin de lui redonner un forme homogène",
@@ -152,6 +157,8 @@ export default function Home() {
 
     {
       imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,q_100,w_230/v1647431187/L'institut%20d'Aur%C3%A9/Dermopigmentation_pny4sp.webp",
+      dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,q_100,w_230/v1647431187/L'institut%20d'Aur%C3%A9/Dermopigmentation_pny4sp.webp",
       title: "DERMOPIGMENTATION",
       body: "Modelez vos sourcils ou lèvres dans le but de redonner du volume",
@@ -159,6 +166,8 @@ export default function Home() {
     },
     {
       imgUrl:
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,q_100,w_230/v1647442043/L'institut%20d'Aur%C3%A9/Soins-visage_hn4gvq.webp",
+      dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,q_100,w_230/v1647442043/L'institut%20d'Aur%C3%A9/Soins-visage_hn4gvq.webp",
       title: "SOINS CORPORELS",
       body: "Dessinez votre sourcils afin de lui redonner ",
@@ -172,7 +181,10 @@ export default function Home() {
       content:
         "Outre le fait d'avoir une prestation de qualité, Aurélie saura prendre le temps de vous accueillir dans une ambiance calme et détendue. Vous apprécierez la délicatesse et la minutie de son travail.",
       imgSrc:
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1649426541/L%27institut%20d%27Aur%C3%A9/Extension-de-cils_l0divs_rtsoel.webp",
+      dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1649426541/L%27institut%20d%27Aur%C3%A9/Extension-de-cils_l0divs_rtsoel.webp",
+
       imgAlt: "technique d'extension de cil",
       imgWidth: "960px",
       imgHeight: "540px",
@@ -182,6 +194,8 @@ export default function Home() {
       content:
         "La maîtrise des techniques s'acquiert grâce à des formations de qualités et réputées, du matériel soigneusement choisi ainsi qu'à la pratique soignée de toutes ses prestations.",
       imgSrc:
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647431187/L%27institut%20d%27Aur%C3%A9/Dermopigmentation_pny4sp.webp",
+      dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647431187/L%27institut%20d%27Aur%C3%A9/Dermopigmentation_pny4sp.webp",
 
       imgAlt: "technique de BB glow | dermopigmentation",
@@ -193,7 +207,10 @@ export default function Home() {
       content:
         "Aurély est à l'écoute du marché et se veut de proposer des prix attractifs pour le bonheur de sa clientèle. Quoiqu'il en coûte, la qualité sera toujours au rendez-vous.",
       imgSrc:
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647431588/L%27institut%20d%27Aur%C3%A9/Micropigmentation_jckwjc.webp",
+      dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1647431588/L%27institut%20d%27Aur%C3%A9/Micropigmentation_jckwjc.webp",
+
       imgAlt: "technique d'extension microblading | micropigmentation",
       imgWidth: "1000px",
       imgHeight: "563px",
@@ -227,7 +244,7 @@ export default function Home() {
                   alt={`Présentation de la prestation: ${card.title}`}
                   width="230px"
                   height="230px"
-                  data-src={card.imgUrl}
+                  data-src={card.dataSrc}
                 />
               </div>
               <div className="title-card-grid">{card.title}</div>
@@ -257,7 +274,7 @@ export default function Home() {
                 alt={container.imgAlt}
                 width={container.imgWidth}
                 height={container.imgHeight}
-                data-src={container.imgSrc}
+                data-src={container.dataSrc}
               />
             </div>
           </div>
@@ -267,7 +284,7 @@ export default function Home() {
       <div id="contact-link">
         <div>
           <img
-            src="https://res.cloudinary.com/flowww-dev/image/upload/v1647730702/L%27institut%20d%27Aur%C3%A9/icons8-eyebrow-64_qtvxv2.png"
+            src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647730702/L%27institut%20d%27Aur%C3%A9/icons8-eyebrow-64_qtvxv2.png"
             alt="logo d'un sourcil dessiné"
             height="64px"
             width="64px"

@@ -46,7 +46,10 @@ export default function Microshading() {
 
   const container = {
     imageUrl:
+      "https://res.cloudinary.com/flowww-dev/image/upload/q_20/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1649683469/L%27institut%20d%27Aur%C3%A9/cthe-lose-up-face-pretty-girl-with-beautiful-big-blue-eyes_wanjqc.webp",
+    dataSrc:
       "https://res.cloudinary.com/flowww-dev/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1649683469/L%27institut%20d%27Aur%C3%A9/cthe-lose-up-face-pretty-girl-with-beautiful-big-blue-eyes_wanjqc.webp",
+
     imageWidth: "1000px",
     imageHeight: "1000px",
     alt: "technique: Microshading",
@@ -107,14 +110,14 @@ export default function Microshading() {
           alt={container.alt}
           width={container.imageWidth}
           height={container.imageHeight}
-          data-src={container.imageUrl}
+          data-src={container.dataSrc}
         />
 
         <div className="text-container-show">
           <ul>
             <li id="technique">
               <img
-                src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
+                src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                 alt="icone de sourcil"
                 data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
               />{" "}
@@ -124,7 +127,7 @@ export default function Microshading() {
             </li>
             <li id="duration">
               <img
-                src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
+                src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                 alt="icone d'horloge"
                 data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
               />{" "}
@@ -134,7 +137,7 @@ export default function Microshading() {
             </li>
             <li id="cost">
               <img
-                src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
+                src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                 alt="icone d'horloge"
                 data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
               />

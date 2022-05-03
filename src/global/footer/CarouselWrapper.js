@@ -4,35 +4,35 @@ export default function CarouselWrapper() {
   const items = [
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1647873448/L%27institut%20d%27Aur%C3%A9/image_uvjpsj_kfzbzs.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647873448/L%27institut%20d%27Aur%C3%A9/image_uvjpsj_kfzbzs.webp",
       linkSrc: "https://unsplash.com/@luxdamore",
       text: "Luca Iaconelli",
       alt: "regard d'un femme aux yeux clairs",
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1651220945/L'institut%20d'Aur%C3%A9/lash-mega_qtsmjm.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,w_235/v1651220945/L'institut%20d'Aur%C3%A9/lash-mega_qtsmjm.webp",
       linkSrc: "https://fr.freepik.com/photos/personnes",
       text: "Personnes photo créé par Racool_studio",
       alt: "oeil d'un femme avec de faux cils",
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,q_80,w_235/v1651222309/L'institut%20d'Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,q_80,w_235/v1651222309/L'institut%20d'Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
       linkSrc: "https://fr.freepik.com/photos/femme",
       text: "Femme photo créé par valuavitaly",
       alt: "oeil coloré d'un femme avec de faux cils",
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/v1648039654/L%27institut%20d%27Aur%C3%A9/icons8-icons8-480_dqclsk.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648039654/L%27institut%20d%27Aur%C3%A9/icons8-icons8-480_dqclsk.webp",
       linkSrc: "https://icons8",
       text: "Icônes par Icons8",
       alt: "logo d'Icons8",
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1651225966/L'institut%20d'Aur%C3%A9/numero1_fruo2a.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,w_235/v1651225966/L'institut%20d'Aur%C3%A9/numero1_fruo2a.webp",
       linkSrc:
         "https://unsplash.com/@photos_by_lanty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
       text: "Photos by Lanty on Unsplash",
@@ -40,7 +40,7 @@ export default function CarouselWrapper() {
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1651226173/L'institut%20d'Aur%C3%A9/numero2_lijlkd.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,w_235/v1651226173/L'institut%20d'Aur%C3%A9/numero2_lijlkd.webp",
       linkSrc:
         "https://unsplash.com/@deefbelgium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
       text: "Photos by David Libeert on Unsplash",
@@ -48,7 +48,7 @@ export default function CarouselWrapper() {
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1651219226/L'institut%20d'Aur%C3%A9/number3_eps6wv.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,w_235/v1651219226/L'institut%20d'Aur%C3%A9/number3_eps6wv.webp",
       linkSrc:
         "https://unsplash.com/@justusmenke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
       text: "Photos by Justus Menke on Unsplash",
@@ -56,21 +56,21 @@ export default function CarouselWrapper() {
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,q_100,w_235/v1651227097/L'institut%20d'Aur%C3%A9/microshading1_z9j6vf.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,q_100,w_235/v1651227097/L'institut%20d'Aur%C3%A9/microshading1_z9j6vf.webp",
       linkSrc: "https://www.freepik.com/photos/brows",
       text: "Brows photo created by freepik - www.freepik.com",
       alt: "pratique d'un microshading",
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,q_100,w_235/v1651227531/L'institut%20d'Aur%C3%A9/microblading2_cvgs0x.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,q_100,w_235/v1651227531/L'institut%20d'Aur%C3%A9/microblading2_cvgs0x.webp",
       linkSrc: "https://www.freepik.com/photos/brows",
       text: "Brows photo created by freepik - www.freepik.com",
       alt: "pratique d'un microshading",
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,q_100,w_235/v1651228003/L'institut%20d'Aur%C3%A9/beautiful-eyebrow_gxxeri.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/c_scale,h_158,q_100,w_235/v1651228003/L'institut%20d'Aur%C3%A9/beautiful-eyebrow_gxxeri.webp",
       linkSrc: "https://www.freepik.com/photos/brows",
       text: "Brows photo created by freepik - www.freepik.com",
       alt: "regard de profil",

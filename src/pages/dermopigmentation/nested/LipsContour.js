@@ -45,7 +45,10 @@ export default function LipsContour() {
   }, [width]);
   const container = {
     imageUrl:
+      "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
+    dataSrc:
       "https://res.cloudinary.com/flowww-dev/image/upload/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
+
     imageWidth: "1000px",
     imageHeight: "1000px",
     alt: "technique: Contour des lèvres",
@@ -94,14 +97,16 @@ export default function LipsContour() {
             alt={container.alt}
             width={container.imageWidth}
             height={container.imageHeight}
+            data-src={container.dataSrc}
           />
 
           <div className="text-container-show">
             <ul>
               <li id="technique">
                 <img
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                   alt="icone de sourcil"
+                  data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                 />{" "}
                 <span>
                   Technique: <strong>{container.technical}</strong>
@@ -109,8 +114,9 @@ export default function LipsContour() {
               </li>
               <li id="duration">
                 <img
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                   alt="icone d'horloge"
+                  data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                 />{" "}
                 <span>
                   Durée initiale: <strong>{container.duration}</strong>
@@ -118,8 +124,9 @@ export default function LipsContour() {
               </li>
               <li id="cost">
                 <img
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                   alt="icone d'horloge"
+                  data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                 />
                 <span>
                   Prix de la prestation initiale:{" "}

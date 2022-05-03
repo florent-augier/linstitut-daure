@@ -45,6 +45,8 @@ export default function LipsFull() {
   }, [width]);
   const container = {
     imageUrl:
+      "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
+    dataSrc:
       "https://res.cloudinary.com/flowww-dev/image/upload/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
     imageWidth: "1000px",
     imageHeight: "1000px",
@@ -94,14 +96,14 @@ export default function LipsFull() {
             alt={container.alt}
             width={container.imageWidth}
             height={container.imageHeight}
-            data-src={container.imageUrl}
+            data-src={container.dataSrc}
           />
 
           <div className="text-container-show">
             <ul>
               <li id="technique">
                 <img
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                   alt="icone de sourcil"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                 />{" "}
@@ -111,7 +113,7 @@ export default function LipsFull() {
               </li>
               <li id="duration">
                 <img
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                   alt="icone d'horloge"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                 />{" "}
@@ -121,7 +123,7 @@ export default function LipsFull() {
               </li>
               <li id="cost">
                 <img
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                   alt="icone d'horloge"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                 />
