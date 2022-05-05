@@ -66,6 +66,7 @@ export default function Contact() {
                   aria-label="copy email"
                 >
                   <img
+                    loading="lazy"
                     src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648206506/L%27institut%20d%27Aur%C3%A9/icons8-at-sign-50_yayf8q.webp"
                     alt="logo de téléphone"
                     width="50px"
@@ -88,6 +89,7 @@ export default function Contact() {
                 >
                   <a href="tel:+33671445775">
                     <img
+                      loading="lazy"
                       src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648206425/L%27institut%20d%27Aur%C3%A9/icons8-phone-50_figont.webp"
                       alt="logo téléphone"
                       width="50px"

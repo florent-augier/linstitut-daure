@@ -116,6 +116,7 @@ export default function CarouselWrapper() {
           return (
             <div id={`slide-${index}`} key={index}>
               <img
+                loading="lazy"
                 src={item.imgUrl}
                 alt={item.alt}
                 width="235px"

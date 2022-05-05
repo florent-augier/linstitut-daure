@@ -93,6 +93,7 @@ export default function LipsContour() {
         </p>
         <div className="container-show-common" ref={containerRef}>
           <img
+            loading="lazy"
             src={container.imageUrl}
             alt={container.alt}
             width={container.imageWidth}
@@ -104,6 +105,7 @@ export default function LipsContour() {
             <ul>
               <li id="technique">
                 <img
+                  loading="lazy"
                   src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                   alt="icone de sourcil"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
@@ -114,6 +116,7 @@ export default function LipsContour() {
               </li>
               <li id="duration">
                 <img
+                  loading="lazy"
                   src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                   alt="icone d'horloge"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
@@ -124,6 +127,7 @@ export default function LipsContour() {
               </li>
               <li id="cost">
                 <img
+                  loading="lazy"
                   src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                   alt="icone d'horloge"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"

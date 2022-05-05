@@ -65,6 +65,7 @@ export default function Dermopigmentation() {
                 <Link to={url.toLowerCase()}>
                   {url.split("-").join(" ")}
                   <img
+                    loading="lazy"
                     src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650528959/L%27institut%20d%27Aur%C3%A9/icons8-link-64-2_vqjlt7.webp"
                     alt="logo d'un lien"
                     width="64px"

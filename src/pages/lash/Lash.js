@@ -147,6 +147,7 @@ export default function Lash() {
         return (
           <div className="container-show-lash" key={index}>
             <img
+              loading="lazy"
               src={container.imageUrl}
               alt={container.alt}
               width={container.imageWidth}
@@ -158,6 +159,7 @@ export default function Lash() {
               <ul>
                 <li id="technique">
                   <img
+                    loading="lazy"
                     src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                     alt="icone de sourcil"
                     data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
@@ -168,6 +170,7 @@ export default function Lash() {
                 </li>
                 <li id="duration">
                   <img
+                    loading="lazy"
                     src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                     alt="icone d'horloge"
                     data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
@@ -178,6 +181,7 @@ export default function Lash() {
                 </li>
                 <li id="cost">
                   <img
+                    loading="lazy"
                     src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                     alt="icone d'horloge"
                     data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
@@ -204,6 +208,7 @@ export default function Lash() {
               </section>
               {index !== descriptionContainers.length - 1 && (
                 <img
+                  loading="lazy"
                   src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648118758/L%27institut%20d%27Aur%C3%A9/floral-g4ddcf5316_1280_o7cyy6.png"
                   alt="diviseur de contenu"
                   width="1280px"
@@ -229,6 +234,7 @@ export default function Lash() {
         </details>
         <figure>
           <img
+            loading="lazy"
             src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650889545/L%27institut%20d%27Aur%C3%A9/differences-faux-cils_fzsuaj.webp"
             alt="Différence entre plusieurs courbures d'extensions de cils"
             width="1000px"
@@ -246,6 +252,7 @@ export default function Lash() {
         </p>
         <figure>
           <img
+            loading="lazy"
             src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1649341995/L%27institut%20d%27Aur%C3%A9/difference-cils_vdaolr.webp"
             alt="différence entre des cils mal collés et un cil bien collé"
             width="1076px"
@@ -263,6 +270,7 @@ export default function Lash() {
         <div id="grid-recommandations">
           <div className="item-card-recommandations">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651225966/L%27institut%20d%27Aur%C3%A9/numero1_fruo2a.webp"
               alt="recommandation numéro une"
               width="450px"
@@ -283,6 +291,7 @@ export default function Lash() {
           </div>
           <div className="item-card-recommandations">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651226173/L%27institut%20d%27Aur%C3%A9/numero2_lijlkd.webp"
               alt="recommandation numéro deux"
               width="300px"
@@ -303,6 +312,7 @@ export default function Lash() {
           </div>
           <div className="item-card-recommandations">
             <img
+              loading="lazy"
               src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651219226/L%27institut%20d%27Aur%C3%A9/number3_eps6wv.webp"
               alt="recommandation numéro trois"
               width="300px"

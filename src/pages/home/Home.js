@@ -233,6 +233,7 @@ export default function Home() {
             <div className={`card-grid ${index}`} key={index.toString()}>
               <div className="image-card-grid">
                 <img
+                  loading="lazy"
                   src={card.imgUrl}
                   alt={`Présentation de la prestation: ${card.title}`}
                   width="230px"
@@ -263,6 +264,7 @@ export default function Home() {
             </section>
             <div className="container-img">
               <img
+                loading="lazy"
                 src={container.imgSrc}
                 alt={container.imgAlt}
                 width="672px"
@@ -277,6 +279,7 @@ export default function Home() {
       <div id="contact-link">
         <div>
           <img
+            loading="lazy"
             src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647730702/L%27institut%20d%27Aur%C3%A9/icons8-eyebrow-64_qtvxv2.png"
             alt="logo d'un sourcil dessiné"
             height="64px"
