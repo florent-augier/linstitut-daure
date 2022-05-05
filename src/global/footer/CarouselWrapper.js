@@ -34,9 +34,9 @@ export default function CarouselWrapper() {
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648039654/L%27institut%20d%27Aur%C3%A9/icons8-icons8-480_dqclsk.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651760263/L'institut%20d'Aur%C3%A9/icons8-icons8_lfcxxs.webp",
       dataSrc:
-        "https://res.cloudinary.com/flowww-dev/image/upload/c_scale,h_158,w_235/v1648039654/L%27institut%20d%27Aur%C3%A9/icons8-icons8-480_dqclsk.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/v1651760263/L%27institut%20d%27Aur%C3%A9/icons8-icons8_lfcxxs.webp",
 
       linkSrc: "https://icons8",
       text: "Icônes par Icons8",
