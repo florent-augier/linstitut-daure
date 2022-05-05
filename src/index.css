@@ -30,52 +30,51 @@ body,
 @font-face {
   font-family: "Tahu";
   font-display: swap;
-  src: local("Tahu"), url("./fonts/Tahu.ttf") format("truetype");
+  src: local("Tahu"), url("./fonts/Tahu.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Mea-Culpa";
   font-display: swap;
-  src: local("Mea-Culpa"),
-    url("./fonts/MeaCulpa-Regular.woff2") format("truetype");
+  src: local("Mea-Culpa"), url("./fonts/MeaCulpa-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Garamond-Bold";
   font-display: swap;
   src: local("Garamond-Bold"),
-    url("./fonts/Garamond-Bold.ttf") format("truetype");
+    url("./fonts/Garamond-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Garamond-BoldItalic";
   font-display: swap;
   src: local("Garamond-BoldItalic"),
-    url("./fonts/Garamond-BoldItalic.ttf") format("truetype");
+    url("./fonts/Garamond-BoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Garamond-ExtraBold";
   font-display: swap;
   src: local("Garamond-ExtraBold"),
-    url("./fonts/Garamond-ExtraBold.ttf") format("truetype");
+    url("./fonts/Garamond-ExtraBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Garamond-Medium";
   font-display: swap;
   src: local("Garamond-Medium"),
-    url("./fonts/Garamond-Medium.ttf") format("truetype");
+    url("./fonts/Garamond-Medium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Garamond-Regular";
   font-display: swap;
   src: local("Garamond-Regular"),
-    url("./fonts/Garamond-Regular.ttf") format("truetype");
+    url("./fonts/Garamond-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Garamond-SemiBold";
   font-display: swap;
   src: local("Garamond-SemiBold"),
-    url("./fonts/Garamond-SemiBold.ttf") format("truetype");
+    url("./fonts/Garamond-SemiBold.woff2") format("woff2");
 }
