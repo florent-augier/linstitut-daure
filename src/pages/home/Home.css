@@ -85,6 +85,7 @@
   transform: translateY(25%);
   -webkit-transform: translateY(25%);
   transition: all 1s;
+  will-change: transform, opacity;
 }
 .card-grid.is-shown {
   transform: translateY(0);
@@ -103,6 +104,7 @@
 .card-grid.is-shown:hover img {
   transform: scale(110%);
   transition: initial 1s;
+  will-change: transform;
 }
 
 .card-grid.is-shown > .image-card-grid > img {
@@ -178,6 +180,7 @@
   background-color: white;
   padding: 10%;
   transform: translateX(-100%);
+  will-change: transform;
 }
 
 .container-show:nth-child(2n) section {
@@ -226,6 +229,7 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transform: translateX(100%);
+  will-change: transform;
 }
 
 .container-show.is-shown .container-img {

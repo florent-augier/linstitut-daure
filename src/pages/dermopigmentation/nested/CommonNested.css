@@ -72,6 +72,7 @@ summary {
   margin-block: auto;
   opacity: 0;
   transform: translateY(50px);
+  will-change: transform, opacity;
 }
 
 .text-container-show {
@@ -91,6 +92,7 @@ summary {
   transition: all 1s 0.5s;
   transform: translateY(50px);
   opacity: 0;
+  will-change: transform, opacity;
 }
 .container-show-common.is-shown .text-container-show p {
   transform: translateY(0);
@@ -114,6 +116,7 @@ summary {
   padding: 12px;
   opacity: 0;
   transform: translateY(50px);
+  will-change: transform, opacity;
 }
 
 .container-show-common.is-shown .text-container-show ul li img {
@@ -133,6 +136,7 @@ summary {
 .text-container-show ul li p {
   font-size: 24px;
   transform: translateY(50px);
+  will-change: transform;
 }
 
 .text-container-show ul li strong {
@@ -225,7 +229,6 @@ summary {
 
   .text-container-show ul li p {
     font-size: 18px;
-    /* transform: translateY(50px); */
   }
   .pertinent-question {
     padding: 4px;
@@ -298,7 +301,6 @@ summary {
 
   .text-container-show ul li p {
     font-size: 12px;
-    /* transform: translateY(50px); */
   }
   .text-container-show ul li span strong {
     font-size: 18px;

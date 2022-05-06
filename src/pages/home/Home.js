@@ -113,6 +113,7 @@ export default function Home() {
               animationName: "reveal",
               animationDelay: `${index * 0.03 + 3}s`,
               animationDuration: "2s",
+              willChange: "transform",
             };
 
             if (char === " ") {

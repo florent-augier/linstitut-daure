@@ -4,6 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Tahu";
+  will-change: transform;
 }
 
 .text {
@@ -28,6 +29,7 @@
   border-radius: 50%;
   background-color: var(--gold);
   transform-origin: 50%;
+  will-change: transform;
   -webkit-animation: bounce 500ms alternate infinite ease;
   animation: bounce 500ms alternate infinite ease;
 }
