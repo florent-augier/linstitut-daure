@@ -8,6 +8,29 @@ export default function Home() {
   const width = useWindowWidth();
 
   useEffect(() => {
+    function bgPromise() {
+      return new Promise(function (successCallback, failureCallback) {
+        setTimeout(() => {
+          const element = document.querySelector(".wrapper-first-layout");
+          if (element) {
+            successCallback(element);
+          } else {
+            failureCallback("L'élément ciblé n'a pas été trouvé. Dommage!");
+          }
+        }, 100);
+      });
+    }
+    let promise = bgPromise();
+    promise.then(
+      (result) =>
+        console.log(
+          (result.style.backgroundImage = `url("https://res.cloudinary.com/flowww-dev/image/upload/v1651239770/L%27institut%20d%27Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp")`)
+        ),
+      (error) => console.log(error)
+    );
+  }, []);
+
+  useEffect(() => {
     const options = {
       root: null,
       rootMargin: "0px",

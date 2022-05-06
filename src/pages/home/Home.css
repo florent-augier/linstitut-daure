@@ -10,7 +10,8 @@
   background-size: cover;
   position: relative;
   height: calc(100 * var(--vh));
-  background-image: url("https://res.cloudinary.com/flowww-dev/image/upload/v1651239770/L%27institut%20d%27Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp");
+  background-image: none;
+  /* background-image: url("https://res.cloudinary.com/flowww-dev/image/upload/v1651239770/L%27institut%20d%27Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp"); */
 }
 
 .wrapper-first-layout::after {
