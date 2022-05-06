@@ -1,12 +1,12 @@
-import React, { lazy, Suspense, useEffect, useState } from "react";
+import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 import Loading from "./../global/loading/Loading";
 
-const App = lazy(() => import("../App"));
+import App from "../App";
+// const App = lazy(() => import("../App"));
 const Home = lazy(() => import("./../pages/home/Home"));
 const Lash = lazy(() => import("./../pages/lash/Lash"));
 const Micropigmentation = lazy(() =>
@@ -40,100 +40,6 @@ const LipsFilling = lazy(() =>
 // export const ToastContext = createContext();
 
 const InitialRouter = () => {
-  let location = useLocation();
-  const [myElement, setMyElement] = useState(null);
-  const [allImages, setAllImages] = useState([]);
-
-  useEffect(() => {
-    async function elementSearch() {
-      return new Promise(function (successCallback, failureCallback) {
-        setTimeout(() => {
-          const element = document.getElementById("invisible-element");
-          if (element) {
-            successCallback(element);
-          } else {
-            failureCallback("L'élément ciblé n'a pas été trouvé. Dommage!");
-          }
-        }, 500);
-      });
-    }
-    let promise = elementSearch();
-
-    promise.then(
-      (result) => setMyElement(result),
-      (error) => console.log(error)
-    );
-
-    async function imagesSearch() {
-      return new Promise(function (successCallback, failureCallback) {
-        setTimeout(() => {
-          const images = document.querySelectorAll("img");
-          if (images.length > 0) {
-            successCallback(images);
-          } else {
-            failureCallback("Les images n'ont pas été trouvées");
-          }
-        }, 1000);
-      });
-    }
-    let imagesPromise = imagesSearch();
-    imagesPromise.then(
-      (result) => setAllImages(result),
-      (error) => console.log(error)
-    );
-  }, [location]);
-
-  useEffect(() => {
-    const imageObserver = new IntersectionObserver((entries, imgObserver) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const lazyImage = entry.target;
-          lazyImage.src = lazyImage.dataset.src;
-        }
-      });
-    });
-    setTimeout(() => {
-      if (allImages.length > 0) {
-        allImages.forEach((v) => {
-          imageObserver.observe(v);
-        });
-        return () => {
-          allImages.forEach((v) => {
-            imageObserver.unobserve(v);
-          });
-        };
-      }
-    }, 1000);
-  }, [allImages, allImages.length, location]);
-
-  useEffect(() => {
-    const regex = /\/dermopigmentation\//;
-
-    function scrollToInvisibleElement() {
-      return new Promise(function (success, failure) {
-        setTimeout(() => {
-          if (location.pathname.match(regex)) {
-            if (myElement) {
-              myElement.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          } else {
-            window.scrollTo(0, 0);
-          }
-        }, 200);
-      });
-    }
-
-    let promise = scrollToInvisibleElement();
-
-    promise.then(
-      (result) => setMyElement(result),
-      (error) => console.log(error)
-    );
-  }, [myElement, location]);
-
   //   const notify = (alert) => toast(alert);
 
   return (
