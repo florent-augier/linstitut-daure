@@ -45,7 +45,7 @@ export default function Combo() {
   }, [width]);
   const container = {
     imageUrl:
-      "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
+      "https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1650634078/L%27institut%20d%27Aur%C3%A9/microblading_wfldgk.webp",
     imageWidth: "1000px",
     imageHeight: "1000px",
     alt: "technique: Combo microshading/microblading",
@@ -103,7 +103,7 @@ export default function Combo() {
               <li id="technique">
                 <img
                   loading="lazy"
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                   alt="icone de sourcil"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                 />{" "}
@@ -114,7 +114,7 @@ export default function Combo() {
               <li id="duration">
                 <img
                   loading="lazy"
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                   alt="icone d'horloge"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                 />{" "}
@@ -125,7 +125,7 @@ export default function Combo() {
               <li id="cost">
                 <img
                   loading="lazy"
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                   alt="icone d'horloge"
                   data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                 />

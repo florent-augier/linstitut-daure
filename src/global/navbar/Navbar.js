@@ -101,7 +101,7 @@ export default function Navbar() {
           <a href="tel:+33671445775">
             <img
               loading="lazy"
-              src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647901258/L%27institut%20d%27Aur%C3%A9/icons8-call-85_dbvgkt.webp"
+              src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647901258/L%27institut%20d%27Aur%C3%A9/icons8-call-85_dbvgkt.webp"
               alt="logo de téléphone"
               width="85px"
               height="85px"

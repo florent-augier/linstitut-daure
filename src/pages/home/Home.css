@@ -238,12 +238,12 @@
 }
 
 .container-show:nth-child(2n) .container-img::after {
-  content: url("https://res.cloudinary.com/flowww-dev/image/upload/v1647527059/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_1_hqfjm0.png");
+  content: url("https://res.cloudinary.com/flowww-dev/image/upload/f_auto/v1647527059/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_1_hqfjm0.png");
   left: 80%;
   background-color: var(--dark);
 }
 .container-img:after {
-  content: url("https://res.cloudinary.com/flowww-dev/image/upload/v1647522810/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_vexkoc.png");
+  content: url("https://res.cloudinary.com/flowww-dev/image/upload/f_auto/v1647522810/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50_vexkoc.png");
   position: absolute;
   width: 25%;
   height: 25%;

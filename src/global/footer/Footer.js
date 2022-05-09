@@ -61,7 +61,7 @@ export default function Footer() {
               >
                 <img
                   loading="lazy"
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647864006/L%27institut%20d%27Aur%C3%A9/icons8-instagram-old-64_offg4g.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647864006/L%27institut%20d%27Aur%C3%A9/icons8-instagram-old-64_offg4g.webp"
                   alt="logo d'Instagram"
                   width="64px"
                   height="64px"
@@ -78,7 +78,7 @@ export default function Footer() {
               >
                 <img
                   loading="lazy"
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647864732/L%27institut%20d%27Aur%C3%A9/icons8-facebook-64_wnnucb.webp"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647864732/L%27institut%20d%27Aur%C3%A9/icons8-facebook-64_wnnucb.webp"
                   alt="logo de Facebook"
                   width="64px"
                   height="64px"

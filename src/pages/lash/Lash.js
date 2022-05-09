@@ -47,7 +47,7 @@ export default function Lash() {
   const containerShow = [
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648047114/L%27institut%20d%27Aur%C3%A9/cil-a-cil_xqqol6.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1648047114/L%27institut%20d%27Aur%C3%A9/cil-a-cil_xqqol6.webp",
       dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1648047114/L%27institut%20d%27Aur%C3%A9/cil-a-cil_xqqol6.webp",
 
@@ -63,7 +63,7 @@ export default function Lash() {
 
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650629890/L%27institut%20d%27Aur%C3%A9/pose-mixte_wucf0o.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1650629890/L%27institut%20d%27Aur%C3%A9/pose-mixte_wucf0o.webp",
       dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1650629890/L%27institut%20d%27Aur%C3%A9/pose-mixte_wucf0o.webp",
 
@@ -78,7 +78,7 @@ export default function Lash() {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/ar_1:1,c_fill,e_art:hokusai,g_auto,h_480,w_480/v1651220945/L'institut%20d'Aur%C3%A9/lash-mega_qtsmjm.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_10/ar_1:1,c_fill,e_art:hokusai,g_auto,h_480,w_480/v1651220945/L'institut%20d'Aur%C3%A9/lash-mega_qtsmjm.webp",
       dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,h_480,w_480/v1651220945/L'institut%20d'Aur%C3%A9/lash-mega_qtsmjm.webp",
 
@@ -92,7 +92,7 @@ export default function Lash() {
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651222309/L%27institut%20d%27Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
+        "https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1651222309/L%27institut%20d%27Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
       dataSrc:
         "https://res.cloudinary.com/flowww-dev/image/upload/v1651222309/L%27institut%20d%27Aur%C3%A9/lash-mega-volume_mhnbxl.webp",
 
@@ -160,7 +160,7 @@ export default function Lash() {
                 <li id="technique">
                   <img
                     loading="lazy"
-                    src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
+                    src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                     alt="icone de sourcil"
                     data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962261/L%27institut%20d%27Aur%C3%A9/icons8-eyelash-50-2_x56ocl.webp"
                   />{" "}
@@ -171,7 +171,7 @@ export default function Lash() {
                 <li id="duration">
                   <img
                     loading="lazy"
-                    src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
+                    src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                     alt="icone d'horloge"
                     data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962313/L%27institut%20d%27Aur%C3%A9/icons8-stopwatch-64_ammc5q.webp"
                   />{" "}
@@ -182,7 +182,7 @@ export default function Lash() {
                 <li id="cost">
                   <img
                     loading="lazy"
-                    src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
+                    src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                     alt="icone d'horloge"
                     data-src="https://res.cloudinary.com/flowww-dev/image/upload/v1647962290/L%27institut%20d%27Aur%C3%A9/icons8-euro-64_je8zje.webp"
                   />
@@ -209,7 +209,7 @@ export default function Lash() {
               {index !== descriptionContainers.length - 1 && (
                 <img
                   loading="lazy"
-                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1648118758/L%27institut%20d%27Aur%C3%A9/floral-g4ddcf5316_1280_o7cyy6.png"
+                  src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1648118758/L%27institut%20d%27Aur%C3%A9/floral-g4ddcf5316_1280_o7cyy6.png"
                   alt="diviseur de contenu"
                   width="1280px"
                   height="640px"
@@ -235,7 +235,7 @@ export default function Lash() {
         <figure>
           <img
             loading="lazy"
-            src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1650889545/L%27institut%20d%27Aur%C3%A9/differences-faux-cils_fzsuaj.webp"
+            src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1650889545/L%27institut%20d%27Aur%C3%A9/differences-faux-cils_fzsuaj.webp"
             alt="Différence entre plusieurs courbures d'extensions de cils"
             width="1000px"
             height="1000px"
@@ -253,7 +253,7 @@ export default function Lash() {
         <figure>
           <img
             loading="lazy"
-            src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1649341995/L%27institut%20d%27Aur%C3%A9/difference-cils_vdaolr.webp"
+            src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1649341995/L%27institut%20d%27Aur%C3%A9/difference-cils_vdaolr.webp"
             alt="différence entre des cils mal collés et un cil bien collé"
             width="1076px"
             height="934px"
@@ -271,7 +271,7 @@ export default function Lash() {
           <div className="item-card-recommandations">
             <img
               loading="lazy"
-              src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651225966/L%27institut%20d%27Aur%C3%A9/numero1_fruo2a.webp"
+              src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1651225966/L%27institut%20d%27Aur%C3%A9/numero1_fruo2a.webp"
               alt="recommandation numéro une"
               width="450px"
               height="300px"
@@ -292,7 +292,7 @@ export default function Lash() {
           <div className="item-card-recommandations">
             <img
               loading="lazy"
-              src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651226173/L%27institut%20d%27Aur%C3%A9/numero2_lijlkd.webp"
+              src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1651226173/L%27institut%20d%27Aur%C3%A9/numero2_lijlkd.webp"
               alt="recommandation numéro deux"
               width="300px"
               height="450px"
@@ -313,7 +313,7 @@ export default function Lash() {
           <div className="item-card-recommandations">
             <img
               loading="lazy"
-              src="https://res.cloudinary.com/flowww-dev/image/upload/q_20/v1651219226/L%27institut%20d%27Aur%C3%A9/number3_eps6wv.webp"
+              src="https://res.cloudinary.com/flowww-dev/image/upload/q_10/v1651219226/L%27institut%20d%27Aur%C3%A9/number3_eps6wv.webp"
               alt="recommandation numéro trois"
               width="300px"
               height="450px"
