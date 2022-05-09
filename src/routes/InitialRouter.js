@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom";
 
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
+import App from "../App";
 import Loading from "./../global/loading/Loading";
 
-import App from "../App";
 // const App = lazy(() => import("../App"));
 const Home = lazy(() => import("./../pages/home/Home"));
 const Lash = lazy(() => import("./../pages/lash/Lash"));

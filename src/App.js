@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./App.css";
 import { Outlet } from "react-router-dom";
@@ -9,7 +9,7 @@ import Footer from "./global/footer/Footer";
 // import TagManager from "react-gtm-module";
 // import MessengerCustomerChat from "react-messenger-customer-chat";
 
-import Loading from "./global/loading/Loading";
+// import Loading from "./global/loading/Loading";
 // import Cursor from "./cursor/Cursor";
 // import Footer from "./components/footer/Footer";
 import ScrollTop from "./global/scrolltop/ScrollTop";
@@ -129,7 +129,7 @@ function App() {
   }
 
   return (
-    <Suspense fallback={<Loading />}>
+    <>
       <Navbar />
       <ScrollTop />
 
@@ -139,7 +139,7 @@ function App() {
       {/* <ScrollDown />
       <Footer /> */}
       <Footer />
-    </Suspense>
+    </>
   );
 }
 
