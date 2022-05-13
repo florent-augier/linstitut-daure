@@ -12,6 +12,7 @@ export default function Home() {
       return new Promise(function (successCallback, failureCallback) {
         setTimeout(() => {
           const element = document.querySelector(".wrapper-first-layout");
+          console.log(element);
           if (element) {
             successCallback(element);
           } else {
@@ -24,7 +25,7 @@ export default function Home() {
     promise.then(
       (result) =>
         console.log(
-          (result.style.backgroundImage = `url("https://res.cloudinary.com/flowww-dev/image/upload/v1651239770/L%27institut%20d%27Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp")`)
+          (result.style.backgroundImage = `url("https://res.cloudinary.com/flowww-dev/image/upload/c_scale,w_1750/v1651239770/L'institut%20d'Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp")`)
         ),
       (error) => console.log(error)
     );
