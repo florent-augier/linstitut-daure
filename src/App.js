@@ -49,7 +49,7 @@ function App() {
 
     promise.then(
       (result) => setMyElement(result),
-      (error) => console.log(error)
+      (error) => console.warn("Une erreur est survenue: ", error)
     );
 
     async function imagesSearch() {
@@ -67,7 +67,7 @@ function App() {
     let imagesPromise = imagesSearch();
     imagesPromise.then(
       (result) => setAllImages(result),
-      (error) => console.log(error)
+      (error) => console.warn("Une erreur est survenue: ", error)
     );
   }, [location]);
 
@@ -118,7 +118,7 @@ function App() {
 
     promise.then(
       (result) => setMyElement(result),
-      (error) => console.log(error)
+      (error) => console.warn("Une erreur est survenue: ", error)
     );
   }, [myElement, location]);
 
