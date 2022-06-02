@@ -7,30 +7,6 @@ import { Helmet } from "react-helmet";
 export default function Home() {
   const width = useWindowWidth();
 
-  // useEffect(() => {
-  //   function bgPromise() {
-  //     return new Promise(function (successCallback, failureCallback) {
-  //       setTimeout(() => {
-  //         const element = document.querySelector(".wrapper-first-layout>img");
-  //         if (element) {
-  //           successCallback(element);
-  //         } else {
-  //           failureCallback(
-  //             "L'élément ciblé n'a pas été trouvé!",
-  //             this.function
-  //           );
-  //         }
-  //       }, 400);
-  //     });
-  //   }
-  //   let promise = bgPromise();
-  //   promise.then(
-  //     (result) =>
-  //       (result.style.backgroundImage = `url("https://res.cloudinary.com/flowww-dev/image/upload/c_scale,w_1750/v1651239770/L'institut%20d'Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp")`),
-  //     (error) => console.warn("Une erreur est survenue: ", error)
-  //   );
-  // }, []);
-
   useEffect(() => {
     const options = {
       root: null,
@@ -244,11 +220,11 @@ export default function Home() {
       </Helmet>
       <div className="wrapper-first-layout">
         <img
-          src="https://res.cloudinary.com/flowww-dev/image/upload/c_scale,w_1750,q_10/v1651239770/L'institut%20d'Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp"
+          src="https://res.cloudinary.com/flowww-dev/image/upload/c_scale,w_1750,q_50/v1651239770/L'institut%20d'Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp"
           alt="regard d'une femme aux yeux clairs"
           width="1750px"
           height="1651px"
-          data-src="https://res.cloudinary.com/flowww-dev/image/upload/c_scale,w_1750/v1651239770/L'institut%20d'Aur%C3%A9/beautiful-blue-eyes_w6ddxh.webp"
+          className="unobserve"
         />
         <h1>
           L'institut d'<span className="beautiful-letter">Auré</span>

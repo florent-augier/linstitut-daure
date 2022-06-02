@@ -74,7 +74,8 @@ function App() {
   useEffect(() => {
     const imageObserver = new IntersectionObserver((entries, imgObserver) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && entry.target.className !== "unobserve") {
+          console.log(entry);
           const lazyImage = entry.target;
           lazyImage.src = lazyImage.dataset.src;
         }
