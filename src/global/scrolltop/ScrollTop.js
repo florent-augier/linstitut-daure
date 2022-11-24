@@ -45,7 +45,7 @@ const ScrollTop = () => {
     let height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
-    let scrolled = (winScroll / height) * 100;
+    let scrolled = (winScroll / height) * 100; // Define percentage of scroll in page.
     setScrolledY(scrolled);
     updateProgress();
   }
@@ -111,7 +111,7 @@ const ScrollTop = () => {
       );
       var windowHeight = window.innerHeight;
       var offset = window.pageYOffset;
-      var delta = nodeTop - offset;
+      var delta = offset * -1;
       var bottomScrollableY = height - windowHeight;
       var targetY =
         bottomScrollableY < delta

@@ -42,7 +42,7 @@ function App() {
           } else {
             failureCallback("L'élément ciblé n'a pas été trouvé. Dommage!");
           }
-        }, 500);
+        }, 1000);
       });
     }
     let promise = elementSearch();
@@ -61,7 +61,7 @@ function App() {
           } else {
             failureCallback("Les images n'ont pas été trouvées");
           }
-        }, 1000);
+        }, 1500);
       });
     }
     let imagesPromise = imagesSearch();
@@ -74,8 +74,11 @@ function App() {
   useEffect(() => {
     const imageObserver = new IntersectionObserver((entries, imgObserver) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.target.className !== "unobserve") {
-          console.log(entry);
+        if (
+          entry.isIntersecting &&
+          entry.target.className !== "unobserve" &&
+          entry.target.id !== "logo-cil"
+        ) {
           const lazyImage = entry.target;
           lazyImage.src = lazyImage.dataset.src;
         }
@@ -133,12 +136,7 @@ function App() {
     <>
       <Navbar />
       <ScrollTop />
-
-      {/* <MessengerCustomerChat pageId="111253084700995" appId="261838472668128" />
-      <Cursor /> */}
       <Outlet />
-      {/* <ScrollDown />
-      <Footer /> */}
       <Footer />
     </>
   );
